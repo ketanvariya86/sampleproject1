@@ -11,7 +11,6 @@ public class ReadConfig {
 	
 	// create the path variable and add the path of config.properties file.
 	String path = "D:\\JavaSelenium\\IKKON\\Configuration\\config.properties";
-		
 	
 	// create constructor
 	public ReadConfig() {
@@ -27,8 +26,7 @@ public class ReadConfig {
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}
-		
+		}		
 	}
 	
 	public String getBaseUrl()
@@ -47,7 +45,6 @@ public class ReadConfig {
 	public String getBrowser()
 	{
 		String value = properties.getProperty("browser");
-		
 		if(value != null)
 		{
 			return value;

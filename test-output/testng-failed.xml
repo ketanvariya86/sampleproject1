@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.ikkon.Test_cases.TestCase_Login">
+      <class name="com.ikkon.Test_cases.TC_LoginPageTest">
         <methods>
           <include name="openLoginPage"/>
-          <include name="beforetest"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.ikkon.Test_cases.TestCase_Login -->
+      </class> <!-- com.ikkon.Test_cases.TC_LoginPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
