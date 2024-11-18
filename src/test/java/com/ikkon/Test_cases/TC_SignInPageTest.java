@@ -19,16 +19,11 @@ import com.ikkon.pageObjects.SignInPage;
 import dev.failsafe.internal.util.Assert;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class TC_LoginPageTest extends BaseClass {
+public class TC_SignInPageTest extends BaseClass {
 
 	@Test
-	public void openLoginPage() throws InterruptedException {
+	public void openSignInPage() throws InterruptedException {
 
-		System.out.println(url);
-
-		driver.get(url);
-		logger.info("URL Opened");
-		
 		HomePage hpage = new HomePage(driver); 
 		hpage.ClickOnLogin();
 		logger.info("Login button clicked");
@@ -38,6 +33,23 @@ public class TC_LoginPageTest extends BaseClass {
 		String pagename =spage.GetPageName(); 
 		assertEquals("Sign in to IKKON", pagename);
 		logger.info("SignIn page verified");
+	}
+	
+	@Test
+	public void signInWithAdmin()throws InterruptedException{
+		HomePage hpage = new HomePage(driver);
+		hpage.ClickOnLogin();
+		logger.info("Login button clicked");
+		Thread.sleep(1000);
+		
+		SignInPage spage = new SignInPage(driver);
+		spage.EnterEmailId();
+		logger.info("Admin user email address is entered");
+		spage.EnterPassword();
+		logger.info("Admin user password is entered");
+		spage.ClickOnSubmitToLogin();
+		logger.info("Submit button clicked");
+		Thread.sleep(2000);
 	}
 
 }

@@ -4,6 +4,8 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.util.Properties;
 
+import javax.management.RuntimeErrorException;
+
 public class ReadConfig {
 	
 	// create an object of properties class
@@ -52,6 +54,30 @@ public class ReadConfig {
 		else
 		{
 			throw new RuntimeException("Browser is not specified in config.properties file");
+		}
+	}
+	
+	public String adminUserEmailId() {
+		String value = properties.getProperty("adminUserEmailId");
+		if(value!=null)
+		{
+			return value;
+		}
+		else
+		{
+			throw new RuntimeException("Admin user email address is not specified in config.properties file");
+		}
+	}
+	
+	public String adminUserPassword() {
+		String value = properties.getProperty("adminPwd");
+		if(value!=null)
+		{
+			return value;
+		}
+		else
+		{
+			throw new RuntimeException("Admin user password is not specified in config.properties file");
 		}
 	}
 }

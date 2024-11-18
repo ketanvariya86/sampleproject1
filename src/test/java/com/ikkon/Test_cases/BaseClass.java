@@ -61,6 +61,9 @@ public class BaseClass {
 		// For logging
 		logger = LogManager.getLogger("IKKON");
 		logger.info("Browser Setup completed As Browser opened and maximized");
+		
+		driver.get(url);
+		logger.info("URL Opened");
 	}
 	
 	@AfterClass
