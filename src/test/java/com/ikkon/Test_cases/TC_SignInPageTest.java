@@ -13,6 +13,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import com.ikkon.pageObjects.DashboardPage;
 import com.ikkon.pageObjects.HomePage;
 import com.ikkon.pageObjects.SignInPage;
 
@@ -21,7 +22,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class TC_SignInPageTest extends BaseClass {
 
-	@Test
+	@Test (priority = 1)
 	public void openSignInPage() throws InterruptedException {
 
 		HomePage hpage = new HomePage(driver); 
@@ -35,7 +36,7 @@ public class TC_SignInPageTest extends BaseClass {
 		logger.info("SignIn page verified");
 	}
 	
-	@Test
+	@Test (priority = 2)
 	public void signInWithAdmin()throws InterruptedException{
 		HomePage hpage = new HomePage(driver);
 		hpage.ClickOnLogin();
@@ -49,7 +50,12 @@ public class TC_SignInPageTest extends BaseClass {
 		logger.info("Admin user password is entered");
 		spage.ClickOnSubmitToLogin();
 		logger.info("Submit button clicked");
-		Thread.sleep(2000);
+		Thread.sleep(5000);
+		
+		DashboardPage dpage = new DashboardPage(driver);
+		dpage.VerifyDashboardPageURL();
+		logger.info("Admin User Logged In successfully");
+
 	}
 
 }
