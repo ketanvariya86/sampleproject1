@@ -35,7 +35,6 @@ public class TC_SignInPageTest extends BaseClass {
 		assertEquals("Sign in to IKKON", pagename);
 		logger.info("SignIn page verified");
 	}
-	
 	@Test (priority = 2)
 	public void signInWithAdmin()throws InterruptedException{
 		HomePage hpage = new HomePage(driver);
