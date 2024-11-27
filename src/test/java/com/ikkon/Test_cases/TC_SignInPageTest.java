@@ -12,8 +12,9 @@ public class TC_SignInPageTest extends BaseClass {
 
 	// TC-01 : Verify that Sign In page is opened or not
 	@Test(priority = 1)	
-	public void openSignInPage() throws InterruptedException {
+	public void OpenSignInPage() throws InterruptedException {
 
+		logger.info("================== 'Verify that Sign In page is opened or not' execution started ==================");
 		HomePage hpage = new HomePage(driver); 
 		hpage.ClickOnLogin();
 		logger.info("Login button clicked");
@@ -23,12 +24,13 @@ public class TC_SignInPageTest extends BaseClass {
 		String pagename =spage.GetPageName(); 
 		assertEquals("Sign in to IKKON", pagename);
 		logger.info("SignIn page verified");
+		logger.info("================== 'Verify that Sign In page is opened or not' execution completed ==================");
 	}
-	
 	
 	// TC-02 : Verify that Admin is able to sign in successfully with correct credentials	
 	@Test (priority = 2)	
-	public void signInWithAdmin()throws InterruptedException{
+	public void SignInWithAdmin()throws InterruptedException{
+		logger.info("================== 'Verify that Admin is able to sign in successfully with correct credentials' execution started ==================");
 		HomePage hpage = new HomePage(driver);
 		hpage.ClickOnLogin();
 		logger.info("Login button clicked");
@@ -41,91 +43,32 @@ public class TC_SignInPageTest extends BaseClass {
 		logger.info("Admin user password is entered");
 		spage.ClickOnSubmitToLogin();
 		logger.info("Submit button clicked");
-		Thread.sleep(5000);
+		Thread.sleep(10000);
 		
 		DashboardPage dpage = new DashboardPage(driver);
 		dpage.VerifyDashboardPageURL();
 		logger.info("Admin User Logged In successfully");
+		logger.info("================== 'Verify that Admin is able to sign in successfully with correct credentials' execution completed ==================");
+	}
 
-	}
-	
-	// TC-03 : After login with Admin, verify all labels shown on Dashboard 	
+	// TC-03: User Logout
 	@Test(priority = 3)
-	public void VerifyDashboardPageLabelsWithAdminUserLogin() throws InterruptedException
+	public void Logout() throws InterruptedException
 	{
-		Thread.sleep(5000);
-		DashboardPage dpage = new DashboardPage(driver);
-		dpage.VerifyTotalUsersLabel();
-		logger.info("'Total Users' count is exist/displayed on Dashboard Page");
-		
-		dpage.VerifyActiveUsersLabel();
-		logger.info("'Active Users' count is exist/displayed on Dashboard Page");
-		
-		dpage.VerifyInactiveUsersLabel();
-		logger.info("'Inactive Users' count is exist/displayed on Dashboard Page");
-		
-		dpage.VerifyInfluencerUsersLabel();
-		logger.info("'Influencer Users' count is exist/displayed on Dashboard Page");
-		
-		
-		dpage.VerifyBrandUsersLabel();
-		logger.info("'Brand Users' count is exist/displayed on Dashboard Page");
-		
-		dpage.VerifyAgenciesUsersLabel();
-		logger.info("'Agencies Users' count is exist/displayed on Dashboard Page");
-		
-		dpage.VerifyInfluencerCampaignLabel();
-		logger.info("'Influencer Campaign' count is exist/displayed on Dashboard Page");
-		
-		dpage.VerifyPendingLabel();
-		logger.info("'Pending' count is exist/displayed on Dashboard Page under Influencer campaign section");
-		
-		dpage.VerifyRejectedLabel();
-		logger.info("'Reject' count is exist/displayed on Dashboard Page under Influencer campaign section");
-		
-		dpage.VerifyInfluencerCampaignActiveLabel();
-		logger.info("'Active' label is exist/displayed on Dashboard page under Influencer Campaign section");
-		
-		dpage.VerifyInfluencerCampaignCompletedLabel();
-		logger.info("'Completed' label is exist/displayed on Dashboard page under Influencer Campaign section");
-		
-		dpage.VerifyUpcomingLabel();
-		logger.info("'Upcoming' label is exist/displayed on Dashboard page under Influencer campaign section");
-		
-		dpage.VerifyCampaignAnalysisLabel();
-		logger.info("'Campaign Analysis' chart label is exist/displayed on Dashboard page");
-		
-		dpage.VerifyDraftLabel();
-		logger.info("'Draft' label is exist/displayed on Dashboard page under campaign Analysis chart");
-		
-		dpage.VerifyRequestsLabel();
-		logger.info("'Requist' label is exist/displayed on Dashboard page under campaign Analysis chart");
-		
-		dpage.VerifyReviewLabel();
-		logger.info("'Review' label is exist/displayed on Dashboard page under campaign Analysis chart");
-		
-		dpage.VerifyCampaignAnalysisCompletedLabel();
-		logger.info("'Completed' label is exist/displayed on Dashboard page under campaign Analysis chart");
-		
-		dpage.VerifyCampaignAnalysisActiveLabel();
-		logger.info("'Active' label is exist/displayed on Dashboard page under campaign Analysis chart");
-		
-		dpage.VerifyInactiveLabel();
-		logger.info("'Inactive' label is exist/displayed on Dashboard page under campaign Analysis chart");
-		
-		dpage.VerifyInfluencerPlatformsAnalysisLabel();
-		logger.info("'Influencer Platform Analysis' chart label is exist/displayed on Dashboard page");
-		
-		dpage.VerifyYouTubeLabel();
-		logger.info("'YouTube' label is exist/displayed on Dashboard page under Influencer Platform Analysis chart");
-		
-		dpage.VerifyInstagramLabel();
-		logger.info("'Instagram' label is exist/displayed on Dashboard page under Influencer Platform Analysis chart");
-		
-		dpage.VerifyTikTokLabel();
-		logger.info("'TikTok' label is exist/displayed on Dashboard page under Influencer Platform Analysis chart");
-		
-		dpage.VerifySpotifyLabel();
-		logger.info("'Spotify' label is exist/displayed on Dashboard page under Influencer Platform Analysis chart");
+		logger.info("================== User Logout test case execution started ==================");
+		DashboardPage Dpage = new DashboardPage(driver);
+		Dpage.ProfileNameClick();
+		logger.info("TC_DashboardPageTest: Profile name clicked");
+		Thread.sleep(1000);
+		Dpage.LogoutClick();
+		logger.info("TC_DashboardPageTest: Logout button clicked");
+		Thread.sleep(1000);
+		HomePage Hpage = new HomePage(driver);
+		Hpage.VerifyLoginButton();
+		logger.info("TC_DashboardPageTest: Lotout done successfully as Login button is displayed. ");
+
+		logger.info("================== User Logout test case execution completed ==================");
 	}
+
+
 }

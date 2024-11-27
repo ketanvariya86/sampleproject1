@@ -29,21 +29,28 @@ public class BaseClass {
 	// Create setup method
 	public void setup()
 	{
+		// For logging
+		logger = LogManager.getLogger("IKKON");
+
+		logger.info("================ Setup method execution started ================");
 		switch(browser.toLowerCase())
 		{
 			case "chrome":
 				WebDriverManager.chromedriver().setup();
 				driver = new ChromeDriver();
+				logger.info("chrome browser object created");
 				break;
 				
 			case "msedge":
 				WebDriverManager.edgedriver().setup();
 				driver = new EdgeDriver();
+				logger.info("msedge browser object created");
 				break;
 				
 			case "firefox":	
 				WebDriverManager.firefoxdriver().setup();
 				driver = new FirefoxDriver();
+				logger.info("firefox browser object created");
 				break;
 				
 			default:
@@ -56,19 +63,22 @@ public class BaseClass {
 		// Maximize the opened window
 		driver.manage().window().maximize();
 		
-		// For logging
-		logger = LogManager.getLogger("IKKON");
 		logger.info("Browser Setup completed As Browser opened and maximized");
 		
 		driver.get(url);
 		logger.info("URL Opened");
+		
+		logger.info("================ Setup method execution completed ================");
 	}
 	
 	@AfterClass
 	public void tearDown()
 	{
+		logger.info("================ tearDown method execution started ================");
 		driver.close();
+		logger.info("browser closed");
 		driver.quit();
-		logger.info("browser quited");
+		logger.info("browser quitted");
+		logger.info("================ tearDown method exectuion completed ================");
 	}
 }

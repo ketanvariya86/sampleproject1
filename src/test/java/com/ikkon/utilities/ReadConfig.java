@@ -1,10 +1,10 @@
 package com.ikkon.utilities;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
+//import java.io.FileNotFoundException;
 import java.util.Properties;
 
-import javax.management.RuntimeErrorException;
+//import javax.management.RuntimeErrorException;
 
 public class ReadConfig {
 	

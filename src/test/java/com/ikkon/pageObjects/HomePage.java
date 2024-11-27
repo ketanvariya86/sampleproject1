@@ -1,6 +1,6 @@
 package com.ikkon.pageObjects;
 
-import org.openqa.selenium.By;
+//import org.openqa.selenium.By;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -8,7 +8,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class HomePage {
-	// 1. Create onject of webdriver
+	// 1. Create object of webdriver
 	WebDriver ldriver;
 	
 	// 2. Create constructor and it's name should be same as class name
@@ -39,5 +39,10 @@ public class HomePage {
 			// TODO: handle exception
 			System.out.println("Exceptions caught: " + e.getMessage());
 		}
+	}
+	
+	public boolean VerifyLoginButton()
+	{
+		return LoginButton.isDisplayed();
 	}
 }

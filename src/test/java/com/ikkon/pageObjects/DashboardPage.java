@@ -1,7 +1,7 @@
 package com.ikkon.pageObjects;
 
 import static org.testng.Assert.assertEquals;
-import static org.testng.Assert.assertTrue;
+//import static org.testng.Assert.assertTrue;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -43,8 +43,9 @@ public class DashboardPage {
 		@FindBy(xpath = "//p[text()='Instagram']") public WebElement Instagram;
 		@FindBy(xpath = "//p[text()='TikTok']") public WebElement TikTok;
 		@FindBy(xpath = "//p[text()='Spotify']") public WebElement Spotify;
-		
-		
+		@FindBy(xpath = "//div[@class='MuiBox-root css-759u60']") public WebElement profilename;
+		@FindBy(xpath = "//li[text()='Logout']") public WebElement Logout;
+		@FindBy(xpath = "//span[text()='Dashboard']") public WebElement DashboardTab;
 		
 		public void VerifyDashboardPageURL()
 		{
@@ -58,7 +59,7 @@ public class DashboardPage {
 		 */
 		
 		public void VerifyTotalUsersLabel()
-		{
+		{				
 			Assert.assertTrue(TotalUsers.isDisplayed(),"Total Users label is not displayed");
 		}
 		
@@ -176,5 +177,48 @@ public class DashboardPage {
 			return Spotify.isDisplayed();
 		}
 		
+		public void ProfileNameClick()
+		{
+			profilename.click();
+		}
 		
+		public void LogoutClick()
+		{
+			Logout.click();
+		}
+		
+		public void TotalUsersClick()
+		{
+			TotalUsers.click();
+		}
+		
+		public void DashboardTabClicked()
+		{
+			DashboardTab.click();
+		}
+		
+		public void ActiveUsersClick()
+		{
+			ActiveUsers.click();
+		}
+		
+		public void InactiveUsersClick()
+		{
+			InactiveUsers.click();
+		}
+		
+		public void InfluencerUsersClick()
+		{
+			InfluencerUsers.click();
+		}
+		
+		public void BrandUsersClick()
+		{
+			BrandUsers.click();
+		}
+		
+		public void AgencyUsersClick()
+		{
+			AgenciesUsers.click();
+		}
 }
