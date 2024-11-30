@@ -22,7 +22,7 @@ public class DashboardPage {
 		@FindBy(xpath = "//h6[text()='Total Users']") public WebElement TotalUsers;
 		@FindBy(xpath = "//h6[text()='Active Users']") public WebElement ActiveUsers;
 		@FindBy(xpath = "//h6[text()='Inactive Users']") public WebElement InactiveUsers;
-		@FindBy(xpath = "//h6[text()='Influencer Users']") public WebElement InfluencerUsers;
+		@FindBy(xpath = "//h6[text()='Influencer User's']") public WebElement InfluencerUsers;
 		@FindBy(xpath = "//h6[text()='Brand Users']") public WebElement BrandUsers;
 		@FindBy(xpath = "//h6[text()='Agencies Users']") public WebElement AgenciesUsers;
 		@FindBy(xpath = "//h5[text()='Influencer Campaign']") public WebElement InfluencerCampaign;

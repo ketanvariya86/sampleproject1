@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">10 methods,   10 passed</span>
+                    <span class="method-stats">12 methods, 2 failed,   10 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ikkon.Test_cases.TC_DashboardPageTest" class="method navigator-link" hash-for-method="VerifyDashboardPageLabelsAfterAdminUserLogin">VerifyDashboardPageLabelsAfterAdminUserLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ikkon.Test_cases.TC_DashboardPageTest" class="method navigator-link" hash-for-method="VerifyInfluencerUsersListByClickingOnInfluencerUsers">VerifyInfluencerUsersListByClickingOnInfluencerUsers</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,7 +122,27 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ikkon.Test_cases.TC_MenuPageTest" class="method navigator-link" hash-for-method="AgencyPageOpened">AgencyPageOpened</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ikkon.Test_cases.TC_MenuPageTest" class="method navigator-link" hash-for-method="DashboardPageOpened">DashboardPageOpened</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.ikkon.Test_cases.TC_SignInPageTest" class="method navigator-link" hash-for-method="Logout">Logout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ikkon.Test_cases.TC_SignInPageTest" class="method navigator-link" hash-for-method="OpenSignInPage">OpenSignInPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ikkon.Test_cases.TC_SignInPageTest" class="method navigator-link" hash-for-method="SignInWithAdmin">SignInWithAdmin</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -128,27 +167,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.ikkon.Test_cases.TC_DashboardPageTest" class="method navigator-link" hash-for-method="VerifyDashboardPageLabelsAfterAdminUserLogin">VerifyDashboardPageLabelsAfterAdminUserLogin</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.ikkon.Test_cases.TC_DashboardPageTest" class="method navigator-link" hash-for-method="VerifyInactiveUsersListByClickingOnInactiveUsers">VerifyInactiveUsersListByClickingOnInactiveUsers</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.ikkon.Test_cases.TC_DashboardPageTest" class="method navigator-link" hash-for-method="VerifyInfluencerUsersListByClickingOnInfluencerUsers">VerifyInfluencerUsersListByClickingOnInfluencerUsers</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.ikkon.Test_cases.TC_SignInPageTest" class="method navigator-link" hash-for-method="openSignInPage">openSignInPage</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.ikkon.Test_cases.TC_SignInPageTest" class="method navigator-link" hash-for-method="signInWithAdmin">signInWithAdmin</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -163,6 +182,86 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.ikkon.Test_cases.TC_DashboardPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyDashboardPageLabelsAfterAdminUserLogin">
+                  </a> <!-- VerifyDashboardPageLabelsAfterAdminUserLogin -->
+                  <span class="method-name">VerifyDashboardPageLabelsAfterAdminUserLogin</span>
+                  <div class="stack-trace">org.openqa.selenium.InvalidSelectorException: invalid selector
+from javascript error: {&quot;status&quot;:32,&quot;value&quot;:&quot;Unable to locate an element with the xpath expression //h6[text()=&apos;Influencer User&apos;s&apos;] because of the following error:\nSyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;//h6[text()=&apos;Influencer User&apos;s&apos;]&apos; is not a valid XPath expression.&quot;}
+  (Session info: chrome=131.0.6778.86)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Build info: version: &apos;4.26.0&apos;, revision: &apos;8ccf0219d7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2919cbf381087ce3033dbfe7677bb2b5, findElement {value=//h6[text()=&apos;Influencer User&apos;s&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\KANHAS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58337}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58337/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2919cbf381087ce3033dbfe7677bb2b5
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy28.isDisplayed(Unknown Source)
+	at com.ikkon.pageObjects.DashboardPage.VerifyInfluencerUsersLabel(DashboardPage.java:78)
+	at com.ikkon.Test_cases.TC_DashboardPageTest.VerifyDashboardPageLabelsAfterAdminUserLogin(TC_DashboardPageTest.java:47)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyInfluencerUsersListByClickingOnInfluencerUsers">
+                  </a> <!-- VerifyInfluencerUsersListByClickingOnInfluencerUsers -->
+                  <span class="method-name">VerifyInfluencerUsersListByClickingOnInfluencerUsers</span>
+                  <div class="stack-trace">org.openqa.selenium.InvalidSelectorException: invalid selector
+from javascript error: {&quot;status&quot;:32,&quot;value&quot;:&quot;Unable to locate an element with the xpath expression //h6[text()=&apos;Influencer User&apos;s&apos;] because of the following error:\nSyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;//h6[text()=&apos;Influencer User&apos;s&apos;]&apos; is not a valid XPath expression.&quot;}
+  (Session info: chrome=131.0.6778.86)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Build info: version: &apos;4.26.0&apos;, revision: &apos;8ccf0219d7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2919cbf381087ce3033dbfe7677bb2b5, findElement {value=//h6[text()=&apos;Influencer User&apos;s&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\KANHAS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58337}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58337/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2919cbf381087ce3033dbfe7677bb2b5
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy28.click(Unknown Source)
+	at com.ikkon.pageObjects.DashboardPage.InfluencerUsersClick(DashboardPage.java:212)
+	at com.ikkon.Test_cases.TC_DashboardPageTest.VerifyInfluencerUsersListByClickingOnInfluencerUsers(TC_DashboardPageTest.java:190)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -199,23 +298,31 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="VerifyDashboardPageLabelsAfterAdminUserLogin">
-                  </a> <!-- VerifyDashboardPageLabelsAfterAdminUserLogin -->
-                  <span class="method-name">VerifyDashboardPageLabelsAfterAdminUserLogin</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="VerifyInactiveUsersListByClickingOnInactiveUsers">
                   </a> <!-- VerifyInactiveUsersListByClickingOnInactiveUsers -->
                   <span class="method-name">VerifyInactiveUsersListByClickingOnInactiveUsers</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.ikkon.Test_cases.TC_MenuPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="VerifyInfluencerUsersListByClickingOnInfluencerUsers">
-                  </a> <!-- VerifyInfluencerUsersListByClickingOnInfluencerUsers -->
-                  <span class="method-name">VerifyInfluencerUsersListByClickingOnInfluencerUsers</span>
+                  <a name="AgencyPageOpened">
+                  </a> <!-- AgencyPageOpened -->
+                  <span class="method-name">AgencyPageOpened</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="DashboardPageOpened">
+                  </a> <!-- DashboardPageOpened -->
+                  <span class="method-name">DashboardPageOpened</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -235,16 +342,16 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="openSignInPage">
-                  </a> <!-- openSignInPage -->
-                  <span class="method-name">openSignInPage</span>
+                  <a name="OpenSignInPage">
+                  </a> <!-- OpenSignInPage -->
+                  <span class="method-name">OpenSignInPage</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="signInWithAdmin">
-                  </a> <!-- signInWithAdmin -->
-                  <span class="method-name">signInWithAdmin</span>
+                  <a name="SignInWithAdmin">
+                  </a> <!-- SignInWithAdmin -->
+                  <span class="method-name">SignInWithAdmin</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -263,6 +370,7 @@
     &lt;classes&gt;
       &lt;class name=&quot;com.ikkon.Test_cases.TC_SignInPageTest&quot;/&gt;
       &lt;class name=&quot;com.ikkon.Test_cases.TC_DashboardPageTest&quot;/&gt;
+      &lt;class name=&quot;com.ikkon.Test_cases.TC_MenuPageTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -276,7 +384,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (2 classes)</span>
+                <span class="test-name">Test (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -302,47 +410,55 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(10);
+data.addRows(12);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'signInWithAdmin')
-data.setCell(0, 2, 'com.ikkon.Test_cases.TC_SignInPageTest')
-data.setCell(0, 3, 11927);
+data.setCell(0, 1, 'AgencyPageOpened')
+data.setCell(0, 2, 'com.ikkon.Test_cases.TC_MenuPageTest')
+data.setCell(0, 3, 14955);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'VerifyDashboardPageLabelsAfterAdminUserLogin')
-data.setCell(1, 2, 'com.ikkon.Test_cases.TC_DashboardPageTest')
-data.setCell(1, 3, 9731);
+data.setCell(1, 1, 'SignInWithAdmin')
+data.setCell(1, 2, 'com.ikkon.Test_cases.TC_SignInPageTest')
+data.setCell(1, 3, 12063);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'VerifyInactiveUsersListByClickingOnInactiveUsers')
+data.setCell(2, 1, 'VerifyActiveUsersListByClickingOnActiveUsers')
 data.setCell(2, 2, 'com.ikkon.Test_cases.TC_DashboardPageTest')
-data.setCell(2, 3, 8365);
+data.setCell(2, 3, 8400);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'VerifyInfluencerUsersListByClickingOnInfluencerUsers')
+data.setCell(3, 1, 'VerifyBrandUsersListByClickingOnBrandUsers')
 data.setCell(3, 2, 'com.ikkon.Test_cases.TC_DashboardPageTest')
-data.setCell(3, 3, 8341);
+data.setCell(3, 3, 8324);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'VerifyBrandUsersListByClickingOnBrandUsers')
+data.setCell(4, 1, 'VerifyInactiveUsersListByClickingOnInactiveUsers')
 data.setCell(4, 2, 'com.ikkon.Test_cases.TC_DashboardPageTest')
-data.setCell(4, 3, 8270);
+data.setCell(4, 3, 8318);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'VerifyAgencyUsersListByClickingOnBrandUsers')
 data.setCell(5, 2, 'com.ikkon.Test_cases.TC_DashboardPageTest')
-data.setCell(5, 3, 8258);
+data.setCell(5, 3, 8252);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'VerifyActiveUsersListByClickingOnActiveUsers')
+data.setCell(6, 1, 'VerifyDashboardPageLabelsAfterAdminUserLogin')
 data.setCell(6, 2, 'com.ikkon.Test_cases.TC_DashboardPageTest')
-data.setCell(6, 3, 8211);
+data.setCell(6, 3, 7528);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'VerifyAllUsersListByClickingOnTotalUsers')
+data.setCell(7, 1, 'VerifyInfluencerUsersListByClickingOnInfluencerUsers')
 data.setCell(7, 2, 'com.ikkon.Test_cases.TC_DashboardPageTest')
-data.setCell(7, 3, 3253);
+data.setCell(7, 3, 5154);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'Logout')
-data.setCell(8, 2, 'com.ikkon.Test_cases.TC_SignInPageTest')
-data.setCell(8, 3, 2339);
+data.setCell(8, 1, 'VerifyAllUsersListByClickingOnTotalUsers')
+data.setCell(8, 2, 'com.ikkon.Test_cases.TC_DashboardPageTest')
+data.setCell(8, 3, 3638);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'openSignInPage')
+data.setCell(9, 1, 'OpenSignInPage')
 data.setCell(9, 2, 'com.ikkon.Test_cases.TC_SignInPageTest')
-data.setCell(9, 3, 1373);
+data.setCell(9, 3, 3422);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'Logout')
+data.setCell(10, 2, 'com.ikkon.Test_cases.TC_SignInPageTest')
+data.setCell(10, 3, 2332);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'DashboardPageOpened')
+data.setCell(11, 2, 'com.ikkon.Test_cases.TC_MenuPageTest')
+data.setCell(11, 3, 4);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -379,59 +495,82 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">openSignInPage</span>
-                <span class="method-start">16421 ms</span>
+                <span class="method-name">OpenSignInPage</span>
+                <span class="method-start">5334 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">signInWithAdmin</span>
-                <span class="method-start">17805 ms</span>
+                <span class="method-name">SignInWithAdmin</span>
+                <span class="method-start">8766 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Logout</span>
-                <span class="method-start">29735 ms</span>
+                <span class="method-start">20833 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">32076 ms</span>
+                <span class="method-start">23170 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.ikkon.Test_cases.TC_DashboardPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
-                <span class="method-start">32440 ms</span>
+                <span class="method-start">23944 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">VerifyDashboardPageLabelsAfterAdminUserLogin</span>
-                <span class="method-start">37355 ms</span>
+                <span class="method-start">28247 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">VerifyAllUsersListByClickingOnTotalUsers</span>
-                <span class="method-start">47089 ms</span>
+                <span class="method-start">35785 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">VerifyActiveUsersListByClickingOnActiveUsers</span>
-                <span class="method-start">50345 ms</span>
+                <span class="method-start">39440 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">VerifyInactiveUsersListByClickingOnInactiveUsers</span>
-                <span class="method-start">58566 ms</span>
+                <span class="method-start">47844 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">VerifyInfluencerUsersListByClickingOnInfluencerUsers</span>
-                <span class="method-start">66938 ms</span>
+                <span class="method-start">56168 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">VerifyBrandUsersListByClickingOnBrandUsers</span>
-                <span class="method-start">75284 ms</span>
+                <span class="method-start">61331 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">VerifyAgencyUsersListByClickingOnBrandUsers</span>
-                <span class="method-start">83559 ms</span>
+                <span class="method-start">69658 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">91821 ms</span>
+                <span class="method-start">77913 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ikkon.Test_cases.TC_MenuPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">78444 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">AgencyPageOpened</span>
+                <span class="method-start">82750 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">DashboardPageOpened</span>
+                <span class="method-start">97709 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">97715 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

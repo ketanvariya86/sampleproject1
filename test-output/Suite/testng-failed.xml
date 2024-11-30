@@ -3,14 +3,14 @@
 <suite name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.ikkon.Test_cases.TC_SignInPageTest">
+      <class name="com.ikkon.Test_cases.TC_DashboardPageTest">
         <methods>
-          <include name="Logout"/>
-          <include name="signInWithAdmin"/>
+          <include name="VerifyInfluencerUsersListByClickingOnInfluencerUsers"/>
           <include name="setup"/>
           <include name="tearDown"/>
+          <include name="VerifyDashboardPageLabelsAfterAdminUserLogin"/>
         </methods>
-      </class> <!-- com.ikkon.Test_cases.TC_SignInPageTest -->
+      </class> <!-- com.ikkon.Test_cases.TC_DashboardPageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
