@@ -22,10 +22,11 @@ public class DashboardPage {
 		@FindBy(xpath = "//h6[text()='Total Users']") public WebElement TotalUsers;
 		@FindBy(xpath = "//h6[text()='Active Users']") public WebElement ActiveUsers;
 		@FindBy(xpath = "//h6[text()='Inactive Users']") public WebElement InactiveUsers;
-		@FindBy(xpath = "//h6[text()='Influencer User's']") public WebElement InfluencerUsers;
+	//	@FindBy(xpath = "//h6[text()=\'Influencer User's\']") public WebElement InfluencerUsers;
+		@FindBy(xpath = "//div[@class='MuiBox-root css-3xl87r']") public WebElement InfluencerUsers;
 		@FindBy(xpath = "//h6[text()='Brand Users']") public WebElement BrandUsers;
 		@FindBy(xpath = "//h6[text()='Agencies Users']") public WebElement AgenciesUsers;
-		@FindBy(xpath = "//h5[text()='Influencer Campaign']") public WebElement InfluencerCampaign;
+		@FindBy(xpath = "//h5[text()='Audio Influencer Campaign']") public WebElement InfluencerCampaign;
 		@FindBy(xpath = "//p[text()='Pending']") public WebElement Pending;
 		@FindBy(xpath = "//p[text()='Rejected']") public WebElement Rejected;
 		@FindBy(xpath = "//p[text()='Active'][@class='MuiTypography-root MuiTypography-body1 css-1990hm5']") public WebElement InfluencerCampaignActive;
@@ -38,7 +39,7 @@ public class DashboardPage {
 		@FindBy(xpath = "//p[@class='MuiTypography-root MuiTypography-body1 css-1op1nui'][text()='Completed']") public WebElement CampaignAnalysisCompleted;
 		@FindBy(xpath = "//p[text()='Active'][@class='MuiTypography-root MuiTypography-body1 css-1op1nui']") public WebElement CampaignAnalysisActive;
 		@FindBy(xpath = "//p[text()='Inactive']") public WebElement Inactive;
-		@FindBy(xpath = "//h5[text()='Influencer Platforms Analysis']") public WebElement InfluencerPlatformsAnalysis;
+		@FindBy(xpath = "//h5[text()='Audio Influencer Platforms Analysis']") public WebElement InfluencerPlatformsAnalysis;
 		@FindBy(xpath = "//p[text()='YouTube']") public WebElement YouTube;
 		@FindBy(xpath = "//p[text()='Instagram']") public WebElement Instagram;
 		@FindBy(xpath = "//p[text()='TikTok']") public WebElement TikTok;
