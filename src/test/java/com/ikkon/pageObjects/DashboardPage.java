@@ -19,7 +19,7 @@ public class DashboardPage {
 			PageFactory.initElements(rdriver, this);
 		}
 	// Locators
-		@FindBy(xpath = "//h6[text()='Total Users']") public WebElement TotalUsers;
+		@FindBy(xpath = "//h6[text()='Total Users//']") public WebElement TotalUsers;
 		@FindBy(xpath = "//h6[text()='Active Users']") public WebElement ActiveUsers;
 		@FindBy(xpath = "//h6[text()='Inactive Users']") public WebElement InactiveUsers;
 	//	@FindBy(xpath = "//h6[text()=\'Influencer User's\']") public WebElement InfluencerUsers;
@@ -47,12 +47,19 @@ public class DashboardPage {
 		@FindBy(xpath = "//div[@class='MuiBox-root css-759u60']") public WebElement profilename;
 		@FindBy(xpath = "//li[text()='Logout']") public WebElement Logout;
 		@FindBy(xpath = "//span[text()='Dashboard']") public WebElement DashboardTab;
+		@FindBy(xpath = "//div[text()='Logged in successfully']") public WebElement LoggedInSuccessfullyMsg;
 		
 		public void VerifyDashboardPageURL()
 		{
 			String actualUrl = ldriver.getCurrentUrl();
 			String expectedUrl = "https://ikkon.ae/dashboard";
 			assertEquals(actualUrl,expectedUrl);
+		}
+		
+		public void VerifyLoggedInSuccessfullyMsg()
+		{
+			String Msg = LoggedInSuccessfullyMsg.getText();
+			assertEquals(Msg, "Logged in successfully");
 		}
 	
 		/*

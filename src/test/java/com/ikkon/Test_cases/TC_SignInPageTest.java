@@ -43,9 +43,12 @@ public class TC_SignInPageTest extends BaseClass {
 		logger.info("Admin user password is entered");
 		spage.ClickOnSubmitToLogin();
 		logger.info("Submit button clicked");
-		Thread.sleep(10000);
-		
+		Thread.sleep(5000);		
 		DashboardPage dpage = new DashboardPage(driver);
+		
+		dpage.VerifyLoggedInSuccessfullyMsg();
+		logger.info("Logged In Successfully Message shown");
+		Thread.sleep(5000);
 		dpage.VerifyDashboardPageURL();
 		logger.info("Admin User Logged In successfully");
 		logger.info("================== 'Verify that Admin is able to sign in successfully with correct credentials' execution completed ==================");

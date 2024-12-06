@@ -1,6 +1,8 @@
 package com.ikkon.pageObjects;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
@@ -13,6 +15,9 @@ public class UsersPage {
 		
 		PageFactory.initElements(rdriver,this);
 	}
+	
+	
+	@FindBy(xpath = "//h4[text()='Users']") public WebElement UsersLabel; 
 	
 	public void UsersPageListURLWithAllUsers()
 	{
@@ -43,6 +48,11 @@ public class UsersPage {
 		String currentPageUrl = ldriver.getCurrentUrl();
 		String expectedPageUrl = "https://ikkon.ae/user/:agency";
 		Assert.assertEquals(currentPageUrl,expectedPageUrl);
+	}
+	
+	public boolean VerifyUsersLabel()
+	{
+		return UsersLabel.getText().equals("Users");
 	}
 	
 }

@@ -21,6 +21,10 @@ public class MenuPage {
 	@FindBy(xpath = "//span[text()='Matchmaking']") public WebElement MatchmakingTab;
 	@FindBy(xpath = "//span[text()='Users']") public WebElement UsersTab;
 	@FindBy(xpath = "//span[text()='System Log']") public WebElement SystemLogTab;
+	@FindBy(xpath = "//button[@type='button'][@aria-label='Notifications']") public WebElement NotificaitonIcon;
+
+	//@FindBy(xpath = "//*[name()='svg' and @data-testid='NotificationsIcon']") public WebElement NotificaitonIcon;
+	
 	
 	public void AgencyTabClicked()
 	{
@@ -50,5 +54,9 @@ public class MenuPage {
 	public void SystemLogTabClicked()
 	{
 		SystemLogTab.click();
+	}
+	public void ClickOnNotificationIcon()
+	{
+		NotificaitonIcon.click();
 	}
 }
