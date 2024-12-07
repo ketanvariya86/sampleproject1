@@ -1,236 +1,295 @@
-[INFO ] 2024-12-06 18:39:58.944 [main] IKKON - ================ Setup method execution started ================
-[INFO ] 2024-12-06 18:40:01.481 [main] IKKON - chrome browser object created
-[INFO ] 2024-12-06 18:40:01.539 [main] IKKON - Browser Setup completed As Browser opened and maximized
-[INFO ] 2024-12-06 18:40:05.377 [main] IKKON - URL Opened
-[INFO ] 2024-12-06 18:40:05.378 [main] IKKON - ================ Setup method execution completed ================
-[INFO ] 2024-12-06 18:40:05.417 [main] IKKON - ================== 'Verify that Sign In page is opened or not' execution started ==================
-[INFO ] 2024-12-06 18:40:05.965 [main] IKKON - Login button clicked
-[INFO ] 2024-12-06 18:40:07.016 [main] IKKON - SignIn page verified
-[INFO ] 2024-12-06 18:40:07.017 [main] IKKON - ================== 'Verify that Sign In page is opened or not' execution completed ==================
-[INFO ] 2024-12-06 18:40:07.043 [main] IKKON - ================== 'Verify that Admin is able to sign in successfully with correct credentials' execution started ==================
-[INFO ] 2024-12-06 18:40:07.165 [main] IKKON - Login button clicked
-[INFO ] 2024-12-06 18:40:08.602 [main] IKKON - Admin user email address is entered
-[INFO ] 2024-12-06 18:40:08.800 [main] IKKON - Admin user password is entered
-[INFO ] 2024-12-06 18:40:08.957 [main] IKKON - Submit button clicked
-[INFO ] 2024-12-06 18:40:14.014 [main] IKKON - Logged In Successfully Message shown
-[INFO ] 2024-12-06 18:40:19.041 [main] IKKON - Admin User Logged In successfully
-[INFO ] 2024-12-06 18:40:19.042 [main] IKKON - ================== 'Verify that Admin is able to sign in successfully with correct credentials' execution completed ==================
-[INFO ] 2024-12-06 18:40:19.074 [main] IKKON - ================== User Logout test case execution started ==================
-[INFO ] 2024-12-06 18:40:19.241 [main] IKKON - TC_DashboardPageTest: Profile name clicked
-[INFO ] 2024-12-06 18:40:20.366 [main] IKKON - TC_DashboardPageTest: Logout button clicked
-[INFO ] 2024-12-06 18:40:21.418 [main] IKKON - TC_DashboardPageTest: Lotout done successfully as Login button is displayed. 
-[INFO ] 2024-12-06 18:40:21.419 [main] IKKON - ================== User Logout test case execution completed ==================
-[INFO ] 2024-12-06 18:40:21.425 [main] IKKON - ================ tearDown method execution started ================
-[INFO ] 2024-12-06 18:40:21.582 [main] IKKON - browser closed
-[INFO ] 2024-12-06 18:40:21.733 [main] IKKON - browser quitted
-[INFO ] 2024-12-06 18:40:21.734 [main] IKKON - ================ tearDown method exectuion completed ================
-[INFO ] 2024-12-06 18:40:21.735 [main] IKKON - ================ Setup method execution started ================
-[INFO ] 2024-12-06 18:40:23.028 [main] IKKON - chrome browser object created
-[INFO ] 2024-12-06 18:40:23.078 [main] IKKON - Browser Setup completed As Browser opened and maximized
-[INFO ] 2024-12-06 18:40:31.338 [main] IKKON - URL Opened
-[INFO ] 2024-12-06 18:40:31.339 [main] IKKON - ================ Setup method execution completed ================
-[INFO ] 2024-12-06 18:40:31.344 [main] IKKON - ================== After login with Admin, verify all labels shown on Dashboard execution started ==================
-[INFO ] 2024-12-06 18:40:31.993 [main] IKKON - TC_DashboardPageTest: Login button clicked
-[INFO ] 2024-12-06 18:40:33.287 [main] IKKON - TC_DashboardPageTest: EmailId is entered
-[INFO ] 2024-12-06 18:40:33.556 [main] IKKON - TC_DashboardPageTest: Password is entered
-[INFO ] 2024-12-06 18:40:33.757 [main] IKKON - TC_DashboardPageTest: Submit button is clicked
-[INFO ] 2024-12-06 18:40:48.819 [main] IKKON - ============== Click on 'Total Users' from dashboard page and verify that 'Users' page is opened with all users list test case execution started ===============
-[INFO ] 2024-12-06 18:40:48.972 [main] IKKON - Dashboard tab clicked from left menu
-[INFO ] 2024-12-06 18:40:59.015 [main] IKKON - ============== Click on 'Active Users' from dashboard page and verify that 'Users' page is opened including active users list test case execution started ===============
-[INFO ] 2024-12-06 18:40:59.122 [main] IKKON - Dashboard tab clicked from left menu
-[INFO ] 2024-12-06 18:41:04.237 [main] IKKON - TC_DashboardPageTest: Clicked on 'Active Users'
-[INFO ] 2024-12-06 18:41:07.311 [main] IKKON - ============== Click on 'Inactive Users' from dashboard page and verify that 'Users' page is opened including active users list test case execution started ===============
-[INFO ] 2024-12-06 18:41:07.418 [main] IKKON - Dashboard tab clicked from left menu
-[INFO ] 2024-12-06 18:41:12.519 [main] IKKON - TC_DashboardPageTest: Clicked on 'Inactive Users'
-[INFO ] 2024-12-06 18:41:15.550 [main] IKKON - TC_DashboardPageTest: Users list page is opened with all inactive users list
-[INFO ] 2024-12-06 18:41:15.551 [main] IKKON - ============== Click on 'Inactive Users' from dashboard page and verify that 'Users' page is opened including inactive users test case execution completed ===============
-[INFO ] 2024-12-06 18:41:15.581 [main] IKKON - ============== Click on 'Influencer Users' from dashboard page and verify that 'Users' page is opened with influencer users list test case execution started ===============
-[INFO ] 2024-12-06 18:41:15.690 [main] IKKON - Dashboard tab clicked from left menu
-[INFO ] 2024-12-06 18:41:20.807 [main] IKKON - TC_DashboardPageTest: Clicked on 'Influencer Users'
-[INFO ] 2024-12-06 18:41:23.823 [main] IKKON - TC_DashboardPageTest: Users list page is opened with all influencer users list
-[INFO ] 2024-12-06 18:41:23.824 [main] IKKON - ============== Click on 'Influencer Users' from dashboard page and verify that 'Users' page is opened with all influencer users test case execution completed ===============
-[INFO ] 2024-12-06 18:41:23.856 [main] IKKON - ============== Click on 'Brand Users' from dashboard page and verify that 'Users' page is opened with brand users list test case execution started ===============
-[INFO ] 2024-12-06 18:41:24.562 [main] IKKON - Dashboard tab clicked from left menu
-[INFO ] 2024-12-06 18:41:29.753 [main] IKKON - TC_DashboardPageTest: Clicked on 'Brand Users'
-[INFO ] 2024-12-06 18:41:32.767 [main] IKKON - TC_DashboardPageTest: Users list page is opened with all Brand users list
-[INFO ] 2024-12-06 18:41:32.769 [main] IKKON - ============== Click on 'Brand Users' from dashboard page and verify that 'Users' page is opened with all brand users test case execution completed ===============
-[INFO ] 2024-12-06 18:41:32.779 [main] IKKON - ============== Click on 'Brand Users' from dashboard page and verify that 'Users' page is opened with agency users list test case execution started ===============
-[INFO ] 2024-12-06 18:41:32.878 [main] IKKON - Dashboard tab clicked from left menu
-[INFO ] 2024-12-06 18:41:38.049 [main] IKKON - TC_DashboardPageTest: Clicked on 'Brand Users'
-[INFO ] 2024-12-06 18:41:41.073 [main] IKKON - TC_DashboardPageTest: Users list page is opened with all Agency users list
-[INFO ] 2024-12-06 18:41:41.073 [main] IKKON - ============== Click on 'Agency Users' from dashboard page and verify that 'Users' page is opened with all agency users test case execution completed ===============
-[INFO ] 2024-12-06 18:41:41.075 [main] IKKON - ================ tearDown method execution started ================
-[INFO ] 2024-12-06 18:41:41.246 [main] IKKON - browser closed
-[INFO ] 2024-12-06 18:41:41.462 [main] IKKON - browser quitted
-[INFO ] 2024-12-06 18:41:41.463 [main] IKKON - ================ tearDown method exectuion completed ================
-[INFO ] 2024-12-06 18:41:41.466 [main] IKKON - ================ Setup method execution started ================
-[INFO ] 2024-12-06 18:41:42.812 [main] IKKON - chrome browser object created
-[INFO ] 2024-12-06 18:41:42.881 [main] IKKON - Browser Setup completed As Browser opened and maximized
-[INFO ] 2024-12-06 18:41:47.362 [main] IKKON - URL Opened
-[INFO ] 2024-12-06 18:41:47.362 [main] IKKON - ================ Setup method execution completed ================
-[INFO ] 2024-12-06 18:41:47.371 [main] IKKON - ============= Click on 'Agency' and verify that 'Agency' page is opened test case execution started =============
-[INFO ] 2024-12-06 18:41:47.372 [main] IKKON - ================== 'Verify that Sign In page is opened or not' execution started ==================
-[INFO ] 2024-12-06 18:41:47.891 [main] IKKON - Login button clicked
-[INFO ] 2024-12-06 18:41:48.936 [main] IKKON - SignIn page verified
-[INFO ] 2024-12-06 18:41:48.936 [main] IKKON - ================== 'Verify that Sign In page is opened or not' execution completed ==================
-[INFO ] 2024-12-06 18:41:48.937 [main] IKKON - ================== 'Verify that Admin is able to sign in successfully with correct credentials' execution started ==================
-[INFO ] 2024-12-06 18:41:49.090 [main] IKKON - Login button clicked
-[INFO ] 2024-12-06 18:41:50.558 [main] IKKON - Admin user email address is entered
-[INFO ] 2024-12-06 18:41:50.745 [main] IKKON - Admin user password is entered
-[INFO ] 2024-12-06 18:41:50.910 [main] IKKON - Submit button clicked
-[INFO ] 2024-12-06 18:41:55.960 [main] IKKON - Logged In Successfully Message shown
-[INFO ] 2024-12-06 18:42:00.976 [main] IKKON - Admin User Logged In successfully
-[INFO ] 2024-12-06 18:42:00.976 [main] IKKON - ================== 'Verify that Admin is able to sign in successfully with correct credentials' execution completed ==================
-[INFO ] 2024-12-06 18:42:01.194 [main] IKKON - Agency Tab clicked from left menu bar
-[INFO ] 2024-12-06 18:42:01.551 [main] IKKON - Agency Page opened successfully
-[INFO ] 2024-12-06 18:42:01.552 [main] IKKON - ============= Click on 'Agency' and verify that 'Agency' page is opened test case execution completed =============
-[INFO ] 2024-12-06 18:42:01.556 [main] IKKON - ============= Click on 'Brand' tab and verify that 'Brand' tab is opened test case execution started =============
-[INFO ] 2024-12-06 18:42:01.659 [main] IKKON - Brand Tab Clicked From Left menu Bar
-[INFO ] 2024-12-06 18:42:02.021 [main] IKKON - Brand Page is opened successfully
-[INFO ] 2024-12-06 18:42:02.022 [main] IKKON - ============= Click on 'Brand' tab and verify that 'Brand' tab is opened test case execution Completed =============
-[INFO ] 2024-12-06 18:42:02.025 [main] IKKON - ============= Click on 'Campaign' tab and verify that 'Campaign' tab is opened test case execution started =============
-[INFO ] 2024-12-06 18:42:02.138 [main] IKKON - Campaign Tab Clicked from left menu bar
-[INFO ] 2024-12-06 18:42:02.580 [main] IKKON - Campaign page is opened
-[INFO ] 2024-12-06 18:42:02.580 [main] IKKON - ============= Click on 'Campaign' tab and verify that 'Campaign' tab is opened test case execution Completed =============
-[INFO ] 2024-12-06 18:42:02.611 [main] IKKON - ============= Click on 'Matchmaking' and verify that 'Matchmaking' page is opened test case execution started =============
-[INFO ] 2024-12-06 18:42:02.717 [main] IKKON - Matchmaking tab is pressed/clicked from left menu bar
-[INFO ] 2024-12-06 18:42:03.150 [main] IKKON - Matchmaking page is opend
-[INFO ] 2024-12-06 18:42:03.151 [main] IKKON - ============= Click on 'Matchmaking' and verify that 'Matchmaking' page is opened test case execution completed =============
-[INFO ] 2024-12-06 18:42:03.155 [main] IKKON - ============= Click on 'Users' tab and verify that 'Users' list page is opened test case execution started =============
-[INFO ] 2024-12-06 18:42:03.289 [main] IKKON - Users tab is clicked
-[INFO ] 2024-12-06 18:42:04.785 [main] IKKON - Users page opened successfully
-[INFO ] 2024-12-06 18:42:04.785 [main] IKKON - ============= Click on 'Users' tab and verify that 'Users' list page is opened test case execution completed =============
-[INFO ] 2024-12-06 18:42:04.790 [main] IKKON - ============= Click on 'System Log' and verify that 'System Log' page is opened test case execution started =============
-[INFO ] 2024-12-06 18:42:04.983 [main] IKKON - System Log tab is clicked
-[INFO ] 2024-12-06 18:42:05.337 [main] IKKON - System Logs page is opened
-[INFO ] 2024-12-06 18:42:05.337 [main] IKKON - ============= Click on 'System Log' and verify that 'System Log' page is opened test case execution completed =============
-[INFO ] 2024-12-06 18:42:05.489 [main] IKKON - Dashboard tab is clicked from left menu bar
-[INFO ] 2024-12-06 18:42:10.523 [main] IKKON - Dahsboard tab is opened successfully
-[INFO ] 2024-12-06 18:42:10.535 [main] IKKON - Click on notification icon and verify that notification tray is opened where click on 'View All' button and verify that Notification page is opened test case execution started
-[INFO ] 2024-12-06 18:42:14.771 [main] IKKON - 'View All' button is visible
-[INFO ] 2024-12-06 18:42:14.900 [main] IKKON - 'View All' button is clicked
-[INFO ] 2024-12-06 18:42:15.635 [main] IKKON - Notification page is opened
-[INFO ] 2024-12-06 18:42:15.635 [main] IKKON - Click on notification icon and verify that notification tray is opened where click on 'View All' button and verify that Notification page is opened test case execution completed
-[INFO ] 2024-12-06 18:42:15.638 [main] IKKON - ================ tearDown method execution started ================
-[INFO ] 2024-12-06 18:42:15.777 [main] IKKON - browser closed
-[INFO ] 2024-12-06 18:42:15.928 [main] IKKON - browser quitted
-[INFO ] 2024-12-06 18:42:15.928 [main] IKKON - ================ tearDown method exectuion completed ================
-[INFO ] 2024-12-06 18:43:25.119 [main] IKKON - ================ Setup method execution started ================
-[INFO ] 2024-12-06 18:43:27.568 [main] IKKON - chrome browser object created
-[INFO ] 2024-12-06 18:43:27.662 [main] IKKON - Browser Setup completed As Browser opened and maximized
-[INFO ] 2024-12-06 18:43:32.602 [main] IKKON - URL Opened
-[INFO ] 2024-12-06 18:43:32.602 [main] IKKON - ================ Setup method execution completed ================
-[INFO ] 2024-12-06 18:43:32.649 [main] IKKON - ================== 'Verify that Sign In page is opened or not' execution started ==================
-[INFO ] 2024-12-06 18:43:33.242 [main] IKKON - Login button clicked
-[INFO ] 2024-12-06 18:43:34.347 [main] IKKON - SignIn page verified
-[INFO ] 2024-12-06 18:43:34.348 [main] IKKON - ================== 'Verify that Sign In page is opened or not' execution completed ==================
-[INFO ] 2024-12-06 18:43:34.378 [main] IKKON - ================== 'Verify that Admin is able to sign in successfully with correct credentials' execution started ==================
-[INFO ] 2024-12-06 18:43:34.466 [main] IKKON - Login button clicked
-[INFO ] 2024-12-06 18:43:36.098 [main] IKKON - Admin user email address is entered
-[INFO ] 2024-12-06 18:43:36.347 [main] IKKON - Admin user password is entered
-[INFO ] 2024-12-06 18:43:36.510 [main] IKKON - Submit button clicked
-[INFO ] 2024-12-06 18:43:41.545 [main] IKKON - Logged In Successfully Message shown
-[INFO ] 2024-12-06 18:43:46.569 [main] IKKON - Admin User Logged In successfully
-[INFO ] 2024-12-06 18:43:46.570 [main] IKKON - ================== 'Verify that Admin is able to sign in successfully with correct credentials' execution completed ==================
-[INFO ] 2024-12-06 18:43:46.584 [main] IKKON - ================== User Logout test case execution started ==================
-[INFO ] 2024-12-06 18:43:46.715 [main] IKKON - TC_DashboardPageTest: Profile name clicked
-[INFO ] 2024-12-06 18:43:47.913 [main] IKKON - TC_DashboardPageTest: Logout button clicked
-[INFO ] 2024-12-06 18:43:49.009 [main] IKKON - TC_DashboardPageTest: Lotout done successfully as Login button is displayed. 
-[INFO ] 2024-12-06 18:43:49.010 [main] IKKON - ================== User Logout test case execution completed ==================
-[INFO ] 2024-12-06 18:43:49.013 [main] IKKON - ================ tearDown method execution started ================
-[INFO ] 2024-12-06 18:43:49.263 [main] IKKON - browser closed
-[INFO ] 2024-12-06 18:43:49.420 [main] IKKON - browser quitted
-[INFO ] 2024-12-06 18:43:49.421 [main] IKKON - ================ tearDown method exectuion completed ================
-[INFO ] 2024-12-06 18:43:49.422 [main] IKKON - ================ Setup method execution started ================
-[INFO ] 2024-12-06 18:43:50.726 [main] IKKON - chrome browser object created
-[INFO ] 2024-12-06 18:43:50.783 [main] IKKON - Browser Setup completed As Browser opened and maximized
-[INFO ] 2024-12-06 18:43:51.539 [main] IKKON - URL Opened
-[INFO ] 2024-12-06 18:43:51.540 [main] IKKON - ================ Setup method execution completed ================
-[INFO ] 2024-12-06 18:43:51.544 [main] IKKON - ================== After login with Admin, verify all labels shown on Dashboard execution started ==================
-[INFO ] 2024-12-06 18:43:54.826 [main] IKKON - TC_DashboardPageTest: Login button clicked
-[INFO ] 2024-12-06 18:43:55.919 [main] IKKON - TC_DashboardPageTest: EmailId is entered
-[INFO ] 2024-12-06 18:43:56.141 [main] IKKON - TC_DashboardPageTest: Password is entered
-[INFO ] 2024-12-06 18:43:56.354 [main] IKKON - TC_DashboardPageTest: Submit button is clicked
-[INFO ] 2024-12-06 18:44:11.421 [main] IKKON - ============== Click on 'Total Users' from dashboard page and verify that 'Users' page is opened with all users list test case execution started ===============
-[INFO ] 2024-12-06 18:44:11.552 [main] IKKON - Dashboard tab clicked from left menu
-[INFO ] 2024-12-06 18:44:21.635 [main] IKKON - ============== Click on 'Active Users' from dashboard page and verify that 'Users' page is opened including active users list test case execution started ===============
-[INFO ] 2024-12-06 18:44:21.755 [main] IKKON - Dashboard tab clicked from left menu
-[INFO ] 2024-12-06 18:44:26.934 [main] IKKON - TC_DashboardPageTest: Clicked on 'Active Users'
-[INFO ] 2024-12-06 18:44:29.973 [main] IKKON - TC_DashboardPageTest: Users list page is opened with all users list
-[INFO ] 2024-12-06 18:44:29.974 [main] IKKON - ============== Click on 'Active Users' from dashboard page and verify that 'Users' page is opened including active users test case execution completed ===============
-[INFO ] 2024-12-06 18:44:29.984 [main] IKKON - ============== Click on 'Inactive Users' from dashboard page and verify that 'Users' page is opened including active users list test case execution started ===============
-[INFO ] 2024-12-06 18:44:30.104 [main] IKKON - Dashboard tab clicked from left menu
-[INFO ] 2024-12-06 18:44:35.243 [main] IKKON - TC_DashboardPageTest: Clicked on 'Inactive Users'
-[INFO ] 2024-12-06 18:44:38.270 [main] IKKON - TC_DashboardPageTest: Users list page is opened with all inactive users list
-[INFO ] 2024-12-06 18:44:38.271 [main] IKKON - ============== Click on 'Inactive Users' from dashboard page and verify that 'Users' page is opened including inactive users test case execution completed ===============
-[INFO ] 2024-12-06 18:44:38.286 [main] IKKON - ============== Click on 'Influencer Users' from dashboard page and verify that 'Users' page is opened with influencer users list test case execution started ===============
-[INFO ] 2024-12-06 18:44:38.401 [main] IKKON - Dashboard tab clicked from left menu
-[INFO ] 2024-12-06 18:44:43.520 [main] IKKON - TC_DashboardPageTest: Clicked on 'Influencer Users'
-[INFO ] 2024-12-06 18:44:46.546 [main] IKKON - TC_DashboardPageTest: Users list page is opened with all influencer users list
-[INFO ] 2024-12-06 18:44:46.547 [main] IKKON - ============== Click on 'Influencer Users' from dashboard page and verify that 'Users' page is opened with all influencer users test case execution completed ===============
-[INFO ] 2024-12-06 18:44:46.559 [main] IKKON - ============== Click on 'Brand Users' from dashboard page and verify that 'Users' page is opened with brand users list test case execution started ===============
-[INFO ] 2024-12-06 18:44:46.663 [main] IKKON - Dashboard tab clicked from left menu
-[INFO ] 2024-12-06 18:44:51.794 [main] IKKON - TC_DashboardPageTest: Clicked on 'Brand Users'
-[INFO ] 2024-12-06 18:44:54.812 [main] IKKON - TC_DashboardPageTest: Users list page is opened with all Brand users list
-[INFO ] 2024-12-06 18:44:54.813 [main] IKKON - ============== Click on 'Brand Users' from dashboard page and verify that 'Users' page is opened with all brand users test case execution completed ===============
-[INFO ] 2024-12-06 18:44:54.819 [main] IKKON - ============== Click on 'Brand Users' from dashboard page and verify that 'Users' page is opened with agency users list test case execution started ===============
-[INFO ] 2024-12-06 18:44:54.924 [main] IKKON - Dashboard tab clicked from left menu
-[INFO ] 2024-12-06 18:45:00.060 [main] IKKON - TC_DashboardPageTest: Clicked on 'Brand Users'
-[INFO ] 2024-12-06 18:45:03.075 [main] IKKON - TC_DashboardPageTest: Users list page is opened with all Agency users list
-[INFO ] 2024-12-06 18:45:03.075 [main] IKKON - ============== Click on 'Agency Users' from dashboard page and verify that 'Users' page is opened with all agency users test case execution completed ===============
-[INFO ] 2024-12-06 18:45:03.078 [main] IKKON - ================ tearDown method execution started ================
-[INFO ] 2024-12-06 18:45:03.257 [main] IKKON - browser closed
-[INFO ] 2024-12-06 18:45:03.441 [main] IKKON - browser quitted
-[INFO ] 2024-12-06 18:45:03.441 [main] IKKON - ================ tearDown method exectuion completed ================
-[INFO ] 2024-12-06 18:45:03.442 [main] IKKON - ================ Setup method execution started ================
-[INFO ] 2024-12-06 18:45:04.530 [main] IKKON - chrome browser object created
-[INFO ] 2024-12-06 18:45:04.624 [main] IKKON - Browser Setup completed As Browser opened and maximized
-[INFO ] 2024-12-06 18:45:12.082 [main] IKKON - URL Opened
-[INFO ] 2024-12-06 18:45:12.084 [main] IKKON - ================ Setup method execution completed ================
-[INFO ] 2024-12-06 18:45:12.091 [main] IKKON - ============= Click on 'Agency' and verify that 'Agency' page is opened test case execution started =============
-[INFO ] 2024-12-06 18:45:12.091 [main] IKKON - ================== 'Verify that Sign In page is opened or not' execution started ==================
-[INFO ] 2024-12-06 18:45:12.238 [main] IKKON - Login button clicked
-[INFO ] 2024-12-06 18:45:13.379 [main] IKKON - SignIn page verified
-[INFO ] 2024-12-06 18:45:13.380 [main] IKKON - ================== 'Verify that Sign In page is opened or not' execution completed ==================
-[INFO ] 2024-12-06 18:45:13.380 [main] IKKON - ================== 'Verify that Admin is able to sign in successfully with correct credentials' execution started ==================
-[INFO ] 2024-12-06 18:45:13.472 [main] IKKON - Login button clicked
-[INFO ] 2024-12-06 18:45:15.117 [main] IKKON - Admin user email address is entered
-[INFO ] 2024-12-06 18:45:15.360 [main] IKKON - Admin user password is entered
-[INFO ] 2024-12-06 18:45:15.516 [main] IKKON - Submit button clicked
-[INFO ] 2024-12-06 18:45:20.572 [main] IKKON - Logged In Successfully Message shown
-[INFO ] 2024-12-06 18:45:25.598 [main] IKKON - Admin User Logged In successfully
-[INFO ] 2024-12-06 18:45:25.599 [main] IKKON - ================== 'Verify that Admin is able to sign in successfully with correct credentials' execution completed ==================
-[INFO ] 2024-12-06 18:45:25.744 [main] IKKON - Agency Tab clicked from left menu bar
-[INFO ] 2024-12-06 18:45:26.113 [main] IKKON - Agency Page opened successfully
-[INFO ] 2024-12-06 18:45:26.113 [main] IKKON - ============= Click on 'Agency' and verify that 'Agency' page is opened test case execution completed =============
-[INFO ] 2024-12-06 18:45:26.123 [main] IKKON - ============= Click on 'Brand' tab and verify that 'Brand' tab is opened test case execution started =============
-[INFO ] 2024-12-06 18:45:26.235 [main] IKKON - Brand Tab Clicked From Left menu Bar
-[INFO ] 2024-12-06 18:45:26.605 [main] IKKON - Brand Page is opened successfully
-[INFO ] 2024-12-06 18:45:26.606 [main] IKKON - ============= Click on 'Brand' tab and verify that 'Brand' tab is opened test case execution Completed =============
-[INFO ] 2024-12-06 18:45:26.610 [main] IKKON - ============= Click on 'Campaign' tab and verify that 'Campaign' tab is opened test case execution started =============
-[INFO ] 2024-12-06 18:45:26.721 [main] IKKON - Campaign Tab Clicked from left menu bar
-[INFO ] 2024-12-06 18:45:27.100 [main] IKKON - Campaign page is opened
-[INFO ] 2024-12-06 18:45:27.101 [main] IKKON - ============= Click on 'Campaign' tab and verify that 'Campaign' tab is opened test case execution Completed =============
-[INFO ] 2024-12-06 18:45:27.114 [main] IKKON - ============= Click on 'Matchmaking' and verify that 'Matchmaking' page is opened test case execution started =============
-[INFO ] 2024-12-06 18:45:27.224 [main] IKKON - Matchmaking tab is pressed/clicked from left menu bar
-[INFO ] 2024-12-06 18:45:27.770 [main] IKKON - Matchmaking page is opend
-[INFO ] 2024-12-06 18:45:27.771 [main] IKKON - ============= Click on 'Matchmaking' and verify that 'Matchmaking' page is opened test case execution completed =============
-[INFO ] 2024-12-06 18:45:27.776 [main] IKKON - ============= Click on 'Users' tab and verify that 'Users' list page is opened test case execution started =============
-[INFO ] 2024-12-06 18:45:27.889 [main] IKKON - Users tab is clicked
-[INFO ] 2024-12-06 18:45:29.625 [main] IKKON - Users page opened successfully
-[INFO ] 2024-12-06 18:45:29.625 [main] IKKON - ============= Click on 'Users' tab and verify that 'Users' list page is opened test case execution completed =============
-[INFO ] 2024-12-06 18:45:29.637 [main] IKKON - ============= Click on 'System Log' and verify that 'System Log' page is opened test case execution started =============
-[INFO ] 2024-12-06 18:45:29.789 [main] IKKON - System Log tab is clicked
-[INFO ] 2024-12-06 18:45:30.156 [main] IKKON - System Logs page is opened
-[INFO ] 2024-12-06 18:45:30.156 [main] IKKON - ============= Click on 'System Log' and verify that 'System Log' page is opened test case execution completed =============
-[INFO ] 2024-12-06 18:45:30.260 [main] IKKON - Dashboard tab is clicked from left menu bar
-[INFO ] 2024-12-06 18:45:35.284 [main] IKKON - Dahsboard tab is opened successfully
-[INFO ] 2024-12-06 18:45:35.301 [main] IKKON - Click on notification icon and verify that notification tray is opened where click on 'View All' button and verify that Notification page is opened test case execution started
-[INFO ] 2024-12-06 18:45:39.524 [main] IKKON - 'View All' button is visible
-[INFO ] 2024-12-06 18:45:39.657 [main] IKKON - 'View All' button is clicked
-[INFO ] 2024-12-06 18:45:40.345 [main] IKKON - Notification page is opened
-[INFO ] 2024-12-06 18:45:40.345 [main] IKKON - Click on notification icon and verify that notification tray is opened where click on 'View All' button and verify that Notification page is opened test case execution completed
-[INFO ] 2024-12-06 18:45:40.349 [main] IKKON - ================ tearDown method execution started ================
-[INFO ] 2024-12-06 18:45:40.670 [main] IKKON - browser closed
-[INFO ] 2024-12-06 18:45:40.801 [main] IKKON - browser quitted
-[INFO ] 2024-12-06 18:45:40.801 [main] IKKON - ================ tearDown method exectuion completed ================
+[INFO ] 2024-12-07 22:47:35.581 [main] IKKON - ================ Setup method execution started ================
+[INFO ] 2024-12-07 22:47:37.937 [main] IKKON - chrome browser object created
+[INFO ] 2024-12-07 22:47:37.996 [main] IKKON - Browser Setup completed As Browser opened and maximized
+[INFO ] 2024-12-07 22:47:45.074 [main] IKKON - URL Opened
+[INFO ] 2024-12-07 22:47:45.074 [main] IKKON - ================ Setup method execution completed ================
+[INFO ] 2024-12-07 22:47:45.128 [main] IKKON - ================== 'Verify that Sign In page is opened or not' execution started ==================
+[INFO ] 2024-12-07 22:47:45.577 [main] IKKON - Login button clicked
+[INFO ] 2024-12-07 22:47:48.912 [main] IKKON - SignIn page verified
+[INFO ] 2024-12-07 22:47:48.912 [main] IKKON - ================== 'Verify that Sign In page is opened or not' execution completed ==================
+[INFO ] 2024-12-07 22:47:48.953 [main] IKKON - ================== 'Verify that Admin is able to sign in successfully with correct credentials' execution started ==================
+[INFO ] 2024-12-07 22:47:49.074 [main] IKKON - Login button clicked
+[INFO ] 2024-12-07 22:47:50.654 [main] IKKON - Admin user email address is entered
+[INFO ] 2024-12-07 22:47:50.841 [main] IKKON - Admin user password is entered
+[INFO ] 2024-12-07 22:47:51.012 [main] IKKON - Submit button clicked
+[INFO ] 2024-12-07 22:47:56.118 [main] IKKON - Logged In Successfully Message shown
+[INFO ] 2024-12-07 22:48:01.148 [main] IKKON - Admin User Logged In successfully
+[INFO ] 2024-12-07 22:48:01.149 [main] IKKON - ================== 'Verify that Admin is able to sign in successfully with correct credentials' execution completed ==================
+[INFO ] 2024-12-07 22:48:01.176 [main] IKKON - ================== User Logout test case execution started ==================
+[INFO ] 2024-12-07 22:48:01.341 [main] IKKON - TC_DashboardPageTest: Profile name clicked
+[INFO ] 2024-12-07 22:48:02.694 [main] IKKON - TC_DashboardPageTest: Logout button clicked
+[INFO ] 2024-12-07 22:48:03.792 [main] IKKON - TC_DashboardPageTest: Lotout done successfully as Login button is displayed. 
+[INFO ] 2024-12-07 22:48:03.792 [main] IKKON - ================== User Logout test case execution completed ==================
+[INFO ] 2024-12-07 22:48:03.803 [main] IKKON - ================ tearDown method execution started ================
+[INFO ] 2024-12-07 22:48:04.074 [main] IKKON - browser closed
+[INFO ] 2024-12-07 22:48:04.253 [main] IKKON - browser quitted
+[INFO ] 2024-12-07 22:48:04.254 [main] IKKON - ================ tearDown method exectuion completed ================
+[INFO ] 2024-12-07 22:48:04.260 [main] IKKON - ================ Setup method execution started ================
+[INFO ] 2024-12-07 22:48:05.417 [main] IKKON - chrome browser object created
+[INFO ] 2024-12-07 22:48:05.476 [main] IKKON - Browser Setup completed As Browser opened and maximized
+[INFO ] 2024-12-07 22:48:10.352 [main] IKKON - URL Opened
+[INFO ] 2024-12-07 22:48:10.353 [main] IKKON - ================ Setup method execution completed ================
+[INFO ] 2024-12-07 22:48:10.364 [main] IKKON - ================== After login with Admin, verify all labels shown on Dashboard execution started ==================
+[INFO ] 2024-12-07 22:48:10.842 [main] IKKON - TC_DashboardPageTest: Login button clicked
+[INFO ] 2024-12-07 22:48:12.495 [main] IKKON - TC_DashboardPageTest: EmailId is entered
+[INFO ] 2024-12-07 22:48:12.751 [main] IKKON - TC_DashboardPageTest: Password is entered
+[INFO ] 2024-12-07 22:48:12.926 [main] IKKON - TC_DashboardPageTest: Submit button is clicked
+[INFO ] 2024-12-07 22:48:28.043 [main] IKKON - ============== Click on 'Total Users' from dashboard page and verify that 'Users' page is opened with all users list test case execution started ===============
+[INFO ] 2024-12-07 22:48:28.255 [main] IKKON - Dashboard tab clicked from left menu
+[INFO ] 2024-12-07 22:48:38.325 [main] IKKON - ============== Click on 'Active Users' from dashboard page and verify that 'Users' page is opened including active users list test case execution started ===============
+[INFO ] 2024-12-07 22:48:38.522 [main] IKKON - Dashboard tab clicked from left menu
+[INFO ] 2024-12-07 22:48:43.809 [main] IKKON - TC_DashboardPageTest: Clicked on 'Active Users'
+[INFO ] 2024-12-07 22:48:46.899 [main] IKKON - TC_DashboardPageTest: Users list page is opened with all users list
+[INFO ] 2024-12-07 22:48:46.900 [main] IKKON - ============== Click on 'Active Users' from dashboard page and verify that 'Users' page is opened including active users test case execution completed ===============
+[INFO ] 2024-12-07 22:48:46.915 [main] IKKON - ============== Click on 'Inactive Users' from dashboard page and verify that 'Users' page is opened including active users list test case execution started ===============
+[INFO ] 2024-12-07 22:48:47.032 [main] IKKON - Dashboard tab clicked from left menu
+[INFO ] 2024-12-07 22:48:52.325 [main] IKKON - TC_DashboardPageTest: Clicked on 'Inactive Users'
+[INFO ] 2024-12-07 22:48:55.350 [main] IKKON - TC_DashboardPageTest: Users list page is opened with all inactive users list
+[INFO ] 2024-12-07 22:48:55.351 [main] IKKON - ============== Click on 'Inactive Users' from dashboard page and verify that 'Users' page is opened including inactive users test case execution completed ===============
+[INFO ] 2024-12-07 22:48:55.363 [main] IKKON - ============== Click on 'Influencer Users' from dashboard page and verify that 'Users' page is opened with influencer users list test case execution started ===============
+[INFO ] 2024-12-07 22:48:55.561 [main] IKKON - Dashboard tab clicked from left menu
+[INFO ] 2024-12-07 22:49:00.834 [main] IKKON - TC_DashboardPageTest: Clicked on 'Influencer Users'
+[INFO ] 2024-12-07 22:49:03.867 [main] IKKON - TC_DashboardPageTest: Users list page is opened with all influencer users list
+[INFO ] 2024-12-07 22:49:03.867 [main] IKKON - ============== Click on 'Influencer Users' from dashboard page and verify that 'Users' page is opened with all influencer users test case execution completed ===============
+[INFO ] 2024-12-07 22:49:03.888 [main] IKKON - ============== Click on 'Brand Users' from dashboard page and verify that 'Users' page is opened with brand users list test case execution started ===============
+[INFO ] 2024-12-07 22:49:04.026 [main] IKKON - Dashboard tab clicked from left menu
+[INFO ] 2024-12-07 22:49:09.308 [main] IKKON - TC_DashboardPageTest: Clicked on 'Brand Users'
+[INFO ] 2024-12-07 22:49:12.341 [main] IKKON - TC_DashboardPageTest: Users list page is opened with all Brand users list
+[INFO ] 2024-12-07 22:49:12.341 [main] IKKON - ============== Click on 'Brand Users' from dashboard page and verify that 'Users' page is opened with all brand users test case execution completed ===============
+[INFO ] 2024-12-07 22:49:12.354 [main] IKKON - ============== Click on 'Brand Users' from dashboard page and verify that 'Users' page is opened with agency users list test case execution started ===============
+[INFO ] 2024-12-07 22:49:12.531 [main] IKKON - Dashboard tab clicked from left menu
+[INFO ] 2024-12-07 22:49:17.813 [main] IKKON - TC_DashboardPageTest: Clicked on 'Brand Users'
+[INFO ] 2024-12-07 22:49:20.833 [main] IKKON - TC_DashboardPageTest: Users list page is opened with all Agency users list
+[INFO ] 2024-12-07 22:49:20.833 [main] IKKON - ============== Click on 'Agency Users' from dashboard page and verify that 'Users' page is opened with all agency users test case execution completed ===============
+[INFO ] 2024-12-07 22:49:20.838 [main] IKKON - ================ tearDown method execution started ================
+[INFO ] 2024-12-07 22:49:21.088 [main] IKKON - browser closed
+[INFO ] 2024-12-07 22:49:21.288 [main] IKKON - browser quitted
+[INFO ] 2024-12-07 22:49:21.288 [main] IKKON - ================ tearDown method exectuion completed ================
+[INFO ] 2024-12-07 22:49:21.289 [main] IKKON - ================ Setup method execution started ================
+[INFO ] 2024-12-07 22:49:22.562 [main] IKKON - chrome browser object created
+[INFO ] 2024-12-07 22:49:22.619 [main] IKKON - Browser Setup completed As Browser opened and maximized
+[INFO ] 2024-12-07 22:49:25.501 [main] IKKON - URL Opened
+[INFO ] 2024-12-07 22:49:25.502 [main] IKKON - ================ Setup method execution completed ================
+[INFO ] 2024-12-07 22:49:25.508 [main] IKKON - ============= Click on 'Agency' and verify that 'Agency' page is opened test case execution started =============
+[INFO ] 2024-12-07 22:49:25.513 [main] IKKON - ================== 'Verify that Sign In page is opened or not' execution started ==================
+[INFO ] 2024-12-07 22:49:26.060 [main] IKKON - Login button clicked
+[INFO ] 2024-12-07 22:49:27.694 [main] IKKON - SignIn page verified
+[INFO ] 2024-12-07 22:49:27.695 [main] IKKON - ================== 'Verify that Sign In page is opened or not' execution completed ==================
+[INFO ] 2024-12-07 22:49:27.695 [main] IKKON - ================== 'Verify that Admin is able to sign in successfully with correct credentials' execution started ==================
+[INFO ] 2024-12-07 22:49:27.817 [main] IKKON - Login button clicked
+[INFO ] 2024-12-07 22:49:29.271 [main] IKKON - Admin user email address is entered
+[INFO ] 2024-12-07 22:49:29.464 [main] IKKON - Admin user password is entered
+[INFO ] 2024-12-07 22:49:29.633 [main] IKKON - Submit button clicked
+[INFO ] 2024-12-07 22:49:34.698 [main] IKKON - Logged In Successfully Message shown
+[INFO ] 2024-12-07 22:49:39.710 [main] IKKON - Admin User Logged In successfully
+[INFO ] 2024-12-07 22:49:39.710 [main] IKKON - ================== 'Verify that Admin is able to sign in successfully with correct credentials' execution completed ==================
+[INFO ] 2024-12-07 22:49:39.838 [main] IKKON - Agency Tab clicked from left menu bar
+[ERROR] 2024-12-07 22:49:40.262 [main] IKKON - Agency Page did not opened
+[INFO ] 2024-12-07 22:49:40.462 [main] IKKON - ================ tearDown method execution started ================
+[INFO ] 2024-12-07 22:49:40.758 [main] IKKON - browser closed
+[INFO ] 2024-12-07 22:49:40.920 [main] IKKON - browser quitted
+[INFO ] 2024-12-07 22:49:40.920 [main] IKKON - ================ tearDown method exectuion completed ================
+[INFO ] 2024-12-07 22:53:24.806 [main] IKKON - ================ Setup method execution started ================
+[INFO ] 2024-12-07 22:53:27.145 [main] IKKON - chrome browser object created
+[INFO ] 2024-12-07 22:53:27.212 [main] IKKON - Browser Setup completed As Browser opened and maximized
+[INFO ] 2024-12-07 22:53:30.894 [main] IKKON - URL Opened
+[INFO ] 2024-12-07 22:53:30.895 [main] IKKON - ================ Setup method execution completed ================
+[INFO ] 2024-12-07 22:53:30.938 [main] IKKON - ================== 'Verify that Sign In page is opened or not' execution started ==================
+[INFO ] 2024-12-07 22:53:31.459 [main] IKKON - Login button clicked
+[INFO ] 2024-12-07 22:53:32.522 [main] IKKON - SignIn page verified
+[INFO ] 2024-12-07 22:53:32.522 [main] IKKON - ================== 'Verify that Sign In page is opened or not' execution completed ==================
+[INFO ] 2024-12-07 22:53:32.565 [main] IKKON - ================== 'Verify that Admin is able to sign in successfully with correct credentials' execution started ==================
+[INFO ] 2024-12-07 22:53:32.673 [main] IKKON - Login button clicked
+[INFO ] 2024-12-07 22:53:34.408 [main] IKKON - Admin user email address is entered
+[INFO ] 2024-12-07 22:53:34.639 [main] IKKON - Admin user password is entered
+[INFO ] 2024-12-07 22:53:34.805 [main] IKKON - Submit button clicked
+[INFO ] 2024-12-07 22:53:39.922 [main] IKKON - Logged In Successfully Message shown
+[INFO ] 2024-12-07 22:53:44.956 [main] IKKON - ================== User Logout test case execution started ==================
+[INFO ] 2024-12-07 22:53:47.927 [main] IKKON - TC_DashboardPageTest: Profile name clicked
+[INFO ] 2024-12-07 22:53:49.278 [main] IKKON - TC_DashboardPageTest: Logout button clicked
+[INFO ] 2024-12-07 22:53:50.410 [main] IKKON - TC_DashboardPageTest: Lotout done successfully as Login button is displayed. 
+[INFO ] 2024-12-07 22:53:50.411 [main] IKKON - ================== User Logout test case execution completed ==================
+[INFO ] 2024-12-07 22:53:50.421 [main] IKKON - ================ tearDown method execution started ================
+[INFO ] 2024-12-07 22:53:50.630 [main] IKKON - browser closed
+[INFO ] 2024-12-07 22:53:50.791 [main] IKKON - browser quitted
+[INFO ] 2024-12-07 22:53:50.791 [main] IKKON - ================ tearDown method exectuion completed ================
+[INFO ] 2024-12-07 22:53:50.793 [main] IKKON - ================ Setup method execution started ================
+[INFO ] 2024-12-07 22:53:51.824 [main] IKKON - chrome browser object created
+[INFO ] 2024-12-07 22:53:51.890 [main] IKKON - Browser Setup completed As Browser opened and maximized
+[INFO ] 2024-12-07 22:53:58.556 [main] IKKON - URL Opened
+[INFO ] 2024-12-07 22:53:58.556 [main] IKKON - ================ Setup method execution completed ================
+[INFO ] 2024-12-07 22:53:58.567 [main] IKKON - ================== After login with Admin, verify all labels shown on Dashboard execution started ==================
+[INFO ] 2024-12-07 22:53:59.008 [main] IKKON - TC_DashboardPageTest: Login button clicked
+[INFO ] 2024-12-07 22:54:02.002 [main] IKKON - TC_DashboardPageTest: EmailId is entered
+[INFO ] 2024-12-07 22:54:02.326 [main] IKKON - TC_DashboardPageTest: Password is entered
+[INFO ] 2024-12-07 22:54:02.558 [main] IKKON - TC_DashboardPageTest: Submit button is clicked
+[INFO ] 2024-12-07 22:54:17.694 [main] IKKON - ============== Click on 'Total Users' from dashboard page and verify that 'Users' page is opened with all users list test case execution started ===============
+[INFO ] 2024-12-07 22:54:17.923 [main] IKKON - Dashboard tab clicked from left menu
+[INFO ] 2024-12-07 22:54:28.025 [main] IKKON - ============== Click on 'Active Users' from dashboard page and verify that 'Users' page is opened including active users list test case execution started ===============
+[INFO ] 2024-12-07 22:54:28.173 [main] IKKON - Dashboard tab clicked from left menu
+[INFO ] 2024-12-07 22:54:33.446 [main] IKKON - TC_DashboardPageTest: Clicked on 'Active Users'
+[INFO ] 2024-12-07 22:54:36.472 [main] IKKON - TC_DashboardPageTest: Users list page is opened with all users list
+[INFO ] 2024-12-07 22:54:36.473 [main] IKKON - ============== Click on 'Active Users' from dashboard page and verify that 'Users' page is opened including active users test case execution completed ===============
+[INFO ] 2024-12-07 22:54:36.490 [main] IKKON - ============== Click on 'Inactive Users' from dashboard page and verify that 'Users' page is opened including active users list test case execution started ===============
+[INFO ] 2024-12-07 22:54:36.676 [main] IKKON - Dashboard tab clicked from left menu
+[INFO ] 2024-12-07 22:54:41.959 [main] IKKON - TC_DashboardPageTest: Clicked on 'Inactive Users'
+[INFO ] 2024-12-07 22:54:44.994 [main] IKKON - TC_DashboardPageTest: Users list page is opened with all inactive users list
+[INFO ] 2024-12-07 22:54:44.997 [main] IKKON - ============== Click on 'Inactive Users' from dashboard page and verify that 'Users' page is opened including inactive users test case execution completed ===============
+[INFO ] 2024-12-07 22:54:45.012 [main] IKKON - ============== Click on 'Influencer Users' from dashboard page and verify that 'Users' page is opened with influencer users list test case execution started ===============
+[INFO ] 2024-12-07 22:54:45.255 [main] IKKON - Dashboard tab clicked from left menu
+[INFO ] 2024-12-07 22:54:50.529 [main] IKKON - TC_DashboardPageTest: Clicked on 'Influencer Users'
+[INFO ] 2024-12-07 22:54:53.564 [main] IKKON - TC_DashboardPageTest: Users list page is opened with all influencer users list
+[INFO ] 2024-12-07 22:54:53.569 [main] IKKON - ============== Click on 'Influencer Users' from dashboard page and verify that 'Users' page is opened with all influencer users test case execution completed ===============
+[INFO ] 2024-12-07 22:54:53.593 [main] IKKON - ============== Click on 'Brand Users' from dashboard page and verify that 'Users' page is opened with brand users list test case execution started ===============
+[INFO ] 2024-12-07 22:54:53.807 [main] IKKON - Dashboard tab clicked from left menu
+[INFO ] 2024-12-07 22:54:58.977 [main] IKKON - TC_DashboardPageTest: Clicked on 'Brand Users'
+[INFO ] 2024-12-07 22:55:02.006 [main] IKKON - TC_DashboardPageTest: Users list page is opened with all Brand users list
+[INFO ] 2024-12-07 22:55:02.007 [main] IKKON - ============== Click on 'Brand Users' from dashboard page and verify that 'Users' page is opened with all brand users test case execution completed ===============
+[INFO ] 2024-12-07 22:55:02.051 [main] IKKON - ============== Click on 'Brand Users' from dashboard page and verify that 'Users' page is opened with agency users list test case execution started ===============
+[INFO ] 2024-12-07 22:55:02.230 [main] IKKON - Dashboard tab clicked from left menu
+[INFO ] 2024-12-07 22:55:07.520 [main] IKKON - TC_DashboardPageTest: Clicked on 'Brand Users'
+[INFO ] 2024-12-07 22:55:10.546 [main] IKKON - TC_DashboardPageTest: Users list page is opened with all Agency users list
+[INFO ] 2024-12-07 22:55:10.546 [main] IKKON - ============== Click on 'Agency Users' from dashboard page and verify that 'Users' page is opened with all agency users test case execution completed ===============
+[INFO ] 2024-12-07 22:55:10.555 [main] IKKON - ================ tearDown method execution started ================
+[INFO ] 2024-12-07 22:55:10.773 [main] IKKON - browser closed
+[INFO ] 2024-12-07 22:55:10.954 [main] IKKON - browser quitted
+[INFO ] 2024-12-07 22:55:10.955 [main] IKKON - ================ tearDown method exectuion completed ================
+[INFO ] 2024-12-07 22:55:10.958 [main] IKKON - ================ Setup method execution started ================
+[INFO ] 2024-12-07 22:55:12.071 [main] IKKON - chrome browser object created
+[INFO ] 2024-12-07 22:55:12.162 [main] IKKON - Browser Setup completed As Browser opened and maximized
+[INFO ] 2024-12-07 22:55:23.610 [main] IKKON - URL Opened
+[INFO ] 2024-12-07 22:55:23.611 [main] IKKON - ================ Setup method execution completed ================
+[INFO ] 2024-12-07 22:55:23.618 [main] IKKON - ============= Click on 'Agency' and verify that 'Agency' page is opened test case execution started =============
+[INFO ] 2024-12-07 22:55:23.620 [main] IKKON - ================== 'Verify that Sign In page is opened or not' execution started ==================
+[INFO ] 2024-12-07 22:55:24.064 [main] IKKON - Login button clicked
+[INFO ] 2024-12-07 22:55:25.853 [main] IKKON - SignIn page verified
+[INFO ] 2024-12-07 22:55:25.854 [main] IKKON - ================== 'Verify that Sign In page is opened or not' execution completed ==================
+[INFO ] 2024-12-07 22:55:25.854 [main] IKKON - ================== 'Verify that Admin is able to sign in successfully with correct credentials' execution started ==================
+[INFO ] 2024-12-07 22:55:25.967 [main] IKKON - Login button clicked
+[INFO ] 2024-12-07 22:55:27.492 [main] IKKON - Admin user email address is entered
+[INFO ] 2024-12-07 22:55:27.680 [main] IKKON - Admin user password is entered
+[INFO ] 2024-12-07 22:55:27.842 [main] IKKON - Submit button clicked
+[INFO ] 2024-12-07 22:55:32.907 [main] IKKON - Logged In Successfully Message shown
+[INFO ] 2024-12-07 22:55:37.930 [main] IKKON - Admin User Logged In successfully
+[INFO ] 2024-12-07 22:55:37.931 [main] IKKON - ================== 'Verify that Admin is able to sign in successfully with correct credentials' execution completed ==================
+[INFO ] 2024-12-07 22:55:38.168 [main] IKKON - Agency Tab clicked from left menu bar
+[ERROR] 2024-12-07 22:55:38.668 [main] IKKON - Agency Page did not opened
+[INFO ] 2024-12-07 22:55:38.807 [main] IKKON - ================ tearDown method execution started ================
+[INFO ] 2024-12-07 22:55:39.001 [main] IKKON - browser closed
+[INFO ] 2024-12-07 22:55:39.148 [main] IKKON - browser quitted
+[INFO ] 2024-12-07 22:55:39.148 [main] IKKON - ================ tearDown method exectuion completed ================
+[INFO ] 2024-12-08 00:12:53.158 [main] IKKON - ================ Setup method execution started ================
+[INFO ] 2024-12-08 00:12:57.287 [main] IKKON - chrome browser object created
+[INFO ] 2024-12-08 00:12:57.363 [main] IKKON - Browser Setup completed As Browser opened and maximized
+[INFO ] 2024-12-08 00:12:59.945 [main] IKKON - URL Opened
+[INFO ] 2024-12-08 00:12:59.947 [main] IKKON - ================ Setup method execution completed ================
+[INFO ] 2024-12-08 00:12:59.992 [main] IKKON - ================== 'Verify that Sign In page is opened or not' execution started ==================
+[INFO ] 2024-12-08 00:13:00.777 [main] IKKON - Login button clicked
+[INFO ] 2024-12-08 00:13:01.918 [main] IKKON - SignIn page verified
+[INFO ] 2024-12-08 00:13:01.918 [main] IKKON - ================== 'Verify that Sign In page is opened or not' execution completed ==================
+[INFO ] 2024-12-08 00:13:01.949 [main] IKKON - ================== 'Verify that Admin is able to sign in successfully with correct credentials' execution started ==================
+[INFO ] 2024-12-08 00:13:02.090 [main] IKKON - Login button clicked
+[INFO ] 2024-12-08 00:13:03.602 [main] IKKON - Admin user email address is entered
+[INFO ] 2024-12-08 00:13:03.780 [main] IKKON - Admin user password is entered
+[INFO ] 2024-12-08 00:13:03.934 [main] IKKON - Submit button clicked
+[INFO ] 2024-12-08 00:13:09.090 [main] IKKON - Logged In Successfully Message shown
+[INFO ] 2024-12-08 00:13:14.119 [main] IKKON - Admin User Logged In successfully
+[INFO ] 2024-12-08 00:13:14.119 [main] IKKON - ================== 'Verify that Admin is able to sign in successfully with correct credentials' execution completed ==================
+[INFO ] 2024-12-08 00:13:14.138 [main] IKKON - ================== User Logout test case execution started ==================
+[INFO ] 2024-12-08 00:13:14.364 [main] IKKON - TC_DashboardPageTest: Profile name clicked
+[INFO ] 2024-12-08 00:13:15.524 [main] IKKON - TC_DashboardPageTest: Logout button clicked
+[INFO ] 2024-12-08 00:13:16.650 [main] IKKON - TC_DashboardPageTest: Lotout done successfully as Login button is displayed. 
+[INFO ] 2024-12-08 00:13:16.651 [main] IKKON - ================== User Logout test case execution completed ==================
+[INFO ] 2024-12-08 00:13:16.656 [main] IKKON - ================ tearDown method execution started ================
+[INFO ] 2024-12-08 00:13:16.820 [main] IKKON - browser closed
+[INFO ] 2024-12-08 00:13:16.977 [main] IKKON - browser quitted
+[INFO ] 2024-12-08 00:13:16.977 [main] IKKON - ================ tearDown method exectuion completed ================
+[INFO ] 2024-12-08 00:13:16.979 [main] IKKON - ================ Setup method execution started ================
+[INFO ] 2024-12-08 00:13:18.158 [main] IKKON - chrome browser object created
+[INFO ] 2024-12-08 00:13:18.225 [main] IKKON - Browser Setup completed As Browser opened and maximized
+[INFO ] 2024-12-08 00:13:26.109 [main] IKKON - URL Opened
+[INFO ] 2024-12-08 00:13:26.110 [main] IKKON - ================ Setup method execution completed ================
+[INFO ] 2024-12-08 00:13:26.125 [main] IKKON - ================== After login with Admin, verify all labels shown on Dashboard execution started ==================
+[INFO ] 2024-12-08 00:13:26.458 [main] IKKON - TC_DashboardPageTest: Login button clicked
+[INFO ] 2024-12-08 00:13:27.312 [main] IKKON - TC_DashboardPageTest: EmailId is entered
+[INFO ] 2024-12-08 00:13:27.652 [main] IKKON - TC_DashboardPageTest: Password is entered
+[INFO ] 2024-12-08 00:13:27.822 [main] IKKON - TC_DashboardPageTest: Submit button is clicked
+[INFO ] 2024-12-08 00:13:42.885 [main] IKKON - ============== Click on 'Total Users' from dashboard page and verify that 'Users' page is opened with all users list test case execution started ===============
+[INFO ] 2024-12-08 00:13:43.006 [main] IKKON - Dashboard tab clicked from left menu
+[INFO ] 2024-12-08 00:13:53.062 [main] IKKON - ============== Click on 'Active Users' from dashboard page and verify that 'Users' page is opened including active users list test case execution started ===============
+[INFO ] 2024-12-08 00:13:53.320 [main] IKKON - Dashboard tab clicked from left menu
+[INFO ] 2024-12-08 00:13:58.601 [main] IKKON - TC_DashboardPageTest: Clicked on 'Active Users'
+[INFO ] 2024-12-08 00:14:01.642 [main] IKKON - TC_DashboardPageTest: Users list page is opened with all users list
+[INFO ] 2024-12-08 00:14:01.643 [main] IKKON - ============== Click on 'Active Users' from dashboard page and verify that 'Users' page is opened including active users test case execution completed ===============
+[INFO ] 2024-12-08 00:14:01.655 [main] IKKON - ============== Click on 'Inactive Users' from dashboard page and verify that 'Users' page is opened including active users list test case execution started ===============
+[INFO ] 2024-12-08 00:14:01.872 [main] IKKON - Dashboard tab clicked from left menu
+[INFO ] 2024-12-08 00:14:07.158 [main] IKKON - TC_DashboardPageTest: Clicked on 'Inactive Users'
+[INFO ] 2024-12-08 00:14:10.188 [main] IKKON - TC_DashboardPageTest: Users list page is opened with all inactive users list
+[INFO ] 2024-12-08 00:14:10.190 [main] IKKON - ============== Click on 'Inactive Users' from dashboard page and verify that 'Users' page is opened including inactive users test case execution completed ===============
+[INFO ] 2024-12-08 00:14:10.206 [main] IKKON - ============== Click on 'Influencer Users' from dashboard page and verify that 'Users' page is opened with influencer users list test case execution started ===============
+[INFO ] 2024-12-08 00:14:10.378 [main] IKKON - Dashboard tab clicked from left menu
+[INFO ] 2024-12-08 00:14:15.656 [main] IKKON - TC_DashboardPageTest: Clicked on 'Influencer Users'
+[INFO ] 2024-12-08 00:14:18.684 [main] IKKON - TC_DashboardPageTest: Users list page is opened with all influencer users list
+[INFO ] 2024-12-08 00:14:18.685 [main] IKKON - ============== Click on 'Influencer Users' from dashboard page and verify that 'Users' page is opened with all influencer users test case execution completed ===============
+[INFO ] 2024-12-08 00:14:18.693 [main] IKKON - ============== Click on 'Brand Users' from dashboard page and verify that 'Users' page is opened with brand users list test case execution started ===============
+[INFO ] 2024-12-08 00:14:18.812 [main] IKKON - Dashboard tab clicked from left menu
+[INFO ] 2024-12-08 00:14:24.088 [main] IKKON - TC_DashboardPageTest: Clicked on 'Brand Users'
+[INFO ] 2024-12-08 00:14:27.120 [main] IKKON - TC_DashboardPageTest: Users list page is opened with all Brand users list
+[INFO ] 2024-12-08 00:14:27.120 [main] IKKON - ============== Click on 'Brand Users' from dashboard page and verify that 'Users' page is opened with all brand users test case execution completed ===============
+[INFO ] 2024-12-08 00:14:27.171 [main] IKKON - ============== Click on 'Brand Users' from dashboard page and verify that 'Users' page is opened with agency users list test case execution started ===============
+[INFO ] 2024-12-08 00:14:27.356 [main] IKKON - Dashboard tab clicked from left menu
+[INFO ] 2024-12-08 00:14:32.639 [main] IKKON - TC_DashboardPageTest: Clicked on 'Brand Users'
+[INFO ] 2024-12-08 00:14:35.664 [main] IKKON - TC_DashboardPageTest: Users list page is opened with all Agency users list
+[INFO ] 2024-12-08 00:14:35.666 [main] IKKON - ============== Click on 'Agency Users' from dashboard page and verify that 'Users' page is opened with all agency users test case execution completed ===============
+[INFO ] 2024-12-08 00:14:35.679 [main] IKKON - ================ tearDown method execution started ================
+[INFO ] 2024-12-08 00:14:35.918 [main] IKKON - browser closed
+[INFO ] 2024-12-08 00:14:36.078 [main] IKKON - browser quitted
+[INFO ] 2024-12-08 00:14:36.078 [main] IKKON - ================ tearDown method exectuion completed ================
+[INFO ] 2024-12-08 00:14:36.080 [main] IKKON - ================ Setup method execution started ================
+[INFO ] 2024-12-08 00:14:37.333 [main] IKKON - chrome browser object created
+[INFO ] 2024-12-08 00:14:37.381 [main] IKKON - Browser Setup completed As Browser opened and maximized
+[INFO ] 2024-12-08 00:14:38.097 [main] IKKON - URL Opened
+[INFO ] 2024-12-08 00:14:38.102 [main] IKKON - ================ Setup method execution completed ================
+[INFO ] 2024-12-08 00:14:38.115 [main] IKKON - ============= Click on 'Agency' and verify that 'Agency' page is opened test case execution started =============
+[INFO ] 2024-12-08 00:14:38.117 [main] IKKON - ================== 'Verify that Sign In page is opened or not' execution started ==================
+[INFO ] 2024-12-08 00:14:48.844 [main] IKKON - Login button clicked
+[INFO ] 2024-12-08 00:14:50.162 [main] IKKON - SignIn page verified
+[INFO ] 2024-12-08 00:14:50.163 [main] IKKON - ================== 'Verify that Sign In page is opened or not' execution completed ==================
+[INFO ] 2024-12-08 00:14:50.163 [main] IKKON - ================== 'Verify that Admin is able to sign in successfully with correct credentials' execution started ==================
+[INFO ] 2024-12-08 00:14:50.329 [main] IKKON - Login button clicked
+[INFO ] 2024-12-08 00:14:51.935 [main] IKKON - Admin user email address is entered
+[INFO ] 2024-12-08 00:14:52.186 [main] IKKON - Admin user password is entered
+[INFO ] 2024-12-08 00:14:52.333 [main] IKKON - Submit button clicked
+[INFO ] 2024-12-08 00:14:57.438 [main] IKKON - Logged In Successfully Message shown
+[INFO ] 2024-12-08 00:15:02.473 [main] IKKON - Admin User Logged In successfully
+[INFO ] 2024-12-08 00:15:02.474 [main] IKKON - ================== 'Verify that Admin is able to sign in successfully with correct credentials' execution completed ==================
+[INFO ] 2024-12-08 00:15:02.668 [main] IKKON - Agency Tab clicked from left menu bar
+[ERROR] 2024-12-08 00:15:03.184 [main] IKKON - Agency Page did not opened
+[INFO ] 2024-12-08 00:15:03.493 [main] IKKON - ============= Click on 'Brand' tab and verify that 'Brand' tab is opened test case execution started =============
+[INFO ] 2024-12-08 00:15:03.587 [main] IKKON - Brand Tab Clicked From Left menu Bar
+[ERROR] 2024-12-08 00:15:04.073 [main] IKKON - Brand Page did not opened
+[INFO ] 2024-12-08 00:15:04.281 [main] IKKON - ============= Click on 'Campaign' tab and verify that 'Campaign' tab is opened test case execution started =============
+[INFO ] 2024-12-08 00:15:04.391 [main] IKKON - Campaign Tab Clicked from left menu bar
+[ERROR] 2024-12-08 00:15:04.880 [main] IKKON - Campaign page did not opened
+[INFO ] 2024-12-08 00:15:05.118 [main] IKKON - ============= Click on 'Matchmaking' and verify that 'Matchmaking' page is opened test case execution started =============
+[INFO ] 2024-12-08 00:15:05.218 [main] IKKON - Matchmaking tab is pressed/clicked from left menu bar
+[ERROR] 2024-12-08 00:15:05.799 [main] IKKON - Matchmaking tab did not opened
+[INFO ] 2024-12-08 00:15:06.023 [main] IKKON - ============= Click on 'Users' tab and verify that 'Users' list page is opened test case execution started =============
+[INFO ] 2024-12-08 00:15:06.170 [main] IKKON - Users tab is clicked
+[INFO ] 2024-12-08 00:15:07.761 [main] IKKON - Users page opened successfully
+[INFO ] 2024-12-08 00:15:07.761 [main] IKKON - ============= Click on 'Users' tab and verify that 'Users' list page is opened test case execution completed =============
+[INFO ] 2024-12-08 00:15:07.765 [main] IKKON - ============= Click on 'System Log' and verify that 'System Log' page is opened test case execution started =============
+[INFO ] 2024-12-08 00:15:07.899 [main] IKKON - System Log tab is clicked
+[INFO ] 2024-12-08 00:15:08.283 [main] IKKON - System Logs page is opened
+[INFO ] 2024-12-08 00:15:08.283 [main] IKKON - ============= Click on 'System Log' and verify that 'System Log' page is opened test case execution completed =============
+[INFO ] 2024-12-08 00:15:08.389 [main] IKKON - Dashboard tab is clicked from left menu bar
+[INFO ] 2024-12-08 00:15:13.414 [main] IKKON - Dahsboard tab is opened successfully
+[INFO ] 2024-12-08 00:15:13.428 [main] IKKON - Click on notification icon and verify that notification tray is opened where click on 'View All' button and verify that Notification page is opened test case execution started
+[INFO ] 2024-12-08 00:15:17.933 [main] IKKON - 'View All' button is visible
+[INFO ] 2024-12-08 00:15:18.242 [main] IKKON - 'View All' button is clicked
+[INFO ] 2024-12-08 00:15:19.063 [main] IKKON - Notification page is opened
+[INFO ] 2024-12-08 00:15:19.064 [main] IKKON - Click on notification icon and verify that notification tray is opened where click on 'View All' button and verify that Notification page is opened test case execution completed
+[INFO ] 2024-12-08 00:15:19.067 [main] IKKON - ================ tearDown method execution started ================
+[INFO ] 2024-12-08 00:15:19.258 [main] IKKON - browser closed
+[INFO ] 2024-12-08 00:15:19.398 [main] IKKON - browser quitted
+[INFO ] 2024-12-08 00:15:19.398 [main] IKKON - ================ tearDown method exectuion completed ================

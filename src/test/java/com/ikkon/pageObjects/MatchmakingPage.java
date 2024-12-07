@@ -19,7 +19,7 @@ public class MatchmakingPage {
 	
 	public boolean verifyFindPerfectMatchLabel()
 	{
-		return FindPerfectMatchLabel.getText().equals("Find Perfect Match");
+		return FindPerfectMatchLabel.getText().equals("Find Perfect Match/");
 	}
 	
 	

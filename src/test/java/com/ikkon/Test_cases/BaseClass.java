@@ -98,8 +98,10 @@ public class BaseClass {
 		//Step 2: call getScreenshotAs method to create image file
 		File src = screenshot.getScreenshotAs(OutputType.FILE);
 		
+		String destination = System.getProperty("user.dir") + "/Screenshots/" + testName + ".png";
+		
 		// Step 3: Define the destination path for the screenshot
-		File dest = new File(System.getProperty("user.dir") + "//Screenshots//" + testName + ".png");
+		File dest = new File(destination);
 
 		//step4: copy image file to destination
 		FileUtils.copyFile(src, dest);
