@@ -18,6 +18,6 @@ public class BrandPage {
 	
 	public boolean verifyBrandLabel()
 	{
-		return BrandPageLabel.getText().equals("Brands/");
+		return BrandPageLabel.getText().equals("Brands");
 	}
 }

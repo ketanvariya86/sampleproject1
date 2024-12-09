@@ -18,6 +18,6 @@ public class CampaignPage {
 	
 	public boolean VerifyCampignPage()
 	{
-		return CampaignLabel.getText().equals("Campaigns/");
+		return CampaignLabel.getText().equals("Campaigns");
 	}
 }

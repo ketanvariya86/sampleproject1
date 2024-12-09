@@ -3,11 +3,13 @@ package com.ikkon.pageObjects;
 import static org.testng.Assert.assertEquals;
 //import static org.testng.Assert.assertTrue;
 
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
+import org.testng.Reporter;
 
 public class DashboardPage {
 	// Create local object of WebDriver
@@ -19,7 +21,7 @@ public class DashboardPage {
 			PageFactory.initElements(rdriver, this);
 		}
 	// Locators
-		@FindBy(xpath = "//h6[text()='Total Users//']") public WebElement TotalUsers;
+		@FindBy(xpath = "//h6[text()='Total Users']") public WebElement TotalUsers;
 		@FindBy(xpath = "//h6[text()='Active Users']") public WebElement ActiveUsers;
 		@FindBy(xpath = "//h6[text()='Inactive Users']") public WebElement InactiveUsers;
 	//	@FindBy(xpath = "//h6[text()=\'Influencer User's\']") public WebElement InfluencerUsers;
@@ -68,7 +70,14 @@ public class DashboardPage {
 		
 		public void VerifyTotalUsersLabel()
 		{				
-			Assert.assertTrue(TotalUsers.isDisplayed(),"Total Users label is not displayed");
+			try {
+				Assert.assertTrue(TotalUsers.isDisplayed());
+			} catch (NoSuchElementException e) {
+					String errorMessage = "Total Users label is not displayed";
+			        Reporter.log(errorMessage, true); // Logs the error in the TestNG report
+			        Assert.fail(errorMessage);       // Fails the test with a custom message
+					
+			}
 		}
 		
 		public boolean VerifyActiveUsersLabel()

@@ -23,6 +23,6 @@ public class AgencyPage {
 //		String ExpactedLabel = "Agency";
 //		String ActualLabel = AgentLabel.getText(); 
 //		Assert.assertEquals(ActualLabel, ExpactedLabel);		
-		return AgentLabel.getText().equals("Agency/");
+		return AgentLabel.getText().equals("Agency");
 	}
 }

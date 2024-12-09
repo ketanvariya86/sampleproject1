@@ -8,22 +8,23 @@
     <classes>
       <class name="com.ikkon.Test_cases.TC_DashboardPageTest">
         <methods>
+          <include name="VerifyInfluencerUsersListByClickingOnInfluencerUsers"/>
+          <include name="VerifyBrandUsersListByClickingOnBrandUsers"/>
           <include name="VerifyAllUsersListByClickingOnTotalUsers"/>
           <include name="setup"/>
-          <include name="VerifyDashboardPageLabelsAfterAdminUserLogin"/>
+          <include name="VerifyInactiveUsersListByClickingOnInactiveUsers"/>
+          <include name="VerifyAgencyUsersListByClickingOnBrandUsers"/>
+          <include name="VerifyActiveUsersListByClickingOnActiveUsers"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.ikkon.Test_cases.TC_DashboardPageTest -->
-      <class name="com.ikkon.Test_cases.TC_MenuPageTest">
+      <class name="com.ikkon.Test_cases.TC_SignInPageTest">
         <methods>
-          <include name="BrandPageOpened"/>
+          <include name="Logout"/>
           <include name="setup"/>
-          <include name="MatchmakingPageOpened"/>
-          <include name="AgencyPageOpened"/>
-          <include name="CampaignPageOpened"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.ikkon.Test_cases.TC_MenuPageTest -->
+      </class> <!-- com.ikkon.Test_cases.TC_SignInPageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

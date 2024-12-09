@@ -21,7 +21,7 @@ public class TC_DashboardPageTest extends BaseClass {
 		logger.info("================== After login with Admin, verify all labels shown on Dashboard execution started ==================");
 		HomePage Hpage = new HomePage(driver);
 		Hpage.ClickOnLogin();
-		logger.info("TC_DashboardPageTest: Login button clicked");
+		logger.info("TC_ashboardPageTest: Login button clicked");
 		
 		SignInPage Spage = new SignInPage(driver);
 		Spage.EnterEmailId();

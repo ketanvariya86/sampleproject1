@@ -1,6 +1,8 @@
 package com.ikkon.utilities;
 
 import java.io.File;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 import org.testng.ITestContext;
 import org.testng.ITestListener;
@@ -22,19 +24,21 @@ public class ExtentListenerClass implements ITestListener{
 	
 	public void configureReport()
 	{
-		htmlReporter = new ExtentSparkReporter("ExtentListnerReportDemo.html");
+		String timeStamp = new SimpleDateFormat("yyyy.MM.dd-HH.mm.ss").format(new Date());
+		String reportName = "iKKON-TestReport-" + timeStamp + ".html";
+		htmlReporter = new ExtentSparkReporter(System.getProperty("user.dir") + "/Extent_Report/" + reportName);
 		reports = new ExtentReports();
 		reports.attachReporter(htmlReporter);
 		
 		//add system information/environment info to reports
-		reports.setSystemInfo("Machine:", "testpc1");
-		reports.setSystemInfo("OS", "windows 11");
-		reports.setSystemInfo("Browser:", "chrome");
+		reports.setSystemInfo("Machine:", "Kanhasoft - 062");
+		reports.setSystemInfo("OS", "Windows 10 Pro");
+		reports.setSystemInfo("Browser:", "Chrome");
 		reports.setSystemInfo("User Name:", "Admin");
 		
 		//Configuration to change look and feel of reports
-		htmlReporter.config().setDocumentTitle("Extent Listener Report Demo");
-		htmlReporter.config().setReportName("This is my First Report");
+		htmlReporter.config().setDocumentTitle("Test Case Execution Extent Listener Report Demo");
+		htmlReporter.config().setReportName("iKKON Test Case Execution Report");
 		htmlReporter.config().setTheme(Theme.DARK);
 	}
 	
