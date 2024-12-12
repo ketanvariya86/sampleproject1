@@ -1,361 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="18" passed="11" failed="7" skipped="0">
+<testng-results ignored="0" total="20" passed="19" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-09T18:34:06 IST" name="Suite" finished-at="2024-12-09T18:36:46 IST" duration-ms="160313">
+  <suite started-at="2024-12-12T20:03:07 IST" name="Suite" finished-at="2024-12-12T20:05:19 IST" duration-ms="131582">
     <groups>
     </groups>
-    <test started-at="2024-12-09T18:34:06 IST" name="Test" finished-at="2024-12-09T18:36:46 IST" duration-ms="160313">
+    <test started-at="2024-12-12T20:03:07 IST" name="Test" finished-at="2024-12-12T20:05:19 IST" duration-ms="131582">
       <class name="com.ikkon.Test_cases.TC_DashboardPageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.ikkon.Test_cases.TC_DashboardPageTest@18271936]" started-at="2024-12-09T18:34:30 IST" name="setup" finished-at="2024-12-09T18:34:38 IST" duration-ms="7783" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ikkon.Test_cases.TC_DashboardPageTest@8458f04]" started-at="2024-12-12T20:03:40 IST" name="setup" finished-at="2024-12-12T20:03:44 IST" duration-ms="3962" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="VerifyDashboardPageLabelsAfterAdminUserLogin()[pri:1, instance:com.ikkon.Test_cases.TC_DashboardPageTest@18271936]" started-at="2024-12-09T18:34:38 IST" name="VerifyDashboardPageLabelsAfterAdminUserLogin" finished-at="2024-12-09T18:34:48 IST" duration-ms="10610" status="PASS">
+        <test-method signature="VerifyDashboardPageLabelsAfterAdminUserLogin()[pri:1, instance:com.ikkon.Test_cases.TC_DashboardPageTest@8458f04]" started-at="2024-12-12T20:03:44 IST" name="VerifyDashboardPageLabelsAfterAdminUserLogin" finished-at="2024-12-12T20:03:53 IST" duration-ms="8593" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyDashboardPageLabelsAfterAdminUserLogin -->
-        <test-method signature="VerifyAllUsersListByClickingOnTotalUsers()[pri:2, instance:com.ikkon.Test_cases.TC_DashboardPageTest@18271936]" started-at="2024-12-09T18:34:48 IST" name="VerifyAllUsersListByClickingOnTotalUsers" finished-at="2024-12-09T18:34:52 IST" duration-ms="3285" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [https://ikkon.ae/user/:all] but found [https://ikkon.ae/dashboard]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [https://ikkon.ae/user/:all] but found [https://ikkon.ae/dashboard]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1413)
-at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-at org.testng.Assert.assertEquals(Assert.java:131)
-at org.testng.Assert.assertEquals(Assert.java:655)
-at org.testng.Assert.assertEquals(Assert.java:665)
-at com.ikkon.pageObjects.UsersPage.UsersPageListURLWithAllUsers(UsersPage.java:28)
-at com.ikkon.Test_cases.TC_DashboardPageTest.VerifyAllUsersListByClickingOnTotalUsers(TC_DashboardPageTest.java:130)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="VerifyAllUsersListByClickingOnTotalUsers()[pri:2, instance:com.ikkon.Test_cases.TC_DashboardPageTest@8458f04]" started-at="2024-12-12T20:03:53 IST" name="VerifyAllUsersListByClickingOnTotalUsers" finished-at="2024-12-12T20:03:56 IST" duration-ms="3267" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyAllUsersListByClickingOnTotalUsers -->
-        <test-method signature="VerifyActiveUsersListByClickingOnActiveUsers()[pri:3, instance:com.ikkon.Test_cases.TC_DashboardPageTest@18271936]" started-at="2024-12-09T18:34:52 IST" name="VerifyActiveUsersListByClickingOnActiveUsers" finished-at="2024-12-09T18:35:00 IST" duration-ms="8273" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [https://ikkon.ae/user/:all] but found [https://ikkon.ae/dashboard]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [https://ikkon.ae/user/:all] but found [https://ikkon.ae/dashboard]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1413)
-at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-at org.testng.Assert.assertEquals(Assert.java:131)
-at org.testng.Assert.assertEquals(Assert.java:655)
-at org.testng.Assert.assertEquals(Assert.java:665)
-at com.ikkon.pageObjects.UsersPage.UsersPageListURLWithAllUsers(UsersPage.java:28)
-at com.ikkon.Test_cases.TC_DashboardPageTest.VerifyActiveUsersListByClickingOnActiveUsers(TC_DashboardPageTest.java:152)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="VerifyActiveUsersListByClickingOnActiveUsers()[pri:3, instance:com.ikkon.Test_cases.TC_DashboardPageTest@8458f04]" started-at="2024-12-12T20:03:56 IST" name="VerifyActiveUsersListByClickingOnActiveUsers" finished-at="2024-12-12T20:04:04 IST" duration-ms="8283" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyActiveUsersListByClickingOnActiveUsers -->
-        <test-method signature="VerifyInactiveUsersListByClickingOnInactiveUsers()[pri:4, instance:com.ikkon.Test_cases.TC_DashboardPageTest@18271936]" started-at="2024-12-09T18:35:00 IST" name="VerifyInactiveUsersListByClickingOnInactiveUsers" finished-at="2024-12-09T18:35:08 IST" duration-ms="8302" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [https://ikkon.ae/user/:all] but found [https://ikkon.ae/dashboard]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [https://ikkon.ae/user/:all] but found [https://ikkon.ae/dashboard]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1413)
-at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-at org.testng.Assert.assertEquals(Assert.java:131)
-at org.testng.Assert.assertEquals(Assert.java:655)
-at org.testng.Assert.assertEquals(Assert.java:665)
-at com.ikkon.pageObjects.UsersPage.UsersPageListURLWithAllUsers(UsersPage.java:28)
-at com.ikkon.Test_cases.TC_DashboardPageTest.VerifyInactiveUsersListByClickingOnInactiveUsers(TC_DashboardPageTest.java:174)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="VerifyInactiveUsersListByClickingOnInactiveUsers()[pri:4, instance:com.ikkon.Test_cases.TC_DashboardPageTest@8458f04]" started-at="2024-12-12T20:04:04 IST" name="VerifyInactiveUsersListByClickingOnInactiveUsers" finished-at="2024-12-12T20:04:13 IST" duration-ms="8276" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyInactiveUsersListByClickingOnInactiveUsers -->
-        <test-method signature="VerifyInfluencerUsersListByClickingOnInfluencerUsers()[pri:5, instance:com.ikkon.Test_cases.TC_DashboardPageTest@18271936]" started-at="2024-12-09T18:35:08 IST" name="VerifyInfluencerUsersListByClickingOnInfluencerUsers" finished-at="2024-12-09T18:35:16 IST" duration-ms="8263" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [https://ikkon.ae/user/:influencer] but found [https://ikkon.ae/dashboard]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [https://ikkon.ae/user/:influencer] but found [https://ikkon.ae/dashboard]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1413)
-at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-at org.testng.Assert.assertEquals(Assert.java:131)
-at org.testng.Assert.assertEquals(Assert.java:655)
-at org.testng.Assert.assertEquals(Assert.java:665)
-at com.ikkon.pageObjects.UsersPage.UsersPageListURLWithInfluencerUsers(UsersPage.java:36)
-at com.ikkon.Test_cases.TC_DashboardPageTest.VerifyInfluencerUsersListByClickingOnInfluencerUsers(TC_DashboardPageTest.java:196)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="VerifyInfluencerUsersListByClickingOnInfluencerUsers()[pri:5, instance:com.ikkon.Test_cases.TC_DashboardPageTest@8458f04]" started-at="2024-12-12T20:04:13 IST" name="VerifyInfluencerUsersListByClickingOnInfluencerUsers" finished-at="2024-12-12T20:04:21 IST" duration-ms="8315" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyInfluencerUsersListByClickingOnInfluencerUsers -->
-        <test-method signature="VerifyBrandUsersListByClickingOnBrandUsers()[pri:6, instance:com.ikkon.Test_cases.TC_DashboardPageTest@18271936]" started-at="2024-12-09T18:35:16 IST" name="VerifyBrandUsersListByClickingOnBrandUsers" finished-at="2024-12-09T18:35:25 IST" duration-ms="8231" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [https://ikkon.ae/user/:brand] but found [https://ikkon.ae/dashboard]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [https://ikkon.ae/user/:brand] but found [https://ikkon.ae/dashboard]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1413)
-at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-at org.testng.Assert.assertEquals(Assert.java:131)
-at org.testng.Assert.assertEquals(Assert.java:655)
-at org.testng.Assert.assertEquals(Assert.java:665)
-at com.ikkon.pageObjects.UsersPage.UsersPageURLWithBrandUsers(UsersPage.java:43)
-at com.ikkon.Test_cases.TC_DashboardPageTest.VerifyBrandUsersListByClickingOnBrandUsers(TC_DashboardPageTest.java:220)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="VerifyBrandUsersListByClickingOnBrandUsers()[pri:6, instance:com.ikkon.Test_cases.TC_DashboardPageTest@8458f04]" started-at="2024-12-12T20:04:21 IST" name="VerifyBrandUsersListByClickingOnBrandUsers" finished-at="2024-12-12T20:04:29 IST" duration-ms="8274" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyBrandUsersListByClickingOnBrandUsers -->
-        <test-method signature="VerifyAgencyUsersListByClickingOnBrandUsers()[pri:7, instance:com.ikkon.Test_cases.TC_DashboardPageTest@18271936]" started-at="2024-12-09T18:35:25 IST" name="VerifyAgencyUsersListByClickingOnBrandUsers" finished-at="2024-12-09T18:35:33 IST" duration-ms="8273" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [https://ikkon.ae/user/:agency] but found [https://ikkon.ae/dashboard]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [https://ikkon.ae/user/:agency] but found [https://ikkon.ae/dashboard]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1413)
-at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-at org.testng.Assert.assertEquals(Assert.java:131)
-at org.testng.Assert.assertEquals(Assert.java:655)
-at org.testng.Assert.assertEquals(Assert.java:665)
-at com.ikkon.pageObjects.UsersPage.UsersPageURLWithAgencyUsers(UsersPage.java:50)
-at com.ikkon.Test_cases.TC_DashboardPageTest.VerifyAgencyUsersListByClickingOnBrandUsers(TC_DashboardPageTest.java:243)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="VerifyAgencyUsersListByClickingOnBrandUsers()[pri:7, instance:com.ikkon.Test_cases.TC_DashboardPageTest@8458f04]" started-at="2024-12-12T20:04:29 IST" name="VerifyAgencyUsersListByClickingOnBrandUsers" finished-at="2024-12-12T20:04:38 IST" duration-ms="8343" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyAgencyUsersListByClickingOnBrandUsers -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ikkon.Test_cases.TC_DashboardPageTest@18271936]" started-at="2024-12-09T18:35:33 IST" name="tearDown" finished-at="2024-12-09T18:35:33 IST" duration-ms="351" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ikkon.Test_cases.TC_DashboardPageTest@8458f04]" started-at="2024-12-12T20:04:38 IST" name="tearDown" finished-at="2024-12-12T20:04:38 IST" duration-ms="350" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.ikkon.Test_cases.TC_DashboardPageTest -->
       <class name="com.ikkon.Test_cases.TC_SignInPageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.ikkon.Test_cases.TC_SignInPageTest@35dab4eb]" started-at="2024-12-09T18:34:06 IST" name="setup" finished-at="2024-12-09T18:34:14 IST" duration-ms="8097" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ikkon.Test_cases.TC_SignInPageTest@3ba987b8]" started-at="2024-12-12T20:03:08 IST" name="setup" finished-at="2024-12-12T20:03:14 IST" duration-ms="5768" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="OpenSignInPage()[pri:1, instance:com.ikkon.Test_cases.TC_SignInPageTest@35dab4eb]" started-at="2024-12-09T18:34:14 IST" name="OpenSignInPage" finished-at="2024-12-09T18:34:16 IST" duration-ms="1632" status="PASS">
+        <test-method signature="OpenSignInPage()[pri:1, instance:com.ikkon.Test_cases.TC_SignInPageTest@3ba987b8]" started-at="2024-12-12T20:03:14 IST" name="OpenSignInPage" finished-at="2024-12-12T20:03:15 IST" duration-ms="1582" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenSignInPage -->
-        <test-method signature="SignInWithAdmin()[pri:2, instance:com.ikkon.Test_cases.TC_SignInPageTest@35dab4eb]" started-at="2024-12-09T18:34:16 IST" name="SignInWithAdmin" finished-at="2024-12-09T18:34:28 IST" duration-ms="11986" status="PASS">
+        <test-method signature="LoginWithoutEnteringCredentials()[pri:2, instance:com.ikkon.Test_cases.TC_SignInPageTest@3ba987b8]" started-at="2024-12-12T20:03:15 IST" name="LoginWithoutEnteringCredentials" finished-at="2024-12-12T20:03:16 IST" duration-ms="565" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SignInWithAdmin -->
-        <test-method signature="Logout()[pri:3, instance:com.ikkon.Test_cases.TC_SignInPageTest@35dab4eb]" started-at="2024-12-09T18:34:28 IST" name="Logout" finished-at="2024-12-09T18:34:29 IST" duration-ms="1174" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+        </test-method> <!-- LoginWithoutEnteringCredentials -->
+        <test-method signature="LoginWithoutEnteringPassword()[pri:3, instance:com.ikkon.Test_cases.TC_SignInPageTest@3ba987b8]" started-at="2024-12-12T20:03:16 IST" name="LoginWithoutEnteringPassword" finished-at="2024-12-12T20:03:17 IST" duration-ms="1093" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[element click intercepted: Element <div class="MuiBox-root css-759u60">...</div> is not clickable at point (1235, 50). Other element would receive the click: <div>...</div>
-  (Session info: chrome=131.0.6778.109)
-Build info: version: '4.26.0', revision: '8ccf0219d7'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [c22193258c66bfd591f87038efebf7f9, clickElement {id=f.D3DCFA0BC88B5A7862DB6FFBBCDF10FB.d.EE2E46893F6681C5B7298C0048BE778F.e.77}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.109, chrome: {chromedriverVersion: 131.0.6778.87 (ce31cae94873..., userDataDir: C:\Users\KANHAS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60886}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60886/devtoo..., se:cdpVersion: 131.0.6778.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (c22193258c66bfd591f87038efebf7f9)] -> xpath: //div[@class='MuiBox-root css-759u60']]
-Session ID: c22193258c66bfd591f87038efebf7f9]]>
+              <![CDATA['Password is required' error message is shown]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <div class="MuiBox-root css-759u60">...</div> is not clickable at point (1235, 50). Other element would receive the click: <div>...</div>
-  (Session info: chrome=131.0.6778.109)
-Build info: version: '4.26.0', revision: '8ccf0219d7'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [c22193258c66bfd591f87038efebf7f9, clickElement {id=f.D3DCFA0BC88B5A7862DB6FFBBCDF10FB.d.EE2E46893F6681C5B7298C0048BE778F.e.77}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.109, chrome: {chromedriverVersion: 131.0.6778.87 (ce31cae94873..., userDataDir: C:\Users\KANHAS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60886}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60886/devtoo..., se:cdpVersion: 131.0.6778.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (c22193258c66bfd591f87038efebf7f9)] -> xpath: //div[@class='MuiBox-root css-759u60']]
-Session ID: c22193258c66bfd591f87038efebf7f9
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at jdk.proxy2/jdk.proxy2.$Proxy29.click(Unknown Source)
-at com.ikkon.pageObjects.DashboardPage.ProfileNameClick(DashboardPage.java:199)
-at com.ikkon.Test_cases.TC_SignInPageTest.Logout(TC_SignInPageTest.java:63)
+              <![CDATA[java.lang.AssertionError: 'Password is required' error message is shown
+at org.testng.Assert.fail(Assert.java:110)
+at com.ikkon.Test_cases.TC_SignInPageTest.LoginWithoutEnteringPassword(TC_SignInPageTest.java:89)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -384,53 +94,61 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginWithoutEnteringPassword -->
+        <test-method signature="SignInWithAdmin()[pri:4, instance:com.ikkon.Test_cases.TC_SignInPageTest@3ba987b8]" started-at="2024-12-12T20:03:17 IST" name="SignInWithAdmin" finished-at="2024-12-12T20:03:37 IST" duration-ms="20471" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignInWithAdmin -->
+        <test-method signature="Logout()[pri:5, instance:com.ikkon.Test_cases.TC_SignInPageTest@3ba987b8]" started-at="2024-12-12T20:03:37 IST" name="Logout" finished-at="2024-12-12T20:03:40 IST" duration-ms="2388" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Logout -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ikkon.Test_cases.TC_SignInPageTest@35dab4eb]" started-at="2024-12-09T18:34:29 IST" name="tearDown" finished-at="2024-12-09T18:34:30 IST" duration-ms="643" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ikkon.Test_cases.TC_SignInPageTest@3ba987b8]" started-at="2024-12-12T20:03:40 IST" name="tearDown" finished-at="2024-12-12T20:03:40 IST" duration-ms="320" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.ikkon.Test_cases.TC_SignInPageTest -->
       <class name="com.ikkon.Test_cases.TC_MenuPageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.ikkon.Test_cases.TC_MenuPageTest@606e4010]" started-at="2024-12-09T18:35:33 IST" name="setup" finished-at="2024-12-09T18:36:00 IST" duration-ms="26459" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ikkon.Test_cases.TC_MenuPageTest@48075da3]" started-at="2024-12-12T20:04:38 IST" name="setup" finished-at="2024-12-12T20:04:42 IST" duration-ms="4217" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="AgencyPageOpened()[pri:1, instance:com.ikkon.Test_cases.TC_MenuPageTest@606e4010]" started-at="2024-12-09T18:36:00 IST" name="AgencyPageOpened" finished-at="2024-12-09T18:36:31 IST" duration-ms="31480" status="PASS">
+        <test-method signature="AgencyPageOpened()[pri:1, instance:com.ikkon.Test_cases.TC_MenuPageTest@48075da3]" started-at="2024-12-12T20:04:42 IST" name="AgencyPageOpened" finished-at="2024-12-12T20:05:05 IST" duration-ms="22767" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AgencyPageOpened -->
-        <test-method signature="BrandPageOpened()[pri:2, instance:com.ikkon.Test_cases.TC_MenuPageTest@606e4010]" started-at="2024-12-09T18:36:31 IST" name="BrandPageOpened" finished-at="2024-12-09T18:36:32 IST" duration-ms="473" status="PASS">
+        <test-method signature="BrandPageOpened()[pri:2, instance:com.ikkon.Test_cases.TC_MenuPageTest@48075da3]" started-at="2024-12-12T20:05:05 IST" name="BrandPageOpened" finished-at="2024-12-12T20:05:05 IST" duration-ms="495" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BrandPageOpened -->
-        <test-method signature="CampaignPageOpened()[pri:3, instance:com.ikkon.Test_cases.TC_MenuPageTest@606e4010]" started-at="2024-12-09T18:36:32 IST" name="CampaignPageOpened" finished-at="2024-12-09T18:36:32 IST" duration-ms="508" status="PASS">
+        <test-method signature="CampaignPageOpened()[pri:3, instance:com.ikkon.Test_cases.TC_MenuPageTest@48075da3]" started-at="2024-12-12T20:05:05 IST" name="CampaignPageOpened" finished-at="2024-12-12T20:05:06 IST" duration-ms="500" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CampaignPageOpened -->
-        <test-method signature="MatchmakingPageOpened()[pri:4, instance:com.ikkon.Test_cases.TC_MenuPageTest@606e4010]" started-at="2024-12-09T18:36:32 IST" name="MatchmakingPageOpened" finished-at="2024-12-09T18:36:33 IST" duration-ms="605" status="PASS">
+        <test-method signature="MatchmakingPageOpened()[pri:4, instance:com.ikkon.Test_cases.TC_MenuPageTest@48075da3]" started-at="2024-12-12T20:05:06 IST" name="MatchmakingPageOpened" finished-at="2024-12-12T20:05:06 IST" duration-ms="607" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MatchmakingPageOpened -->
-        <test-method signature="UsersPageIsOpened()[pri:5, instance:com.ikkon.Test_cases.TC_MenuPageTest@606e4010]" started-at="2024-12-09T18:36:33 IST" name="UsersPageIsOpened" finished-at="2024-12-09T18:36:35 IST" duration-ms="1840" status="PASS">
+        <test-method signature="UsersPageIsOpened()[pri:5, instance:com.ikkon.Test_cases.TC_MenuPageTest@48075da3]" started-at="2024-12-12T20:05:06 IST" name="UsersPageIsOpened" finished-at="2024-12-12T20:05:08 IST" duration-ms="1435" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UsersPageIsOpened -->
-        <test-method signature="SystemLogsPageIsOpened()[pri:6, instance:com.ikkon.Test_cases.TC_MenuPageTest@606e4010]" started-at="2024-12-09T18:36:35 IST" name="SystemLogsPageIsOpened" finished-at="2024-12-09T18:36:35 IST" duration-ms="477" status="PASS">
+        <test-method signature="SystemLogsPageIsOpened()[pri:6, instance:com.ikkon.Test_cases.TC_MenuPageTest@48075da3]" started-at="2024-12-12T20:05:08 IST" name="SystemLogsPageIsOpened" finished-at="2024-12-12T20:05:08 IST" duration-ms="498" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SystemLogsPageIsOpened -->
-        <test-method signature="DashboardPageOpened()[pri:7, instance:com.ikkon.Test_cases.TC_MenuPageTest@606e4010]" started-at="2024-12-09T18:36:35 IST" name="DashboardPageOpened" finished-at="2024-12-09T18:36:40 IST" duration-ms="5138" status="PASS">
+        <test-method signature="DashboardPageOpened()[pri:7, instance:com.ikkon.Test_cases.TC_MenuPageTest@48075da3]" started-at="2024-12-12T20:05:08 IST" name="DashboardPageOpened" finished-at="2024-12-12T20:05:14 IST" duration-ms="5144" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DashboardPageOpened -->
-        <test-method signature="NotificationPageIsOpened()[pri:8, instance:com.ikkon.Test_cases.TC_MenuPageTest@606e4010]" started-at="2024-12-09T18:36:40 IST" name="NotificationPageIsOpened" finished-at="2024-12-09T18:36:46 IST" duration-ms="5440" status="PASS">
+        <test-method signature="NotificationPageIsOpened()[pri:8, instance:com.ikkon.Test_cases.TC_MenuPageTest@48075da3]" started-at="2024-12-12T20:05:14 IST" name="NotificationPageIsOpened" finished-at="2024-12-12T20:05:19 IST" duration-ms="5116" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- NotificationPageIsOpened -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ikkon.Test_cases.TC_MenuPageTest@606e4010]" started-at="2024-12-09T18:36:46 IST" name="tearDown" finished-at="2024-12-09T18:36:46 IST" duration-ms="285" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ikkon.Test_cases.TC_MenuPageTest@48075da3]" started-at="2024-12-12T20:05:19 IST" name="tearDown" finished-at="2024-12-12T20:05:19 IST" duration-ms="341" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

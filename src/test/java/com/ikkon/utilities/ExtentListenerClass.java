@@ -30,6 +30,7 @@ public class ExtentListenerClass implements ITestListener{
 		reports = new ExtentReports();
 		reports.attachReporter(htmlReporter);
 		
+		
 		//add system information/environment info to reports
 		reports.setSystemInfo("Machine:", "Kanhasoft - 062");
 		reports.setSystemInfo("OS", "Windows 10 Pro");
@@ -40,6 +41,7 @@ public class ExtentListenerClass implements ITestListener{
 		htmlReporter.config().setDocumentTitle("Test Case Execution Extent Listener Report Demo");
 		htmlReporter.config().setReportName("iKKON Test Case Execution Report");
 		htmlReporter.config().setTheme(Theme.DARK);
+		
 	}
 	
 	//OnStart method is called when any Test starts.

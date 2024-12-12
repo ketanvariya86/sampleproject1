@@ -10,7 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 public class HomePage {
 	// 1. Create object of webdriver
 	WebDriver ldriver;
-	
+
 	// 2. Create constructor and it's name should be same as class name
 	public HomePage(WebDriver rdriver) {
 		ldriver = 	rdriver;	
@@ -27,18 +27,13 @@ public class HomePage {
 	@FindBy(xpath = "//button[text()='Login']") public WebElement LoginButton;
 	
 	
-	public void ClickOnLogin() {
-		try {
-			// Needs to write below line for doing action when use page object model
-			//	driver.findElement(LoginButton).click();
-			
-			// Needs to write below line for doing action when user page factory 
-			LoginButton.click();
-			
-		} catch (Exception e) {
-			// TODO: handle exception
-			System.out.println("Exceptions caught: " + e.getMessage());
-		}
+	public void ClickOnLogin() 
+	{
+		// Needs to write below line for doing action when use page object model
+		//	driver.findElement(LoginButton).click();
+		
+		// Needs to write below line for doing action when user page factory 
+		LoginButton.click();
 	}
 	
 	public boolean VerifyLoginButton()

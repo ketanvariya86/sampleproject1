@@ -6,21 +6,9 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.ikkon.Test_cases.TC_DashboardPageTest">
-        <methods>
-          <include name="VerifyInfluencerUsersListByClickingOnInfluencerUsers"/>
-          <include name="VerifyBrandUsersListByClickingOnBrandUsers"/>
-          <include name="VerifyAllUsersListByClickingOnTotalUsers"/>
-          <include name="setup"/>
-          <include name="VerifyInactiveUsersListByClickingOnInactiveUsers"/>
-          <include name="VerifyAgencyUsersListByClickingOnBrandUsers"/>
-          <include name="VerifyActiveUsersListByClickingOnActiveUsers"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.ikkon.Test_cases.TC_DashboardPageTest -->
       <class name="com.ikkon.Test_cases.TC_SignInPageTest">
         <methods>
-          <include name="Logout"/>
+          <include name="LoginWithoutEnteringPassword"/>
           <include name="setup"/>
           <include name="tearDown"/>
         </methods>
