@@ -54,13 +54,20 @@ public class SignInPage {
 	{
 		Email.sendKeys(email);
 	}
+	public void EnterInvalidEmailID()
+	{
+		Email.sendKeys("abcd@abc");
+	}
 	
 	String password = readConfig.adminUserPassword();
 	public void EnterPassword()
 	{
 		Password.sendKeys(password);
 	}
-	
+	public void EnterInvalidPassword()
+	{
+		Password.sendKeys("12345");
+	}
 	public void ClickOnSubmitToLogin()
 	{
 		LoginSubmit.click();

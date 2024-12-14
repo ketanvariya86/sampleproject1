@@ -8,6 +8,7 @@
     <classes>
       <class name="com.ikkon.Test_cases.TC_SignInPageTest">
         <methods>
+          <include name="LoginWithoutEnteringCredentials"/>
           <include name="LoginWithoutEnteringPassword"/>
           <include name="setup"/>
           <include name="tearDown"/>

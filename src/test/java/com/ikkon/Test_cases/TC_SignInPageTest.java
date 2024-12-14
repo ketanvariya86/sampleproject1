@@ -52,7 +52,7 @@ public class TC_SignInPageTest extends BaseClass {
 		}
 		String PwdErrMsg = SIP.GetPasswordErrorMessage();
 		
-		if(PwdErrMsg.equals("Password is required"))
+		if(PwdErrMsg.equals("Password is required..."))
 		{
 			logger.info("'Password is required' error message is shown");
 			Assert.assertTrue(true);
@@ -72,8 +72,11 @@ public class TC_SignInPageTest extends BaseClass {
 		logger.info("================= Test Case Started: Login without entering credentials");
 		SignInPage SIP = new SignInPage(driver);
 		SIP.ClearCredentials();
+		logger.info("Email and Password fields are cleared");
 		SIP.EnterEmailId();
+		logger.info("Email is entered");
 		SIP.ClickOnSubmitToLogin();
+		logger.info("Clicked on Submit button");
 				
 		String PwdErrMsg = SIP.GetPasswordErrorMessage();
 		
@@ -84,20 +87,97 @@ public class TC_SignInPageTest extends BaseClass {
 		}
 		else
 		{
-			logger.error("'Password is required' error message is shown");
+			logger.error("'Password is required' error message is not shown");
 			captureScreenShot(driver,"LoginWithoutEnteringPassword");
-			Assert.fail("'Password is required' error message is shown");
+			Assert.fail("'Password is required' error message is not shown");
+		}
+	}
+
+	@Test(priority = 4)
+	//	TC: Enter only password field(Without entering email) and click on "Submit" button and verify that related validation message is shown like ""Email is required"
+
+	public void LoginWithoutEnteringEmail() throws IOException
+	{
+		SignInPage SIP = new SignInPage(driver);
+		SIP.ClearCredentials();
+		logger.info("Credentials are cleared for Email ID and Password are cleared");
+		SIP.EnterPassword();
+		logger.info("Password is entered");
+		SIP.ClickOnSubmitToLogin();
+		logger.info("Submit button clicked");
+		
+		if(SIP.GetEmailErrorMessage().equals("Email is required"))
+		{
+			logger.info("'Email is required' error message is shown");
+			Assert.assertTrue(true);
+		}
+		else
+		{
+			logger.info("Email is required' error message is not shown");
+			captureScreenShot(driver, "LoginWithoutEnteringEmail");
+			Assert.fail("Email is required' error message is not shown");
 		}
 	}
 	
-	// TC-02 : Admin: Enter correct credentials(Email id and Password) and click on "Submit" button and verify that user is able to login successfully	
-	@Test (priority = 4)	
+	@Test(priority = 5)
+	//	Enter invalid Email and correct credentials and verify that related validation message is shown like "Invalid email address"
+	public void LoginWithInvalidEmailAndCorrectPassword() throws IOException
+	{
+		SignInPage SIP = new SignInPage(driver);
+		SIP.ClearCredentials();
+		logger.info("Login and Password fields are cleared");
+		SIP.EnterInvalidEmailID();
+		logger.info("Invalid Email entered in Email field");
+		SIP.EnterPassword();
+		logger.info("Password is entered in password field");
+		if(SIP.GetEmailErrorMessage().equals("Invalid email address"))
+		{
+			logger.info("'Invalid email address' error message is shown");
+			Assert.assertTrue(true);
+		}
+		else
+		{
+			logger.info("'Invalid email address' error message is not shown");			
+			captureScreenShot(driver, "LoginWithInvalidEmailAndCorrectPassword");
+			Assert.fail("'Invalid email address' error message is not shown");
+		}
+		
+	}
+	
+	@Test(priority = 6)
+	//	Enter correct Email and invalid password(less than 6 character) and verify that related validation message is shown like "Password must be at least 6 characters"
+	public void LoginEmailAndInvalidPassword() throws IOException
+	{
+		SignInPage SIP = new SignInPage(driver);
+		SIP.ClearCredentials();
+		logger.info("Email and Password fields are cleared");
+		SIP.EnterEmailId();
+		logger.info("Email id is entered in the email box");
+		SIP.EnterInvalidPassword();
+		logger.info("Invalid password is entered in the password text box");
+		if(SIP.GetPasswordErrorMessage().equals("Password must be at least 6 characters"))
+		{
+			logger.info("'Password must be at least 6 characters' error message is shown");
+			Assert.assertTrue(true);
+		}
+		else
+		{
+			logger.info("'Password must be at least 6 characters' error message is not shown");
+			captureScreenShot(driver, "LoginEmailAndInvalidPassword");
+			Assert.fail("'Password must be at least 6 characters' error message is not shown");
+		}
+	}
+	
+	
+		
+	@Test (priority = 7)	
+	// TC-02 : Admin: Enter correct credentials(Email id and Password) and click on "Submit" button and verify that user is able to login successfully
 	public void SignInWithAdmin()throws InterruptedException{
 		logger.info("================== 'Verify that Admin is able to sign in successfully with correct credentials' execution started ==================");
-		HomePage hpage = new HomePage(driver);
-		hpage.ClickOnLogin();
-		logger.info("Login button clicked");
-		Thread.sleep(5000);
+//		HomePage hpage = new HomePage(driver);
+//		hpage.ClickOnLogin();
+//		logger.info("Login button clicked");
+//		Thread.sleep(5000);
 		
 		SignInPage spage = new SignInPage(driver);
 		spage.ClearCredentials();
@@ -123,7 +203,7 @@ public class TC_SignInPageTest extends BaseClass {
 	}
 
 	// TC-03: User Logout
-	@Test(priority = 5)
+	@Test(priority = 8)
 	public void Logout() throws InterruptedException
 	{
 		logger.info("================== User Logout test case execution started ==================");
@@ -142,10 +222,6 @@ public class TC_SignInPageTest extends BaseClass {
 	}
 
 	
-
-//	Enter only password field(Without entering email) and click on "Submit" button and verify that related validation message is shown like ""Email is required"
-//	Enter invalid Email and correct credentials and verify that related validation message is shown like "Invalid email address"
-//	Enter correct Email and invalid password(less than 6 character) and verify that related validation message is shown like "Password must be at least 6 characters"
 	
 
 }

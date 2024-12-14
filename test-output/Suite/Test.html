@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>19/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>21/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Dec 12 20:03:07 IST 2024</td>
+<td>Started on:</td><td>Sat Dec 14 14:05:54 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>131 seconds (131582 ms)</td>
+<tr><td>Total time:</td><td>135 seconds (135583 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,14 +76,52 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.ikkon.Test_cases.TC_SignInPageTest.LoginWithoutEnteringPassword()'><b>LoginWithoutEnteringPassword</b><br>Test class: com.ikkon.Test_cases.TC_SignInPageTest</td>
+<td title='com.ikkon.Test_cases.TC_SignInPageTest.LoginWithoutEnteringCredentials()'><b>LoginWithoutEnteringCredentials</b><br>Test class: com.ikkon.Test_cases.TC_SignInPageTest</td>
 <td><div><pre>java.lang.AssertionError: &apos;Password is required&apos; error message is shown
-	at com.ikkon.Test_cases.TC_SignInPageTest.LoginWithoutEnteringPassword(TC_SignInPageTest.java:89)
+	at com.ikkon.Test_cases.TC_SignInPageTest.LoginWithoutEnteringCredentials(TC_SignInPageTest.java:64)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace765551203", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace765551203'><pre>java.lang.AssertionError: &apos;Password is required&apos; error message is shown
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace209667159", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace209667159'><pre>java.lang.AssertionError: &apos;Password is required&apos; error message is shown
 	at org.testng.Assert.fail(Assert.java:110)
-	at com.ikkon.Test_cases.TC_SignInPageTest.LoginWithoutEnteringPassword(TC_SignInPageTest.java:89)
+	at com.ikkon.Test_cases.TC_SignInPageTest.LoginWithoutEnteringCredentials(TC_SignInPageTest.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.ikkon.Test_cases.TC_SignInPageTest@72cc7e6f</td></tr>
+<tr>
+<td title='com.ikkon.Test_cases.TC_SignInPageTest.LoginWithoutEnteringPassword()'><b>LoginWithoutEnteringPassword</b><br>Test class: com.ikkon.Test_cases.TC_SignInPageTest</td>
+<td><div><pre>java.lang.AssertionError: &apos;Password is required&apos; error message is not shown
+	at com.ikkon.Test_cases.TC_SignInPageTest.LoginWithoutEnteringPassword(TC_SignInPageTest.java:92)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1454942961", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1454942961'><pre>java.lang.AssertionError: &apos;Password is required&apos; error message is not shown
+	at org.testng.Assert.fail(Assert.java:110)
+	at com.ikkon.Test_cases.TC_SignInPageTest.LoginWithoutEnteringPassword(TC_SignInPageTest.java:92)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -112,7 +150,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>1</td>
-<td>com.ikkon.Test_cases.TC_SignInPageTest@3ba987b8</td></tr>
+<td>com.ikkon.Test_cases.TC_SignInPageTest@72cc7e6f</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -123,100 +161,110 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.ikkon.Test_cases.TC_DashboardPageTest.VerifyInactiveUsersListByClickingOnInactiveUsers()'><b>VerifyInactiveUsersListByClickingOnInactiveUsers</b><br>Test class: com.ikkon.Test_cases.TC_DashboardPageTest</td>
-<td></td>
-<td>8</td>
-<td>com.ikkon.Test_cases.TC_DashboardPageTest@8458f04</td></tr>
-<tr>
 <td title='com.ikkon.Test_cases.TC_SignInPageTest.SignInWithAdmin()'><b>SignInWithAdmin</b><br>Test class: com.ikkon.Test_cases.TC_SignInPageTest</td>
 <td></td>
-<td>20</td>
-<td>com.ikkon.Test_cases.TC_SignInPageTest@3ba987b8</td></tr>
-<tr>
-<td title='com.ikkon.Test_cases.TC_MenuPageTest.SystemLogsPageIsOpened()'><b>SystemLogsPageIsOpened</b><br>Test class: com.ikkon.Test_cases.TC_MenuPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.ikkon.Test_cases.TC_MenuPageTest@48075da3</td></tr>
-<tr>
-<td title='com.ikkon.Test_cases.TC_DashboardPageTest.VerifyDashboardPageLabelsAfterAdminUserLogin()'><b>VerifyDashboardPageLabelsAfterAdminUserLogin</b><br>Test class: com.ikkon.Test_cases.TC_DashboardPageTest</td>
-<td></td>
-<td>8</td>
-<td>com.ikkon.Test_cases.TC_DashboardPageTest@8458f04</td></tr>
-<tr>
-<td title='com.ikkon.Test_cases.TC_DashboardPageTest.VerifyAgencyUsersListByClickingOnBrandUsers()'><b>VerifyAgencyUsersListByClickingOnBrandUsers</b><br>Test class: com.ikkon.Test_cases.TC_DashboardPageTest</td>
-<td></td>
-<td>8</td>
-<td>com.ikkon.Test_cases.TC_DashboardPageTest@8458f04</td></tr>
-<tr>
-<td title='com.ikkon.Test_cases.TC_DashboardPageTest.VerifyInfluencerUsersListByClickingOnInfluencerUsers()'><b>VerifyInfluencerUsersListByClickingOnInfluencerUsers</b><br>Test class: com.ikkon.Test_cases.TC_DashboardPageTest</td>
-<td></td>
-<td>8</td>
-<td>com.ikkon.Test_cases.TC_DashboardPageTest@8458f04</td></tr>
-<tr>
-<td title='com.ikkon.Test_cases.TC_MenuPageTest.BrandPageOpened()'><b>BrandPageOpened</b><br>Test class: com.ikkon.Test_cases.TC_MenuPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.ikkon.Test_cases.TC_MenuPageTest@48075da3</td></tr>
-<tr>
-<td title='com.ikkon.Test_cases.TC_SignInPageTest.LoginWithoutEnteringCredentials()'><b>LoginWithoutEnteringCredentials</b><br>Test class: com.ikkon.Test_cases.TC_SignInPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.ikkon.Test_cases.TC_SignInPageTest@3ba987b8</td></tr>
-<tr>
-<td title='com.ikkon.Test_cases.TC_MenuPageTest.NotificationPageIsOpened()'><b>NotificationPageIsOpened</b><br>Test class: com.ikkon.Test_cases.TC_MenuPageTest</td>
-<td></td>
-<td>5</td>
-<td>com.ikkon.Test_cases.TC_MenuPageTest@48075da3</td></tr>
-<tr>
-<td title='com.ikkon.Test_cases.TC_DashboardPageTest.VerifyActiveUsersListByClickingOnActiveUsers()'><b>VerifyActiveUsersListByClickingOnActiveUsers</b><br>Test class: com.ikkon.Test_cases.TC_DashboardPageTest</td>
-<td></td>
-<td>8</td>
-<td>com.ikkon.Test_cases.TC_DashboardPageTest@8458f04</td></tr>
-<tr>
-<td title='com.ikkon.Test_cases.TC_SignInPageTest.Logout()'><b>Logout</b><br>Test class: com.ikkon.Test_cases.TC_SignInPageTest</td>
-<td></td>
-<td>2</td>
-<td>com.ikkon.Test_cases.TC_SignInPageTest@3ba987b8</td></tr>
-<tr>
-<td title='com.ikkon.Test_cases.TC_DashboardPageTest.VerifyBrandUsersListByClickingOnBrandUsers()'><b>VerifyBrandUsersListByClickingOnBrandUsers</b><br>Test class: com.ikkon.Test_cases.TC_DashboardPageTest</td>
-<td></td>
-<td>8</td>
-<td>com.ikkon.Test_cases.TC_DashboardPageTest@8458f04</td></tr>
-<tr>
-<td title='com.ikkon.Test_cases.TC_MenuPageTest.MatchmakingPageOpened()'><b>MatchmakingPageOpened</b><br>Test class: com.ikkon.Test_cases.TC_MenuPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.ikkon.Test_cases.TC_MenuPageTest@48075da3</td></tr>
-<tr>
-<td title='com.ikkon.Test_cases.TC_DashboardPageTest.VerifyAllUsersListByClickingOnTotalUsers()'><b>VerifyAllUsersListByClickingOnTotalUsers</b><br>Test class: com.ikkon.Test_cases.TC_DashboardPageTest</td>
-<td></td>
-<td>3</td>
-<td>com.ikkon.Test_cases.TC_DashboardPageTest@8458f04</td></tr>
+<td>15</td>
+<td>com.ikkon.Test_cases.TC_SignInPageTest@72cc7e6f</td></tr>
 <tr>
 <td title='com.ikkon.Test_cases.TC_MenuPageTest.CampaignPageOpened()'><b>CampaignPageOpened</b><br>Test class: com.ikkon.Test_cases.TC_MenuPageTest</td>
 <td></td>
 <td>0</td>
-<td>com.ikkon.Test_cases.TC_MenuPageTest@48075da3</td></tr>
+<td>com.ikkon.Test_cases.TC_MenuPageTest@5e2c3d18</td></tr>
+<tr>
+<td title='com.ikkon.Test_cases.TC_MenuPageTest.MatchmakingPageOpened()'><b>MatchmakingPageOpened</b><br>Test class: com.ikkon.Test_cases.TC_MenuPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.ikkon.Test_cases.TC_MenuPageTest@5e2c3d18</td></tr>
+<tr>
+<td title='com.ikkon.Test_cases.TC_DashboardPageTest.VerifyActiveUsersListByClickingOnActiveUsers()'><b>VerifyActiveUsersListByClickingOnActiveUsers</b><br>Test class: com.ikkon.Test_cases.TC_DashboardPageTest</td>
+<td></td>
+<td>8</td>
+<td>com.ikkon.Test_cases.TC_DashboardPageTest@7a35b0f5</td></tr>
+<tr>
+<td title='com.ikkon.Test_cases.TC_DashboardPageTest.VerifyInactiveUsersListByClickingOnInactiveUsers()'><b>VerifyInactiveUsersListByClickingOnInactiveUsers</b><br>Test class: com.ikkon.Test_cases.TC_DashboardPageTest</td>
+<td></td>
+<td>8</td>
+<td>com.ikkon.Test_cases.TC_DashboardPageTest@7a35b0f5</td></tr>
+<tr>
+<td title='com.ikkon.Test_cases.TC_DashboardPageTest.VerifyBrandUsersListByClickingOnBrandUsers()'><b>VerifyBrandUsersListByClickingOnBrandUsers</b><br>Test class: com.ikkon.Test_cases.TC_DashboardPageTest</td>
+<td></td>
+<td>8</td>
+<td>com.ikkon.Test_cases.TC_DashboardPageTest@7a35b0f5</td></tr>
+<tr>
+<td title='com.ikkon.Test_cases.TC_SignInPageTest.Logout()'><b>Logout</b><br>Test class: com.ikkon.Test_cases.TC_SignInPageTest</td>
+<td></td>
+<td>2</td>
+<td>com.ikkon.Test_cases.TC_SignInPageTest@72cc7e6f</td></tr>
+<tr>
+<td title='com.ikkon.Test_cases.TC_SignInPageTest.LoginWithoutEnteringEmail()'><b>LoginWithoutEnteringEmail</b><br>Test class: com.ikkon.Test_cases.TC_SignInPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.ikkon.Test_cases.TC_SignInPageTest@72cc7e6f</td></tr>
+<tr>
+<td title='com.ikkon.Test_cases.TC_SignInPageTest.LoginEmailAndInvalidPassword()'><b>LoginEmailAndInvalidPassword</b><br>Test class: com.ikkon.Test_cases.TC_SignInPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.ikkon.Test_cases.TC_SignInPageTest@72cc7e6f</td></tr>
+<tr>
+<td title='com.ikkon.Test_cases.TC_DashboardPageTest.VerifyAllUsersListByClickingOnTotalUsers()'><b>VerifyAllUsersListByClickingOnTotalUsers</b><br>Test class: com.ikkon.Test_cases.TC_DashboardPageTest</td>
+<td></td>
+<td>3</td>
+<td>com.ikkon.Test_cases.TC_DashboardPageTest@7a35b0f5</td></tr>
+<tr>
+<td title='com.ikkon.Test_cases.TC_DashboardPageTest.VerifyInfluencerUsersListByClickingOnInfluencerUsers()'><b>VerifyInfluencerUsersListByClickingOnInfluencerUsers</b><br>Test class: com.ikkon.Test_cases.TC_DashboardPageTest</td>
+<td></td>
+<td>8</td>
+<td>com.ikkon.Test_cases.TC_DashboardPageTest@7a35b0f5</td></tr>
+<tr>
+<td title='com.ikkon.Test_cases.TC_MenuPageTest.AgencyPageOpened()'><b>AgencyPageOpened</b><br>Test class: com.ikkon.Test_cases.TC_MenuPageTest</td>
+<td></td>
+<td>23</td>
+<td>com.ikkon.Test_cases.TC_MenuPageTest@5e2c3d18</td></tr>
 <tr>
 <td title='com.ikkon.Test_cases.TC_MenuPageTest.DashboardPageOpened()'><b>DashboardPageOpened</b><br>Test class: com.ikkon.Test_cases.TC_MenuPageTest</td>
 <td></td>
 <td>5</td>
-<td>com.ikkon.Test_cases.TC_MenuPageTest@48075da3</td></tr>
+<td>com.ikkon.Test_cases.TC_MenuPageTest@5e2c3d18</td></tr>
 <tr>
-<td title='com.ikkon.Test_cases.TC_SignInPageTest.OpenSignInPage()'><b>OpenSignInPage</b><br>Test class: com.ikkon.Test_cases.TC_SignInPageTest</td>
+<td title='com.ikkon.Test_cases.TC_MenuPageTest.BrandPageOpened()'><b>BrandPageOpened</b><br>Test class: com.ikkon.Test_cases.TC_MenuPageTest</td>
 <td></td>
-<td>1</td>
-<td>com.ikkon.Test_cases.TC_SignInPageTest@3ba987b8</td></tr>
+<td>0</td>
+<td>com.ikkon.Test_cases.TC_MenuPageTest@5e2c3d18</td></tr>
 <tr>
-<td title='com.ikkon.Test_cases.TC_MenuPageTest.AgencyPageOpened()'><b>AgencyPageOpened</b><br>Test class: com.ikkon.Test_cases.TC_MenuPageTest</td>
+<td title='com.ikkon.Test_cases.TC_DashboardPageTest.VerifyAgencyUsersListByClickingOnBrandUsers()'><b>VerifyAgencyUsersListByClickingOnBrandUsers</b><br>Test class: com.ikkon.Test_cases.TC_DashboardPageTest</td>
 <td></td>
-<td>22</td>
-<td>com.ikkon.Test_cases.TC_MenuPageTest@48075da3</td></tr>
+<td>8</td>
+<td>com.ikkon.Test_cases.TC_DashboardPageTest@7a35b0f5</td></tr>
 <tr>
 <td title='com.ikkon.Test_cases.TC_MenuPageTest.UsersPageIsOpened()'><b>UsersPageIsOpened</b><br>Test class: com.ikkon.Test_cases.TC_MenuPageTest</td>
 <td></td>
 <td>1</td>
-<td>com.ikkon.Test_cases.TC_MenuPageTest@48075da3</td></tr>
+<td>com.ikkon.Test_cases.TC_MenuPageTest@5e2c3d18</td></tr>
+<tr>
+<td title='com.ikkon.Test_cases.TC_DashboardPageTest.VerifyDashboardPageLabelsAfterAdminUserLogin()'><b>VerifyDashboardPageLabelsAfterAdminUserLogin</b><br>Test class: com.ikkon.Test_cases.TC_DashboardPageTest</td>
+<td></td>
+<td>8</td>
+<td>com.ikkon.Test_cases.TC_DashboardPageTest@7a35b0f5</td></tr>
+<tr>
+<td title='com.ikkon.Test_cases.TC_MenuPageTest.SystemLogsPageIsOpened()'><b>SystemLogsPageIsOpened</b><br>Test class: com.ikkon.Test_cases.TC_MenuPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.ikkon.Test_cases.TC_MenuPageTest@5e2c3d18</td></tr>
+<tr>
+<td title='com.ikkon.Test_cases.TC_MenuPageTest.NotificationPageIsOpened()'><b>NotificationPageIsOpened</b><br>Test class: com.ikkon.Test_cases.TC_MenuPageTest</td>
+<td></td>
+<td>5</td>
+<td>com.ikkon.Test_cases.TC_MenuPageTest@5e2c3d18</td></tr>
+<tr>
+<td title='com.ikkon.Test_cases.TC_SignInPageTest.OpenSignInPage()'><b>OpenSignInPage</b><br>Test class: com.ikkon.Test_cases.TC_SignInPageTest</td>
+<td></td>
+<td>1</td>
+<td>com.ikkon.Test_cases.TC_SignInPageTest@72cc7e6f</td></tr>
+<tr>
+<td title='com.ikkon.Test_cases.TC_SignInPageTest.LoginWithInvalidEmailAndCorrectPassword()'><b>LoginWithInvalidEmailAndCorrectPassword</b><br>Test class: com.ikkon.Test_cases.TC_SignInPageTest</td>
+<td></td>
+<td>1</td>
+<td>com.ikkon.Test_cases.TC_SignInPageTest@72cc7e6f</td></tr>
 </table><p>
 </body>
 </html>
