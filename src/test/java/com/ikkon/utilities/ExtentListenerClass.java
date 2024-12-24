@@ -79,7 +79,7 @@ public class ExtentListenerClass implements ITestListener{
 	{
 		System.out.println("Name of test method skipped:" + Result.getName());
 		test = reports.createTest(Result.getName());
-		test.log(Status.SKIP, MarkupHelper.createLabel("Name of the skip test case is: " + Result.getName(), ExtentColor.YELLOW));
+		test.log(Status.SKIP, MarkupHelper.createLabel("Name of the skip test case is: " + Result.getName(), ExtentColor.ORANGE));
 	}
 	
 	// When Test case get Started, this method is called.

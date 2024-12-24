@@ -3,16 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.ikkon.Test_cases.TC_SignInPageTest">
+      <class name="com.ikkon.Test_cases.TC_CampaignPgeTest">
         <methods>
-          <include name="LoginWithoutEnteringCredentials"/>
-          <include name="Logout"/>
-          <include name="LoginWithoutEnteringPassword"/>
+          <include name="VerifyPreviousButtonStausWhenSwitchFromFirstPageToAnotherPage"/>
           <include name="setup"/>
-          <include name="SignInWithAdmin"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.ikkon.Test_cases.TC_SignInPageTest -->
+      </class> <!-- com.ikkon.Test_cases.TC_CampaignPgeTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

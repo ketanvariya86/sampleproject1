@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">23 methods, 2 failed,   21 passed</span>
+                    <span class="method-stats">27 methods, 2 failed,   25 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -212,6 +212,11 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ikkon.Test_cases.TC_CampaignPgeTest" class="method navigator-link" hash-for-method="VerifyCampaignListOnFirstPage">VerifyCampaignListOnFirstPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.ikkon.Test_cases.TC_DashboardPageTest" class="method navigator-link" hash-for-method="VerifyDashboardPageLabelsAfterAdminUserLogin">VerifyDashboardPageLabelsAfterAdminUserLogin</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -223,6 +228,21 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.ikkon.Test_cases.TC_DashboardPageTest" class="method navigator-link" hash-for-method="VerifyInfluencerUsersListByClickingOnInfluencerUsers">VerifyInfluencerUsersListByClickingOnInfluencerUsers</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ikkon.Test_cases.TC_CampaignPgeTest" class="method navigator-link" hash-for-method="VerifyNextButtonStatusWhenUserIsOnLastPage">VerifyNextButtonStatusWhenUserIsOnLastPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ikkon.Test_cases.TC_CampaignPgeTest" class="method navigator-link" hash-for-method="VerifyPreviousButtonStatusOnFirstPage">VerifyPreviousButtonStatusOnFirstPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ikkon.Test_cases.TC_CampaignPgeTest" class="method navigator-link" hash-for-method="VerifyPreviousButtonStausWhenSwitchFromFirstPageToAnotherPage">VerifyPreviousButtonStausWhenSwitchFromFirstPageToAnotherPage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -379,6 +399,42 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
+              <span class="class-name">com.ikkon.Test_cases.TC_CampaignPgeTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyCampaignListOnFirstPage">
+                  </a> <!-- VerifyCampaignListOnFirstPage -->
+                  <span class="method-name">VerifyCampaignListOnFirstPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyNextButtonStatusWhenUserIsOnLastPage">
+                  </a> <!-- VerifyNextButtonStatusWhenUserIsOnLastPage -->
+                  <span class="method-name">VerifyNextButtonStatusWhenUserIsOnLastPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyPreviousButtonStatusOnFirstPage">
+                  </a> <!-- VerifyPreviousButtonStatusOnFirstPage -->
+                  <span class="method-name">VerifyPreviousButtonStatusOnFirstPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyPreviousButtonStausWhenSwitchFromFirstPageToAnotherPage">
+                  </a> <!-- VerifyPreviousButtonStausWhenSwitchFromFirstPageToAnotherPage -->
+                  <span class="method-name">VerifyPreviousButtonStausWhenSwitchFromFirstPageToAnotherPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">com.ikkon.Test_cases.TC_MenuPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -458,6 +514,7 @@
       &lt;class name=&quot;com.ikkon.Test_cases.TC_SignInPageTest&quot;/&gt;
       &lt;class name=&quot;com.ikkon.Test_cases.TC_DashboardPageTest&quot;/&gt;
       &lt;class name=&quot;com.ikkon.Test_cases.TC_MenuPageTest&quot;/&gt;
+      &lt;class name=&quot;com.ikkon.Test_cases.TC_CampaignPgeTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -471,7 +528,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (3 classes)</span>
+                <span class="test-name">Test (4 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -497,99 +554,115 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(23);
+data.addRows(27);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'AgencyPageOpened')
-data.setCell(0, 2, 'com.ikkon.Test_cases.TC_MenuPageTest')
-data.setCell(0, 3, 23535);
+data.setCell(0, 1, 'VerifyCampaignListOnFirstPage')
+data.setCell(0, 2, 'com.ikkon.Test_cases.TC_CampaignPgeTest')
+data.setCell(0, 3, 14244);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'SignInWithAdmin')
-data.setCell(1, 2, 'com.ikkon.Test_cases.TC_SignInPageTest')
-data.setCell(1, 3, 15395);
+data.setCell(1, 1, 'AgencyPageOpened')
+data.setCell(1, 2, 'com.ikkon.Test_cases.TC_MenuPageTest')
+data.setCell(1, 3, 13407);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'VerifyDashboardPageLabelsAfterAdminUserLogin')
-data.setCell(2, 2, 'com.ikkon.Test_cases.TC_DashboardPageTest')
-data.setCell(2, 3, 8870);
+data.setCell(2, 1, 'SignInWithAdmin')
+data.setCell(2, 2, 'com.ikkon.Test_cases.TC_SignInPageTest')
+data.setCell(2, 3, 11357);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'VerifyInfluencerUsersListByClickingOnInfluencerUsers')
+data.setCell(3, 1, 'VerifyActiveUsersListByClickingOnActiveUsers')
 data.setCell(3, 2, 'com.ikkon.Test_cases.TC_DashboardPageTest')
-data.setCell(3, 3, 8290);
+data.setCell(3, 3, 8341);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'VerifyBrandUsersListByClickingOnBrandUsers')
 data.setCell(4, 2, 'com.ikkon.Test_cases.TC_DashboardPageTest')
-data.setCell(4, 3, 8251);
+data.setCell(4, 3, 8277);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'VerifyInactiveUsersListByClickingOnInactiveUsers')
+data.setCell(5, 1, 'VerifyAgencyUsersListByClickingOnBrandUsers')
 data.setCell(5, 2, 'com.ikkon.Test_cases.TC_DashboardPageTest')
-data.setCell(5, 3, 8240);
+data.setCell(5, 3, 8274);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'VerifyActiveUsersListByClickingOnActiveUsers')
+data.setCell(6, 1, 'VerifyInactiveUsersListByClickingOnInactiveUsers')
 data.setCell(6, 2, 'com.ikkon.Test_cases.TC_DashboardPageTest')
-data.setCell(6, 3, 8238);
+data.setCell(6, 3, 8269);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'VerifyAgencyUsersListByClickingOnBrandUsers')
+data.setCell(7, 1, 'VerifyInfluencerUsersListByClickingOnInfluencerUsers')
 data.setCell(7, 2, 'com.ikkon.Test_cases.TC_DashboardPageTest')
-data.setCell(7, 3, 8236);
+data.setCell(7, 3, 8264);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'DashboardPageOpened')
-data.setCell(8, 2, 'com.ikkon.Test_cases.TC_MenuPageTest')
-data.setCell(8, 3, 5138);
+data.setCell(8, 1, 'VerifyDashboardPageLabelsAfterAdminUserLogin')
+data.setCell(8, 2, 'com.ikkon.Test_cases.TC_DashboardPageTest')
+data.setCell(8, 3, 7743);
 data.setCell(9, 0, 9)
 data.setCell(9, 1, 'NotificationPageIsOpened')
 data.setCell(9, 2, 'com.ikkon.Test_cases.TC_MenuPageTest')
-data.setCell(9, 3, 5109);
+data.setCell(9, 3, 5250);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'VerifyAllUsersListByClickingOnTotalUsers')
-data.setCell(10, 2, 'com.ikkon.Test_cases.TC_DashboardPageTest')
-data.setCell(10, 3, 3383);
+data.setCell(10, 1, 'DashboardPageOpened')
+data.setCell(10, 2, 'com.ikkon.Test_cases.TC_MenuPageTest')
+data.setCell(10, 3, 5119);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'Logout')
-data.setCell(11, 2, 'com.ikkon.Test_cases.TC_SignInPageTest')
-data.setCell(11, 3, 2359);
+data.setCell(11, 1, 'VerifyAllUsersListByClickingOnTotalUsers')
+data.setCell(11, 2, 'com.ikkon.Test_cases.TC_DashboardPageTest')
+data.setCell(11, 3, 3282);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'OpenSignInPage')
+data.setCell(12, 1, 'Logout')
 data.setCell(12, 2, 'com.ikkon.Test_cases.TC_SignInPageTest')
-data.setCell(12, 3, 1965);
+data.setCell(12, 3, 2384);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'UsersPageIsOpened')
-data.setCell(13, 2, 'com.ikkon.Test_cases.TC_MenuPageTest')
-data.setCell(13, 3, 1494);
+data.setCell(13, 1, 'OpenSignInPage')
+data.setCell(13, 2, 'com.ikkon.Test_cases.TC_SignInPageTest')
+data.setCell(13, 3, 1302);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'LoginWithoutEnteringPassword')
-data.setCell(14, 2, 'com.ikkon.Test_cases.TC_SignInPageTest')
-data.setCell(14, 3, 1195);
+data.setCell(14, 1, 'UsersPageIsOpened')
+data.setCell(14, 2, 'com.ikkon.Test_cases.TC_MenuPageTest')
+data.setCell(14, 3, 1296);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'LoginWithInvalidEmailAndCorrectPassword')
-data.setCell(15, 2, 'com.ikkon.Test_cases.TC_SignInPageTest')
-data.setCell(15, 3, 1007);
+data.setCell(15, 1, 'VerifyNextButtonStatusWhenUserIsOnLastPage')
+data.setCell(15, 2, 'com.ikkon.Test_cases.TC_CampaignPgeTest')
+data.setCell(15, 3, 1224);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'LoginEmailAndInvalidPassword')
-data.setCell(16, 2, 'com.ikkon.Test_cases.TC_SignInPageTest')
-data.setCell(16, 3, 999);
+data.setCell(16, 1, 'VerifyPreviousButtonStausWhenSwitchFromFirstPageToAnotherPage')
+data.setCell(16, 2, 'com.ikkon.Test_cases.TC_CampaignPgeTest')
+data.setCell(16, 3, 1189);
 data.setCell(17, 0, 17)
-data.setCell(17, 1, 'LoginWithoutEnteringCredentials')
+data.setCell(17, 1, 'LoginWithoutEnteringPassword')
 data.setCell(17, 2, 'com.ikkon.Test_cases.TC_SignInPageTest')
-data.setCell(17, 3, 850);
+data.setCell(17, 3, 1066);
 data.setCell(18, 0, 18)
-data.setCell(18, 1, 'LoginWithoutEnteringEmail')
+data.setCell(18, 1, 'LoginEmailAndInvalidPassword')
 data.setCell(18, 2, 'com.ikkon.Test_cases.TC_SignInPageTest')
-data.setCell(18, 3, 738);
+data.setCell(18, 3, 884);
 data.setCell(19, 0, 19)
-data.setCell(19, 1, 'MatchmakingPageOpened')
-data.setCell(19, 2, 'com.ikkon.Test_cases.TC_MenuPageTest')
-data.setCell(19, 3, 631);
+data.setCell(19, 1, 'LoginWithoutEnteringCredentials')
+data.setCell(19, 2, 'com.ikkon.Test_cases.TC_SignInPageTest')
+data.setCell(19, 3, 765);
 data.setCell(20, 0, 20)
-data.setCell(20, 1, 'BrandPageOpened')
-data.setCell(20, 2, 'com.ikkon.Test_cases.TC_MenuPageTest')
-data.setCell(20, 3, 552);
+data.setCell(20, 1, 'LoginWithInvalidEmailAndCorrectPassword')
+data.setCell(20, 2, 'com.ikkon.Test_cases.TC_SignInPageTest')
+data.setCell(20, 3, 701);
 data.setCell(21, 0, 21)
-data.setCell(21, 1, 'CampaignPageOpened')
-data.setCell(21, 2, 'com.ikkon.Test_cases.TC_MenuPageTest')
-data.setCell(21, 3, 516);
+data.setCell(21, 1, 'LoginWithoutEnteringEmail')
+data.setCell(21, 2, 'com.ikkon.Test_cases.TC_SignInPageTest')
+data.setCell(21, 3, 591);
 data.setCell(22, 0, 22)
-data.setCell(22, 1, 'SystemLogsPageIsOpened')
+data.setCell(22, 1, 'MatchmakingPageOpened')
 data.setCell(22, 2, 'com.ikkon.Test_cases.TC_MenuPageTest')
-data.setCell(22, 3, 485);
+data.setCell(22, 3, 574);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'CampaignPageOpened')
+data.setCell(23, 2, 'com.ikkon.Test_cases.TC_MenuPageTest')
+data.setCell(23, 3, 503);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'BrandPageOpened')
+data.setCell(24, 2, 'com.ikkon.Test_cases.TC_MenuPageTest')
+data.setCell(24, 3, 496);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'SystemLogsPageIsOpened')
+data.setCell(25, 2, 'com.ikkon.Test_cases.TC_MenuPageTest')
+data.setCell(25, 3, 489);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'VerifyPreviousButtonStatusOnFirstPage')
+data.setCell(26, 2, 'com.ikkon.Test_cases.TC_CampaignPgeTest')
+data.setCell(26, 3, 66);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -627,125 +700,152 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">OpenSignInPage</span>
-                <span class="method-start">11474 ms</span>
+                <span class="method-start">7123 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">LoginWithoutEnteringCredentials</span>
-                <span class="method-start">13476 ms</span>
+                <span class="method-start">8451 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">LoginWithoutEnteringPassword</span>
-                <span class="method-start">14347 ms</span>
+                <span class="method-start">9225 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">LoginWithoutEnteringEmail</span>
-                <span class="method-start">15557 ms</span>
+                <span class="method-start">10301 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">LoginWithInvalidEmailAndCorrectPassword</span>
-                <span class="method-start">16299 ms</span>
+                <span class="method-start">10901 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">LoginEmailAndInvalidPassword</span>
-                <span class="method-start">17310 ms</span>
+                <span class="method-start">11606 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">SignInWithAdmin</span>
-                <span class="method-start">18316 ms</span>
+                <span class="method-start">12498 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Logout</span>
-                <span class="method-start">33719 ms</span>
+                <span class="method-start">23860 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">36082 ms</span>
+                <span class="method-start">26248 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.ikkon.Test_cases.TC_DashboardPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
-                <span class="method-start">36705 ms</span>
+                <span class="method-start">26692 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">VerifyDashboardPageLabelsAfterAdminUserLogin</span>
-                <span class="method-start">40371 ms</span>
+                <span class="method-start">31561 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">VerifyAllUsersListByClickingOnTotalUsers</span>
-                <span class="method-start">49247 ms</span>
+                <span class="method-start">39307 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">VerifyActiveUsersListByClickingOnActiveUsers</span>
-                <span class="method-start">52634 ms</span>
+                <span class="method-start">42600 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">VerifyInactiveUsersListByClickingOnInactiveUsers</span>
-                <span class="method-start">60876 ms</span>
+                <span class="method-start">50950 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">VerifyInfluencerUsersListByClickingOnInfluencerUsers</span>
-                <span class="method-start">69122 ms</span>
+                <span class="method-start">59225 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">VerifyBrandUsersListByClickingOnBrandUsers</span>
-                <span class="method-start">77417 ms</span>
+                <span class="method-start">67495 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">VerifyAgencyUsersListByClickingOnBrandUsers</span>
-                <span class="method-start">85673 ms</span>
+                <span class="method-start">75779 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">93910 ms</span>
+                <span class="method-start">84056 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.ikkon.Test_cases.TC_MenuPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
-                <span class="method-start">94400 ms</span>
+                <span class="method-start">84502 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">AgencyPageOpened</span>
-                <span class="method-start">96662 ms</span>
+                <span class="method-start">89168 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">BrandPageOpened</span>
-                <span class="method-start">120207 ms</span>
+                <span class="method-start">102579 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">CampaignPageOpened</span>
-                <span class="method-start">120763 ms</span>
+                <span class="method-start">103078 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">MatchmakingPageOpened</span>
-                <span class="method-start">121286 ms</span>
+                <span class="method-start">103592 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">UsersPageIsOpened</span>
-                <span class="method-start">121923 ms</span>
+                <span class="method-start">104172 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">SystemLogsPageIsOpened</span>
-                <span class="method-start">123422 ms</span>
+                <span class="method-start">105470 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">DashboardPageOpened</span>
-                <span class="method-start">123910 ms</span>
+                <span class="method-start">105961 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">NotificationPageIsOpened</span>
-                <span class="method-start">129051 ms</span>
+                <span class="method-start">111087 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">134164 ms</span>
+                <span class="method-start">116339 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ikkon.Test_cases.TC_CampaignPgeTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">116766 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">VerifyCampaignListOnFirstPage</span>
+                <span class="method-start">122444 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">VerifyPreviousButtonStatusOnFirstPage</span>
+                <span class="method-start">136694 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">VerifyPreviousButtonStausWhenSwitchFromFirstPageToAnotherPage</span>
+                <span class="method-start">136763 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">VerifyNextButtonStatusWhenUserIsOnLastPage</span>
+                <span class="method-start">137955 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">139182 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
