@@ -1,59 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="27" passed="25" failed="2" skipped="0">
+<testng-results ignored="0" total="28" passed="25" failed="2" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-24T12:33:39 IST" name="Suite" finished-at="2024-12-24T12:35:59 IST" duration-ms="140212">
+  <suite started-at="2024-12-25T12:50:45 IST" name="Suite" finished-at="2024-12-25T12:53:03 IST" duration-ms="138843">
     <groups>
     </groups>
-    <test started-at="2024-12-24T12:33:39 IST" name="Test" finished-at="2024-12-24T12:35:59 IST" duration-ms="140212">
+    <test started-at="2024-12-25T12:50:45 IST" name="Test" finished-at="2024-12-25T12:53:03 IST" duration-ms="138843">
       <class name="com.ikkon.Test_cases.TC_DashboardPageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.ikkon.Test_cases.TC_DashboardPageTest@645aa696]" started-at="2024-12-24T12:34:06 IST" name="setup" finished-at="2024-12-24T12:34:11 IST" duration-ms="4868" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ikkon.Test_cases.TC_DashboardPageTest@6caf0677]" started-at="2024-12-25T12:51:12 IST" name="setup" finished-at="2024-12-25T12:51:17 IST" duration-ms="4678" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="VerifyDashboardPageLabelsAfterAdminUserLogin()[pri:1, instance:com.ikkon.Test_cases.TC_DashboardPageTest@645aa696]" started-at="2024-12-24T12:34:11 IST" name="VerifyDashboardPageLabelsAfterAdminUserLogin" finished-at="2024-12-24T12:34:19 IST" duration-ms="7743" status="PASS">
+        <test-method signature="VerifyDashboardPageLabelsAfterAdminUserLogin()[pri:1, instance:com.ikkon.Test_cases.TC_DashboardPageTest@6caf0677]" started-at="2024-12-25T12:51:17 IST" name="VerifyDashboardPageLabelsAfterAdminUserLogin" finished-at="2024-12-25T12:51:25 IST" duration-ms="7692" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyDashboardPageLabelsAfterAdminUserLogin -->
-        <test-method signature="VerifyAllUsersListByClickingOnTotalUsers()[pri:2, instance:com.ikkon.Test_cases.TC_DashboardPageTest@645aa696]" started-at="2024-12-24T12:34:19 IST" name="VerifyAllUsersListByClickingOnTotalUsers" finished-at="2024-12-24T12:34:22 IST" duration-ms="3282" status="PASS">
+        <test-method signature="VerifyAllUsersListByClickingOnTotalUsers()[pri:2, instance:com.ikkon.Test_cases.TC_DashboardPageTest@6caf0677]" started-at="2024-12-25T12:51:25 IST" name="VerifyAllUsersListByClickingOnTotalUsers" finished-at="2024-12-25T12:51:28 IST" duration-ms="3366" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyAllUsersListByClickingOnTotalUsers -->
-        <test-method signature="VerifyActiveUsersListByClickingOnActiveUsers()[pri:3, instance:com.ikkon.Test_cases.TC_DashboardPageTest@645aa696]" started-at="2024-12-24T12:34:22 IST" name="VerifyActiveUsersListByClickingOnActiveUsers" finished-at="2024-12-24T12:34:30 IST" duration-ms="8341" status="PASS">
+        <test-method signature="VerifyActiveUsersListByClickingOnActiveUsers()[pri:3, instance:com.ikkon.Test_cases.TC_DashboardPageTest@6caf0677]" started-at="2024-12-25T12:51:28 IST" name="VerifyActiveUsersListByClickingOnActiveUsers" finished-at="2024-12-25T12:51:36 IST" duration-ms="8283" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyActiveUsersListByClickingOnActiveUsers -->
-        <test-method signature="VerifyInactiveUsersListByClickingOnInactiveUsers()[pri:4, instance:com.ikkon.Test_cases.TC_DashboardPageTest@645aa696]" started-at="2024-12-24T12:34:30 IST" name="VerifyInactiveUsersListByClickingOnInactiveUsers" finished-at="2024-12-24T12:34:39 IST" duration-ms="8269" status="PASS">
+        <test-method signature="VerifyInactiveUsersListByClickingOnInactiveUsers()[pri:4, instance:com.ikkon.Test_cases.TC_DashboardPageTest@6caf0677]" started-at="2024-12-25T12:51:36 IST" name="VerifyInactiveUsersListByClickingOnInactiveUsers" finished-at="2024-12-25T12:51:45 IST" duration-ms="8317" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyInactiveUsersListByClickingOnInactiveUsers -->
-        <test-method signature="VerifyInfluencerUsersListByClickingOnInfluencerUsers()[pri:5, instance:com.ikkon.Test_cases.TC_DashboardPageTest@645aa696]" started-at="2024-12-24T12:34:39 IST" name="VerifyInfluencerUsersListByClickingOnInfluencerUsers" finished-at="2024-12-24T12:34:47 IST" duration-ms="8264" status="PASS">
+        <test-method signature="VerifyInfluencerUsersListByClickingOnInfluencerUsers()[pri:5, instance:com.ikkon.Test_cases.TC_DashboardPageTest@6caf0677]" started-at="2024-12-25T12:51:45 IST" name="VerifyInfluencerUsersListByClickingOnInfluencerUsers" finished-at="2024-12-25T12:51:53 IST" duration-ms="8269" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyInfluencerUsersListByClickingOnInfluencerUsers -->
-        <test-method signature="VerifyBrandUsersListByClickingOnBrandUsers()[pri:6, instance:com.ikkon.Test_cases.TC_DashboardPageTest@645aa696]" started-at="2024-12-24T12:34:47 IST" name="VerifyBrandUsersListByClickingOnBrandUsers" finished-at="2024-12-24T12:34:55 IST" duration-ms="8277" status="PASS">
+        <test-method signature="VerifyBrandUsersListByClickingOnBrandUsers()[pri:6, instance:com.ikkon.Test_cases.TC_DashboardPageTest@6caf0677]" started-at="2024-12-25T12:51:53 IST" name="VerifyBrandUsersListByClickingOnBrandUsers" finished-at="2024-12-25T12:52:01 IST" duration-ms="8284" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyBrandUsersListByClickingOnBrandUsers -->
-        <test-method signature="VerifyAgencyUsersListByClickingOnBrandUsers()[pri:7, instance:com.ikkon.Test_cases.TC_DashboardPageTest@645aa696]" started-at="2024-12-24T12:34:55 IST" name="VerifyAgencyUsersListByClickingOnBrandUsers" finished-at="2024-12-24T12:35:04 IST" duration-ms="8274" status="PASS">
+        <test-method signature="VerifyAgencyUsersListByClickingOnBrandUsers()[pri:7, instance:com.ikkon.Test_cases.TC_DashboardPageTest@6caf0677]" started-at="2024-12-25T12:52:01 IST" name="VerifyAgencyUsersListByClickingOnBrandUsers" finished-at="2024-12-25T12:52:09 IST" duration-ms="8297" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyAgencyUsersListByClickingOnBrandUsers -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ikkon.Test_cases.TC_DashboardPageTest@645aa696]" started-at="2024-12-24T12:35:04 IST" name="tearDown" finished-at="2024-12-24T12:35:04 IST" duration-ms="446" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ikkon.Test_cases.TC_DashboardPageTest@6caf0677]" started-at="2024-12-25T12:52:09 IST" name="tearDown" finished-at="2024-12-25T12:52:10 IST" duration-ms="374" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.ikkon.Test_cases.TC_DashboardPageTest -->
       <class name="com.ikkon.Test_cases.TC_SignInPageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.ikkon.Test_cases.TC_SignInPageTest@606e4010]" started-at="2024-12-24T12:33:40 IST" name="setup" finished-at="2024-12-24T12:33:47 IST" duration-ms="7102" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ikkon.Test_cases.TC_SignInPageTest@8458f04]" started-at="2024-12-25T12:50:45 IST" name="setup" finished-at="2024-12-25T12:50:53 IST" duration-ms="8129" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="OpenSignInPage()[pri:1, instance:com.ikkon.Test_cases.TC_SignInPageTest@606e4010]" started-at="2024-12-24T12:33:47 IST" name="OpenSignInPage" finished-at="2024-12-24T12:33:48 IST" duration-ms="1302" status="PASS">
+        <test-method signature="OpenSignInPage()[pri:1, instance:com.ikkon.Test_cases.TC_SignInPageTest@8458f04]" started-at="2024-12-25T12:50:53 IST" name="OpenSignInPage" finished-at="2024-12-25T12:50:55 IST" duration-ms="1403" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenSignInPage -->
-        <test-method signature="LoginWithoutEnteringCredentials()[pri:2, instance:com.ikkon.Test_cases.TC_SignInPageTest@606e4010]" started-at="2024-12-24T12:33:48 IST" name="LoginWithoutEnteringCredentials" finished-at="2024-12-24T12:33:49 IST" duration-ms="765" status="FAIL">
+        <test-method signature="LoginWithoutEnteringCredentials()[pri:2, instance:com.ikkon.Test_cases.TC_SignInPageTest@8458f04]" started-at="2024-12-25T12:50:55 IST" name="LoginWithoutEnteringCredentials" finished-at="2024-12-25T12:50:55 IST" duration-ms="651" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA['Password is required' error message is shown]]>
@@ -94,7 +94,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginWithoutEnteringCredentials -->
-        <test-method signature="LoginWithoutEnteringPassword()[pri:3, instance:com.ikkon.Test_cases.TC_SignInPageTest@606e4010]" started-at="2024-12-24T12:33:49 IST" name="LoginWithoutEnteringPassword" finished-at="2024-12-24T12:33:50 IST" duration-ms="1066" status="FAIL">
+        <test-method signature="LoginWithoutEnteringPassword()[pri:3, instance:com.ikkon.Test_cases.TC_SignInPageTest@8458f04]" started-at="2024-12-25T12:50:55 IST" name="LoginWithoutEnteringPassword" finished-at="2024-12-25T12:50:56 IST" duration-ms="993" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA['Password is required' error message is not shown]]>
@@ -135,95 +135,135 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginWithoutEnteringPassword -->
-        <test-method signature="LoginWithoutEnteringEmail()[pri:4, instance:com.ikkon.Test_cases.TC_SignInPageTest@606e4010]" started-at="2024-12-24T12:33:50 IST" name="LoginWithoutEnteringEmail" finished-at="2024-12-24T12:33:50 IST" duration-ms="591" status="PASS">
+        <test-method signature="LoginWithoutEnteringEmail()[pri:4, instance:com.ikkon.Test_cases.TC_SignInPageTest@8458f04]" started-at="2024-12-25T12:50:56 IST" name="LoginWithoutEnteringEmail" finished-at="2024-12-25T12:50:57 IST" duration-ms="546" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginWithoutEnteringEmail -->
-        <test-method signature="LoginWithInvalidEmailAndCorrectPassword()[pri:5, instance:com.ikkon.Test_cases.TC_SignInPageTest@606e4010]" started-at="2024-12-24T12:33:50 IST" name="LoginWithInvalidEmailAndCorrectPassword" finished-at="2024-12-24T12:33:51 IST" duration-ms="701" status="PASS">
+        <test-method signature="LoginWithInvalidEmailAndCorrectPassword()[pri:5, instance:com.ikkon.Test_cases.TC_SignInPageTest@8458f04]" started-at="2024-12-25T12:50:57 IST" name="LoginWithInvalidEmailAndCorrectPassword" finished-at="2024-12-25T12:50:57 IST" duration-ms="651" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginWithInvalidEmailAndCorrectPassword -->
-        <test-method signature="LoginEmailAndInvalidPassword()[pri:6, instance:com.ikkon.Test_cases.TC_SignInPageTest@606e4010]" started-at="2024-12-24T12:33:51 IST" name="LoginEmailAndInvalidPassword" finished-at="2024-12-24T12:33:52 IST" duration-ms="884" status="PASS">
+        <test-method signature="LoginEmailAndInvalidPassword()[pri:6, instance:com.ikkon.Test_cases.TC_SignInPageTest@8458f04]" started-at="2024-12-25T12:50:57 IST" name="LoginEmailAndInvalidPassword" finished-at="2024-12-25T12:50:58 IST" duration-ms="879" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginEmailAndInvalidPassword -->
-        <test-method signature="SignInWithAdmin()[pri:7, instance:com.ikkon.Test_cases.TC_SignInPageTest@606e4010]" started-at="2024-12-24T12:33:52 IST" name="SignInWithAdmin" finished-at="2024-12-24T12:34:03 IST" duration-ms="11357" status="PASS">
+        <test-method signature="SignInWithAdmin()[pri:7, instance:com.ikkon.Test_cases.TC_SignInPageTest@8458f04]" started-at="2024-12-25T12:50:58 IST" name="SignInWithAdmin" finished-at="2024-12-25T12:51:10 IST" duration-ms="11247" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SignInWithAdmin -->
-        <test-method signature="Logout()[pri:8, instance:com.ikkon.Test_cases.TC_SignInPageTest@606e4010]" started-at="2024-12-24T12:34:03 IST" name="Logout" finished-at="2024-12-24T12:34:06 IST" duration-ms="2384" status="PASS">
+        <test-method signature="Logout()[pri:8, instance:com.ikkon.Test_cases.TC_SignInPageTest@8458f04]" started-at="2024-12-25T12:51:10 IST" name="Logout" finished-at="2024-12-25T12:51:12 IST" duration-ms="2339" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Logout -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ikkon.Test_cases.TC_SignInPageTest@606e4010]" started-at="2024-12-24T12:34:06 IST" name="tearDown" finished-at="2024-12-24T12:34:06 IST" duration-ms="444" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ikkon.Test_cases.TC_SignInPageTest@8458f04]" started-at="2024-12-25T12:51:12 IST" name="tearDown" finished-at="2024-12-25T12:51:12 IST" duration-ms="299" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.ikkon.Test_cases.TC_SignInPageTest -->
       <class name="com.ikkon.Test_cases.TC_CampaignPgeTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.ikkon.Test_cases.TC_CampaignPgeTest@413d1baf]" started-at="2024-12-24T12:35:36 IST" name="setup" finished-at="2024-12-24T12:35:42 IST" duration-ms="5678" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ikkon.Test_cases.TC_CampaignPgeTest@16eb3ea3]" started-at="2024-12-25T12:52:41 IST" name="setup" finished-at="2024-12-25T12:52:45 IST" duration-ms="3390" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="VerifyCampaignListOnFirstPage()[pri:1, instance:com.ikkon.Test_cases.TC_CampaignPgeTest@413d1baf]" started-at="2024-12-24T12:35:42 IST" name="VerifyCampaignListOnFirstPage" finished-at="2024-12-24T12:35:56 IST" duration-ms="14244" status="PASS">
+        <test-method signature="VerifyCampaignListOnFirstPage()[pri:1, instance:com.ikkon.Test_cases.TC_CampaignPgeTest@16eb3ea3]" started-at="2024-12-25T12:52:45 IST" name="VerifyCampaignListOnFirstPage" finished-at="2024-12-25T12:52:59 IST" duration-ms="14162" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyCampaignListOnFirstPage -->
-        <test-method signature="VerifyPreviousButtonStatusOnFirstPage()[pri:2, instance:com.ikkon.Test_cases.TC_CampaignPgeTest@413d1baf]" started-at="2024-12-24T12:35:56 IST" name="VerifyPreviousButtonStatusOnFirstPage" finished-at="2024-12-24T12:35:56 IST" duration-ms="66" status="PASS">
+        <test-method signature="VerifyPreviousButtonStatusOnFirstPage()[pri:2, instance:com.ikkon.Test_cases.TC_CampaignPgeTest@16eb3ea3]" started-at="2024-12-25T12:52:59 IST" name="VerifyPreviousButtonStatusOnFirstPage" finished-at="2024-12-25T12:52:59 IST" duration-ms="29" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyPreviousButtonStatusOnFirstPage -->
-        <test-method signature="VerifyPreviousButtonStausWhenSwitchFromFirstPageToAnotherPage()[pri:3, instance:com.ikkon.Test_cases.TC_CampaignPgeTest@413d1baf]" started-at="2024-12-24T12:35:56 IST" name="VerifyPreviousButtonStausWhenSwitchFromFirstPageToAnotherPage" finished-at="2024-12-24T12:35:57 IST" duration-ms="1189" status="PASS">
+        <test-method signature="VerifyPreviousButtonStausWhenSwitchFromFirstPageToAnotherPage()[pri:3, instance:com.ikkon.Test_cases.TC_CampaignPgeTest@16eb3ea3]" started-at="2024-12-25T12:52:59 IST" name="VerifyPreviousButtonStausWhenSwitchFromFirstPageToAnotherPage" finished-at="2024-12-25T12:53:00 IST" duration-ms="1188" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyPreviousButtonStausWhenSwitchFromFirstPageToAnotherPage -->
-        <test-method signature="VerifyNextButtonStatusWhenUserIsOnLastPage()[pri:4, instance:com.ikkon.Test_cases.TC_CampaignPgeTest@413d1baf]" started-at="2024-12-24T12:35:57 IST" name="VerifyNextButtonStatusWhenUserIsOnLastPage" finished-at="2024-12-24T12:35:59 IST" duration-ms="1224" status="PASS">
+        <test-method signature="VerifyNextButtonStatusWhenUserIsOnLastPage()[pri:4, instance:com.ikkon.Test_cases.TC_CampaignPgeTest@16eb3ea3]" started-at="2024-12-25T12:53:00 IST" name="VerifyNextButtonStatusWhenUserIsOnLastPage" finished-at="2024-12-25T12:53:03 IST" duration-ms="3014" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyNextButtonStatusWhenUserIsOnLastPage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ikkon.Test_cases.TC_CampaignPgeTest@413d1baf]" started-at="2024-12-24T12:35:59 IST" name="tearDown" finished-at="2024-12-24T12:35:59 IST" duration-ms="481" status="PASS">
+        <test-method signature="VerifyPreviousAndNextButtonStatusWhenOnlySinglePageAvailable()[pri:5, instance:com.ikkon.Test_cases.TC_CampaignPgeTest@16eb3ea3]" started-at="2024-12-25T12:53:03 IST" name="VerifyPreviousAndNextButtonStatusWhenOnlySinglePageAvailable" finished-at="2024-12-25T12:53:03 IST" duration-ms="17" status="SKIP">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skiping the test case as Total pages are more than 3. Total Pages are : 4]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skiping the test case as Total pages are more than 3. Total Pages are : 4
+at com.ikkon.Test_cases.TC_CampaignPgeTest.VerifyPreviousAndNextButtonStatusWhenOnlySinglePageAvailable(TC_CampaignPgeTest.java:136)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyPreviousAndNextButtonStatusWhenOnlySinglePageAvailable -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ikkon.Test_cases.TC_CampaignPgeTest@16eb3ea3]" started-at="2024-12-25T12:53:03 IST" name="tearDown" finished-at="2024-12-25T12:53:03 IST" duration-ms="378" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.ikkon.Test_cases.TC_CampaignPgeTest -->
       <class name="com.ikkon.Test_cases.TC_MenuPageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.ikkon.Test_cases.TC_MenuPageTest@6caf0677]" started-at="2024-12-24T12:35:04 IST" name="setup" finished-at="2024-12-24T12:35:09 IST" duration-ms="4665" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ikkon.Test_cases.TC_MenuPageTest@413d1baf]" started-at="2024-12-25T12:52:10 IST" name="setup" finished-at="2024-12-25T12:52:13 IST" duration-ms="3632" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="AgencyPageOpened()[pri:1, instance:com.ikkon.Test_cases.TC_MenuPageTest@6caf0677]" started-at="2024-12-24T12:35:09 IST" name="AgencyPageOpened" finished-at="2024-12-24T12:35:22 IST" duration-ms="13407" status="PASS">
+        <test-method signature="AgencyPageOpened()[pri:1, instance:com.ikkon.Test_cases.TC_MenuPageTest@413d1baf]" started-at="2024-12-25T12:52:13 IST" name="AgencyPageOpened" finished-at="2024-12-25T12:52:27 IST" duration-ms="13510" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AgencyPageOpened -->
-        <test-method signature="BrandPageOpened()[pri:2, instance:com.ikkon.Test_cases.TC_MenuPageTest@6caf0677]" started-at="2024-12-24T12:35:22 IST" name="BrandPageOpened" finished-at="2024-12-24T12:35:23 IST" duration-ms="496" status="PASS">
+        <test-method signature="BrandPageOpened()[pri:2, instance:com.ikkon.Test_cases.TC_MenuPageTest@413d1baf]" started-at="2024-12-25T12:52:27 IST" name="BrandPageOpened" finished-at="2024-12-25T12:52:28 IST" duration-ms="532" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BrandPageOpened -->
-        <test-method signature="CampaignPageOpened()[pri:3, instance:com.ikkon.Test_cases.TC_MenuPageTest@6caf0677]" started-at="2024-12-24T12:35:23 IST" name="CampaignPageOpened" finished-at="2024-12-24T12:35:23 IST" duration-ms="503" status="PASS">
+        <test-method signature="CampaignPageOpened()[pri:3, instance:com.ikkon.Test_cases.TC_MenuPageTest@413d1baf]" started-at="2024-12-25T12:52:28 IST" name="CampaignPageOpened" finished-at="2024-12-25T12:52:28 IST" duration-ms="547" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CampaignPageOpened -->
-        <test-method signature="MatchmakingPageOpened()[pri:4, instance:com.ikkon.Test_cases.TC_MenuPageTest@6caf0677]" started-at="2024-12-24T12:35:23 IST" name="MatchmakingPageOpened" finished-at="2024-12-24T12:35:24 IST" duration-ms="574" status="PASS">
+        <test-method signature="MatchmakingPageOpened()[pri:4, instance:com.ikkon.Test_cases.TC_MenuPageTest@413d1baf]" started-at="2024-12-25T12:52:28 IST" name="MatchmakingPageOpened" finished-at="2024-12-25T12:52:29 IST" duration-ms="712" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MatchmakingPageOpened -->
-        <test-method signature="UsersPageIsOpened()[pri:5, instance:com.ikkon.Test_cases.TC_MenuPageTest@6caf0677]" started-at="2024-12-24T12:35:24 IST" name="UsersPageIsOpened" finished-at="2024-12-24T12:35:25 IST" duration-ms="1296" status="PASS">
+        <test-method signature="UsersPageIsOpened()[pri:5, instance:com.ikkon.Test_cases.TC_MenuPageTest@413d1baf]" started-at="2024-12-25T12:52:29 IST" name="UsersPageIsOpened" finished-at="2024-12-25T12:52:30 IST" duration-ms="1276" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UsersPageIsOpened -->
-        <test-method signature="SystemLogsPageIsOpened()[pri:6, instance:com.ikkon.Test_cases.TC_MenuPageTest@6caf0677]" started-at="2024-12-24T12:35:25 IST" name="SystemLogsPageIsOpened" finished-at="2024-12-24T12:35:25 IST" duration-ms="489" status="PASS">
+        <test-method signature="SystemLogsPageIsOpened()[pri:6, instance:com.ikkon.Test_cases.TC_MenuPageTest@413d1baf]" started-at="2024-12-25T12:52:30 IST" name="SystemLogsPageIsOpened" finished-at="2024-12-25T12:52:31 IST" duration-ms="469" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SystemLogsPageIsOpened -->
-        <test-method signature="DashboardPageOpened()[pri:7, instance:com.ikkon.Test_cases.TC_MenuPageTest@6caf0677]" started-at="2024-12-24T12:35:25 IST" name="DashboardPageOpened" finished-at="2024-12-24T12:35:31 IST" duration-ms="5119" status="PASS">
+        <test-method signature="DashboardPageOpened()[pri:7, instance:com.ikkon.Test_cases.TC_MenuPageTest@413d1baf]" started-at="2024-12-25T12:52:31 IST" name="DashboardPageOpened" finished-at="2024-12-25T12:52:36 IST" duration-ms="5130" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DashboardPageOpened -->
-        <test-method signature="NotificationPageIsOpened()[pri:8, instance:com.ikkon.Test_cases.TC_MenuPageTest@6caf0677]" started-at="2024-12-24T12:35:31 IST" name="NotificationPageIsOpened" finished-at="2024-12-24T12:35:36 IST" duration-ms="5250" status="PASS">
+        <test-method signature="NotificationPageIsOpened()[pri:8, instance:com.ikkon.Test_cases.TC_MenuPageTest@413d1baf]" started-at="2024-12-25T12:52:36 IST" name="NotificationPageIsOpened" finished-at="2024-12-25T12:52:41 IST" duration-ms="5118" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- NotificationPageIsOpened -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ikkon.Test_cases.TC_MenuPageTest@6caf0677]" started-at="2024-12-24T12:35:36 IST" name="tearDown" finished-at="2024-12-24T12:35:36 IST" duration-ms="427" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ikkon.Test_cases.TC_MenuPageTest@413d1baf]" started-at="2024-12-25T12:52:41 IST" name="tearDown" finished-at="2024-12-25T12:52:41 IST" duration-ms="336" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

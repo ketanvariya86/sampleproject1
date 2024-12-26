@@ -5,7 +5,7 @@
     <classes>
       <class name="com.ikkon.Test_cases.TC_CampaignPgeTest">
         <methods>
-          <include name="VerifyPreviousButtonStausWhenSwitchFromFirstPageToAnotherPage"/>
+          <include name="VerifyPreviousAndNextButtonStatusWhenOnlySinglePageAvailable"/>
           <include name="setup"/>
           <include name="tearDown"/>
         </methods>

@@ -97,7 +97,9 @@ public class TC_CampaignPgeTest extends BaseClass{
 	//Verify that the "Next" button gets disabled when user is on the last page
 	public void VerifyNextButtonStatusWhenUserIsOnLastPage() throws IOException, InterruptedException
 	{
+		driver.navigate().refresh();
 		CampaignPage CPage = new CampaignPage(driver);
+		Thread.sleep(1000);
 		CPage.GoToLastPage();
 		Thread.sleep(1000);
 		if(CPage.GoToNextPageButtonStatus()==false)
@@ -113,4 +115,42 @@ public class TC_CampaignPgeTest extends BaseClass{
 		}
 	}
 	
+	@Test(priority=5)
+	//Verify that the "Previous" button and "Next" buttons are disabled when there is only one/single page available
+	public void VerifyPreviousAndNextButtonStatusWhenOnlySinglePageAvailable() throws Exception
+	{
+		
+		CampaignPage CPage = new CampaignPage(driver);
+		int TotalPages = CPage.GetTotalPages();
+		if(TotalPages < 3)
+		{
+			logger.info("There is something wrong as no campaign available on the page");
+			captureScreenShot(driver,"VerifyCampaignListonFirstPage");
+			Assert.assertTrue(false);
+		}
+		else
+		{
+			if(TotalPages > 3)
+			{
+				logger.info("Skiping the test case as Total campaign pages available are: " + TotalPages);
+				throw new SkipException("Skiping the test case as Total pages are more than 3. Total Pages are : " + TotalPages);
+			}
+			else					
+			{
+				if(CPage.GoToPreviousPageButtonStatus()== false && CPage.GoToNextPageButtonStatus() == false)
+				{
+					logger.info("Pass: Previous and Next buttons are disabled");
+					Assert.assertTrue(true);
+				}
+				else
+				{
+					logger.info("Fail: Previous OR Next buttons are enabled which is not expected ");
+					captureScreenShot(driver, browser);
+					Assert.assertTrue(false);					
+				}
+
+			}
+
+		}		
+	}
 }
