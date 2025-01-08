@@ -1,7 +1,6 @@
 package com.ikkon.Test_cases;
 
 import java.io.IOException;
-
 import org.testng.Assert;
 import org.testng.SkipException;
 import org.testng.annotations.Test;
@@ -152,5 +151,165 @@ public class TC_CampaignPgeTest extends BaseClass{
 			}
 
 		}		
+	}
+	
+	@Test(priority=6)
+	//Verify that campaigns are filtered successfully by Draft status
+	public void VerifyFilterByDraft() throws InterruptedException
+	{
+		CampaignPage CPage = new CampaignPage(driver);
+		CPage.ClickOnStatusDropdown();
+		Thread.sleep(1000);
+		CPage.SelectStatus("Draft");
+		Thread.sleep(5000);
+		boolean FilteredStatus = CPage.VerifyGetFilteredCampaignListStatus("Draft");
+		if(FilteredStatus == true)
+		{
+			logger.info("Pass: campaigns are filtered successfully by Draft status");
+			Assert.assertTrue(true);
+		}
+		else
+		{
+			logger.info("Fail: campaigns are not filtered successfully by Draft status");
+			Assert.assertTrue(false);
+		}
+	}
+	
+	@Test(priority=7)
+	//Verify that campaigns are filtered successfully by Active status
+	public void VerifyFilterByActive() throws InterruptedException
+	{
+		CampaignPage CPage = new CampaignPage(driver);
+		CPage.ClickOnStatusDropdown();
+		Thread.sleep(1000);
+		CPage.SelectStatus("Active");
+		Thread.sleep(5000);
+		boolean FilteredStatus = CPage.VerifyGetFilteredCampaignListStatus("Active");
+		if(FilteredStatus == true)
+		{
+			logger.info("Pass: campaigns are filtered successfully by Active status");
+			Assert.assertTrue(true);
+		}
+		else
+		{
+			logger.info("Fail: campaigns are not filtered successfully by Active status");
+			Assert.assertTrue(false);
+		}
+		
+	}
+	
+	@Test(priority=8)
+	//Verify that campaigns are filtered successfully by InActive status
+	public void VerifyFilterByInActive() throws InterruptedException
+	{
+		CampaignPage CPage = new CampaignPage(driver);
+		CPage.ClickOnStatusDropdown();
+		Thread.sleep(1000);
+		CPage.SelectStatus("In Active");
+		Thread.sleep(5000);
+		boolean FilteredStatus = CPage.VerifyGetFilteredCampaignListStatus("In Active");
+		if(FilteredStatus == true)
+		{
+			logger.info("Pass: campaigns are filtered successfully by In Active status");
+			Assert.assertTrue(true);
+		}
+		else
+		{
+			logger.info("Fail: campaigns are not filtered successfully by In Active status");
+			Assert.assertTrue(false);
+		}
+		
+	}
+	
+	@Test(priority=9)
+	//Verify that campaigns are filtered successfully by RequestForInfluencer status
+	public void VerifyFilterByRequestForInfluencer() throws InterruptedException
+	{
+		CampaignPage CPage = new CampaignPage(driver);
+		CPage.ClickOnStatusDropdown();
+		Thread.sleep(1000);
+		CPage.SelectStatus("Request for influencer");
+		Thread.sleep(5000);
+		boolean FilteredStatus = CPage.VerifyGetFilteredCampaignListStatus("Request for influencer");
+		if(FilteredStatus == true)
+		{
+			logger.info("Pass: campaigns are filtered successfully by 'Request for influencer' status");
+			Assert.assertTrue(true);
+		}
+		else
+		{
+			logger.info("Fail: campaigns are not filtered successfully by 'Request for influencer' status");
+			Assert.assertTrue(false);
+		}
+		
+	}
+	
+	@Test(priority=10)
+	//Verify that campaigns are filtered successfully by ReviewInfluencer status
+	public void VerifyFilterByReviewInfluencer() throws InterruptedException
+	{
+		CampaignPage CPage = new CampaignPage(driver);
+		CPage.ClickOnStatusDropdown();
+		Thread.sleep(1000);
+		CPage.SelectStatus("Review influencer");
+		Thread.sleep(5000);
+		boolean FilteredStatus = CPage.VerifyGetFilteredCampaignListStatus("Review influencer");
+		if(FilteredStatus == true)
+		{
+			logger.info("Pass: campaigns are filtered successfully by 'Review influencer' status");
+			Assert.assertTrue(true);
+		}
+		else
+		{
+			logger.info("Fail: campaigns are not filtered successfully by 'Review influencer' status");
+			Assert.assertTrue(false);
+		}
+		
+	}
+	
+	@Test(priority=11)
+	//Verify that campaigns are filtered successfully by InfluencerConfirmed status
+	public void VerifyFilterByInfluencerConfirmed() throws InterruptedException
+	{
+		CampaignPage CPage = new CampaignPage(driver);
+		CPage.ClickOnStatusDropdown();
+		Thread.sleep(1000);
+		CPage.SelectStatus("Influencer Confirmed");
+		Thread.sleep(5000);
+		boolean FilteredStatus = CPage.VerifyGetFilteredCampaignListStatus("Influencer Confirmed");
+		if(FilteredStatus == true)
+		{
+			logger.info("Pass: campaigns are filtered successfully by 'Influencer Confirmed' status");
+			Assert.assertTrue(true);
+		}
+		else
+		{
+			logger.info("Fail: campaigns are not filtered successfully by 'Influencer Confirmed' status");
+			Assert.assertTrue(false);
+		}
+		
+	}
+	
+	@Test(priority=12)
+	//Verify that campaigns are filtered successfully by Completed status
+	public void VerifyFilterByCompleted() throws InterruptedException
+	{
+		CampaignPage CPage = new CampaignPage(driver);
+		CPage.ClickOnStatusDropdown();
+		Thread.sleep(1000);
+		CPage.SelectStatus("Completed");
+		Thread.sleep(5000);
+		boolean FilteredStatus = CPage.VerifyGetFilteredCampaignListStatus("Completed");
+		if(FilteredStatus == true)
+		{
+			logger.info("Pass: campaigns are filtered successfully by Completed status");
+			Assert.assertTrue(true);
+		}
+		else
+		{
+			logger.info("Fail: campaigns are not filtered successfully by Completed status");
+			Assert.assertTrue(false);
+		}
+		
 	}
 }

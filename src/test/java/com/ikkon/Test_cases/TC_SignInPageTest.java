@@ -52,7 +52,7 @@ public class TC_SignInPageTest extends BaseClass {
 		}
 		String PwdErrMsg = SIP.GetPasswordErrorMessage();
 		
-		if(PwdErrMsg.equals("Password is required..."))
+		if(PwdErrMsg.equals("Password is required"))
 		{
 			logger.info("'Password is required' error message is shown");
 			Assert.assertTrue(true);
@@ -80,7 +80,7 @@ public class TC_SignInPageTest extends BaseClass {
 				
 		String PwdErrMsg = SIP.GetPasswordErrorMessage();
 		
-		if(PwdErrMsg.equals("Password is required...."))
+		if(PwdErrMsg.equals("Password is required"))
 		{
 			logger.info("'Password is required' error message is shown");
 			Assert.assertTrue(true);

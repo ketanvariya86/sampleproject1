@@ -5,7 +5,8 @@
     <classes>
       <class name="com.ikkon.Test_cases.TC_CampaignPgeTest">
         <methods>
-          <include name="VerifyPreviousAndNextButtonStatusWhenOnlySinglePageAvailable"/>
+          <include name="VerifyFilterByInActive"/>
+          <include name="VerifyFilterByInfluencerConfirmed"/>
           <include name="setup"/>
           <include name="tearDown"/>
         </methods>
