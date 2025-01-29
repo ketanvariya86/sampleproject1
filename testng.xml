@@ -5,7 +5,8 @@
 <suite name="Suite">
 
 	<listeners>
-		<listener class-name="com.ikkon.utilities.ExtentListenerClass" />
+	<listener class-name="com.ikkon.utilities.ExtentListenerClass" />
+		
 	</listeners>
 	
 	<test name="Test">
@@ -13,7 +14,7 @@
 			<class name="com.ikkon.Test_cases.TC_SignInPageTest" />
 			<class name="com.ikkon.Test_cases.TC_DashboardPageTest" />		
 			<class name="com.ikkon.Test_cases.TC_MenuPageTest" />	
-			<class name="com.ikkon.Test_cases.TC_CampaignPgeTest" />
+			<class name="com.ikkon.Test_cases.TC_CampaignPageTest" />
 		</classes>
 	</test> <!--
 	Test -->

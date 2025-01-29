@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 import com.ikkon.pageObjects.CampaignPage;
 
-public class TC_CampaignPgeTest extends BaseClass{
+public class TC_CampaignPageTest extends BaseClass{
 	
 	@Test(priority=1)
 	//Verify the first page loads with 10 campaigns listed (Basic Functionality)
@@ -100,7 +100,7 @@ public class TC_CampaignPgeTest extends BaseClass{
 		CampaignPage CPage = new CampaignPage(driver);
 		Thread.sleep(1000);
 		CPage.GoToLastPage();
-		Thread.sleep(1000);
+		Thread.sleep(3000);
 		if(CPage.GoToNextPageButtonStatus()==false)
 		{
 			logger.info("Pass: Go to Next Page button is disabled");
@@ -155,13 +155,13 @@ public class TC_CampaignPgeTest extends BaseClass{
 	
 	@Test(priority=6)
 	//Verify that campaigns are filtered successfully by Draft status
-	public void VerifyFilterByDraft() throws InterruptedException
+	public void VerifyFilterByDraft() throws InterruptedException, IOException
 	{
 		CampaignPage CPage = new CampaignPage(driver);
 		CPage.ClickOnStatusDropdown();
 		Thread.sleep(1000);
 		CPage.SelectStatus("Draft");
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		boolean FilteredStatus = CPage.VerifyGetFilteredCampaignListStatus("Draft");
 		if(FilteredStatus == true)
 		{
@@ -171,19 +171,20 @@ public class TC_CampaignPgeTest extends BaseClass{
 		else
 		{
 			logger.info("Fail: campaigns are not filtered successfully by Draft status");
+			captureScreenShot(driver, browser);
 			Assert.assertTrue(false);
 		}
 	}
 	
 	@Test(priority=7)
 	//Verify that campaigns are filtered successfully by Active status
-	public void VerifyFilterByActive() throws InterruptedException
+	public void VerifyFilterByActive() throws InterruptedException, IOException
 	{
 		CampaignPage CPage = new CampaignPage(driver);
 		CPage.ClickOnStatusDropdown();
 		Thread.sleep(1000);
 		CPage.SelectStatus("Active");
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		boolean FilteredStatus = CPage.VerifyGetFilteredCampaignListStatus("Active");
 		if(FilteredStatus == true)
 		{
@@ -193,6 +194,7 @@ public class TC_CampaignPgeTest extends BaseClass{
 		else
 		{
 			logger.info("Fail: campaigns are not filtered successfully by Active status");
+			captureScreenShot(driver, browser);
 			Assert.assertTrue(false);
 		}
 		
@@ -200,13 +202,13 @@ public class TC_CampaignPgeTest extends BaseClass{
 	
 	@Test(priority=8)
 	//Verify that campaigns are filtered successfully by InActive status
-	public void VerifyFilterByInActive() throws InterruptedException
+	public void VerifyFilterByInActive() throws InterruptedException, IOException
 	{
 		CampaignPage CPage = new CampaignPage(driver);
 		CPage.ClickOnStatusDropdown();
 		Thread.sleep(1000);
 		CPage.SelectStatus("In Active");
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		boolean FilteredStatus = CPage.VerifyGetFilteredCampaignListStatus("In Active");
 		if(FilteredStatus == true)
 		{
@@ -216,6 +218,7 @@ public class TC_CampaignPgeTest extends BaseClass{
 		else
 		{
 			logger.info("Fail: campaigns are not filtered successfully by In Active status");
+			captureScreenShot(driver, browser);
 			Assert.assertTrue(false);
 		}
 		
@@ -223,13 +226,13 @@ public class TC_CampaignPgeTest extends BaseClass{
 	
 	@Test(priority=9)
 	//Verify that campaigns are filtered successfully by RequestForInfluencer status
-	public void VerifyFilterByRequestForInfluencer() throws InterruptedException
+	public void VerifyFilterByRequestForInfluencer() throws InterruptedException, IOException
 	{
 		CampaignPage CPage = new CampaignPage(driver);
 		CPage.ClickOnStatusDropdown();
 		Thread.sleep(1000);
 		CPage.SelectStatus("Request for influencer");
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		boolean FilteredStatus = CPage.VerifyGetFilteredCampaignListStatus("Request for influencer");
 		if(FilteredStatus == true)
 		{
@@ -239,6 +242,7 @@ public class TC_CampaignPgeTest extends BaseClass{
 		else
 		{
 			logger.info("Fail: campaigns are not filtered successfully by 'Request for influencer' status");
+			captureScreenShot(driver, browser);
 			Assert.assertTrue(false);
 		}
 		
@@ -246,13 +250,13 @@ public class TC_CampaignPgeTest extends BaseClass{
 	
 	@Test(priority=10)
 	//Verify that campaigns are filtered successfully by ReviewInfluencer status
-	public void VerifyFilterByReviewInfluencer() throws InterruptedException
+	public void VerifyFilterByReviewInfluencer() throws InterruptedException, IOException
 	{
 		CampaignPage CPage = new CampaignPage(driver);
 		CPage.ClickOnStatusDropdown();
 		Thread.sleep(1000);
 		CPage.SelectStatus("Review influencer");
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		boolean FilteredStatus = CPage.VerifyGetFilteredCampaignListStatus("Review influencer");
 		if(FilteredStatus == true)
 		{
@@ -262,6 +266,7 @@ public class TC_CampaignPgeTest extends BaseClass{
 		else
 		{
 			logger.info("Fail: campaigns are not filtered successfully by 'Review influencer' status");
+			captureScreenShot(driver, browser);
 			Assert.assertTrue(false);
 		}
 		
@@ -269,13 +274,13 @@ public class TC_CampaignPgeTest extends BaseClass{
 	
 	@Test(priority=11)
 	//Verify that campaigns are filtered successfully by InfluencerConfirmed status
-	public void VerifyFilterByInfluencerConfirmed() throws InterruptedException
+	public void VerifyFilterByInfluencerConfirmed() throws InterruptedException, IOException
 	{
 		CampaignPage CPage = new CampaignPage(driver);
 		CPage.ClickOnStatusDropdown();
 		Thread.sleep(1000);
 		CPage.SelectStatus("Influencer Confirmed");
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		boolean FilteredStatus = CPage.VerifyGetFilteredCampaignListStatus("Influencer Confirmed");
 		if(FilteredStatus == true)
 		{
@@ -285,6 +290,7 @@ public class TC_CampaignPgeTest extends BaseClass{
 		else
 		{
 			logger.info("Fail: campaigns are not filtered successfully by 'Influencer Confirmed' status");
+			captureScreenShot(driver, browser);
 			Assert.assertTrue(false);
 		}
 		
@@ -292,13 +298,13 @@ public class TC_CampaignPgeTest extends BaseClass{
 	
 	@Test(priority=12)
 	//Verify that campaigns are filtered successfully by Completed status
-	public void VerifyFilterByCompleted() throws InterruptedException
+	public void VerifyFilterByCompleted() throws InterruptedException, IOException
 	{
 		CampaignPage CPage = new CampaignPage(driver);
 		CPage.ClickOnStatusDropdown();
 		Thread.sleep(1000);
 		CPage.SelectStatus("Completed");
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		boolean FilteredStatus = CPage.VerifyGetFilteredCampaignListStatus("Completed");
 		if(FilteredStatus == true)
 		{
@@ -308,6 +314,7 @@ public class TC_CampaignPgeTest extends BaseClass{
 		else
 		{
 			logger.info("Fail: campaigns are not filtered successfully by Completed status");
+			captureScreenShot(driver, browser);
 			Assert.assertTrue(false);
 		}
 		

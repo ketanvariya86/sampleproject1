@@ -3,14 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.ikkon.Test_cases.TC_CampaignPgeTest">
+      <class name="com.ikkon.Test_cases.TC_DashboardPageTest">
         <methods>
-          <include name="VerifyFilterByInActive"/>
-          <include name="VerifyFilterByInfluencerConfirmed"/>
+          <include name="VerifyAgenciesUsersCountOnDashboardAndTotalListeadAgenciesUsersOnUsersPage"/>
+          <include name="VerifyAudioInfluencersCountOnDashboardAndTotalListeadAudioInfluencersOnUsersPage"/>
           <include name="setup"/>
           <include name="tearDown"/>
+          <include name="VerifyTotalUsersOnDashboardAndTotalListeadUsersOnUsersPage"/>
         </methods>
-      </class> <!-- com.ikkon.Test_cases.TC_CampaignPgeTest -->
+      </class> <!-- com.ikkon.Test_cases.TC_DashboardPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -71,6 +71,7 @@ public class CampaignPage {
 		WebElement LastPageButtonXPath = ldriver.findElement(By.xpath("//button[@aria-label='Go to page " + LastPageNumber + "']"));
 		LastPageButtonXPath.click();
 	}
+		
 	public boolean GoToNextPageButtonStatus()
 	{
 		return GoToNextPageButton.isEnabled();

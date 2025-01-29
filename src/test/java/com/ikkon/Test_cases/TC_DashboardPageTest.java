@@ -1,5 +1,9 @@
 package com.ikkon.Test_cases;
 
+import java.io.IOException;
+
+import org.testng.Assert;
+
 //import static org.testng.Assert.assertEquals;
 
 import org.testng.annotations.Test;
@@ -112,14 +116,15 @@ public class TC_DashboardPageTest extends BaseClass {
 	}
 	
 	@Test (priority = 2)
-	// TC: Click on "Total Users" from dashboard page and verify that "Users" page is opened with all users list
-	public void VerifyAllUsersListByClickingOnTotalUsers() throws InterruptedException
+	// TC: Click on "Total Users" from dashboard page and verify that "Users" page is opened with all users list ////and also match the total user count with the total listed users on the users list page.
+	public void VerifyAllUsersListByClickingOnTotalUsers() throws InterruptedException, IOException
 	{
 		logger.info("============== Click on 'Total Users' from dashboard page and verify that 'Users' page is opened with all users list test case execution started ===============");
 		
 		DashboardPage DPage = new DashboardPage(driver);
 		DPage.DashboardTabClicked();
 		logger.info("Dashboard tab clicked from left menu");
+		Thread.sleep(3000);
 		
 		DPage.TotalUsersClick();
 		logger.info("TC_DashboardPageTest: Clicked on 'Total Users'");
@@ -127,14 +132,22 @@ public class TC_DashboardPageTest extends BaseClass {
 		Thread.sleep(3000);
 		UsersPage UPage = new UsersPage(driver);
 		
-		UPage.UsersPageListURLWithAllUsers();
-		logger.info("TC_DashboardPageTest: Users list page is opened with all users list");
-		logger.info("============== Click on 'Total Users' from dashboard page and verify that 'Users' page is opened with all users list test case execution completed ===============");
+		if(UPage.UsersPageListURLWithAllUsers() == true)
+		{
+			logger.info("All users list page is opened successfully by clicking on 'Total Users' link from Dashboard");
+			Assert.assertTrue(true);
+		}
+		else
+		{
+			logger.info("All users list page is not opened successfully by clicking on 'Total Users' link from Dashboard");
+			captureScreenShot(driver,"VerifyAllUsersListByClickingOnTotalUsers");			
+			Assert.assertTrue(false);
+		}
 	}
 	
 	@Test(priority = 3)
 	// TC : Click on 'Active Users' from dashboard page and verify that 'Users' page is opened including active users list
-	public void VerifyActiveUsersListByClickingOnActiveUsers() throws InterruptedException
+	public void VerifyActiveUsersListByClickingOnActiveUsers() throws InterruptedException, IOException
 	{
 		logger.info("============== Click on 'Active Users' from dashboard page and verify that 'Users' page is opened including active users list test case execution started ===============");
 		
@@ -149,14 +162,22 @@ public class TC_DashboardPageTest extends BaseClass {
 		Thread.sleep(3000);
 		UsersPage UPage = new UsersPage(driver);
 		
-		UPage.UsersPageListURLWithAllUsers();
-		logger.info("TC_DashboardPageTest: Users list page is opened with all users list");
-		logger.info("============== Click on 'Active Users' from dashboard page and verify that 'Users' page is opened including active users test case execution completed ===============");
+		if(UPage.UsersPageListURLWithActiveUsers() == true)
+		{
+			logger.info("Active Users list page is opened with by clicking on Active users from Dashboard");
+			Assert.assertTrue(true);
+		}
+		else
+		{
+			logger.info("Active Users list page is not opened with by clicking on Active users from Dashboard");
+			captureScreenShot(driver,"VerifyInactiveUsersListByClickingOnInactiveUsers");			
+			Assert.assertTrue(false);
+		}
 	}
 	
 	@Test(priority = 4)
 	// TC : Click on 'Inactive Users' from dashboard page and verify that 'Users' page is opened including inactive users list
-	public void VerifyInactiveUsersListByClickingOnInactiveUsers() throws InterruptedException
+	public void VerifyInactiveUsersListByClickingOnInactiveUsers() throws InterruptedException, IOException
 	{
 		logger.info("============== Click on 'Inactive Users' from dashboard page and verify that 'Users' page is opened including active users list test case execution started ===============");
 		
@@ -170,10 +191,18 @@ public class TC_DashboardPageTest extends BaseClass {
 		
 		Thread.sleep(3000);
 		UsersPage UPage = new UsersPage(driver);
-		
-		UPage.UsersPageListURLWithAllUsers();
-		logger.info("TC_DashboardPageTest: Users list page is opened with all inactive users list");
-		logger.info("============== Click on 'Inactive Users' from dashboard page and verify that 'Users' page is opened including inactive users test case execution completed ===============");
+
+		if(UPage.UsersPageListURLWithInActiveUsers() == true)
+		{
+			logger.info("In-Active Users list page is opened by clicking on inactive users list from Dashboard");
+			Assert.assertTrue(true);
+		}
+		else
+		{
+			logger.info("In-Active Users list page is not opened by clicking on inactive users list from Dashboard");
+			captureScreenShot(driver,"VerifyInactiveUsersListByClickingOnInactiveUsers");			
+			Assert.assertTrue(false);
+		}
 	}
 	
 	@Test(priority = 5)
@@ -225,7 +254,7 @@ public class TC_DashboardPageTest extends BaseClass {
 	@Test (priority = 7)
 	// TC : Click on 'Influencer Users' from dashboard page and verify that 'Users' page is opened with influencer users list
 	
-	public void VerifyAgencyUsersListByClickingOnBrandUsers() throws InterruptedException
+	public void VerifyAgencyUsersListByClickingOnAgencyUsers() throws InterruptedException
 	{
 		logger.info("============== Click on 'Brand Users' from dashboard page and verify that 'Users' page is opened with agency users list test case execution started ===============");
 		
@@ -235,7 +264,7 @@ public class TC_DashboardPageTest extends BaseClass {
 		Thread.sleep(5000);
 		
 		DPage.AgencyUsersClick();
-		logger.info("TC_DashboardPageTest: Clicked on 'Brand Users'");
+		logger.info("TC_DashboardPageTest: Clicked on 'Agencies Users'");
 		
 		Thread.sleep(3000);
 		UsersPage UPage = new UsersPage(driver);
@@ -243,6 +272,232 @@ public class TC_DashboardPageTest extends BaseClass {
 		UPage.UsersPageURLWithAgencyUsers();
 		logger.info("TC_DashboardPageTest: Users list page is opened with all Agency users list");
 		logger.info("============== Click on 'Agency Users' from dashboard page and verify that 'Users' page is opened with all agency users test case execution completed ===============");
+	}
+	
+	@Test(priority = 8)
+	//TC: Total Users shown on dashboard is match with the total listed users on the users page
+	public void VerifyTotalUsersOnDashboardAndTotalListeadUsersOnUsersPage() throws InterruptedException, IOException
+	{		
+		DashboardPage Dpage = new DashboardPage(driver);
+		Dpage.DashboardTabClicked();
+		Thread.sleep(2000);
+		Dpage.VerifyTotalUsersLabel();
+		logger.info("'Total Users' count is exist/displayed on Dashboard Page");
+		
+		int TotalUserOnDashboardPage = Dpage.GetTotalUserCount();
+		
+		
+		Dpage.TotalUsersClick();
+		logger.info("Total Users count is clicked");
+		Thread.sleep(2000);
+
+		
+		UsersPage UPage = new UsersPage(driver);
+		int TotalUsers = UPage.GetTotalUsersFromTheUsersList();
+		System.out.println("Total Users: " + TotalUsers);
+		logger.info("Total Users : ", + TotalUsers);
+		
+		if(TotalUserOnDashboardPage == TotalUsers)
+		{
+			logger.info("Total Users shown on Dashboard is matched with total users listead on Users list page");
+			Assert.assertTrue(true);
+		}
+		else
+		{
+			logger.info("Total Users shown on Dashboard is not matched with total users listead on Users list page");
+//			Dpage.DashboardTabClicked();
+			captureScreenShot(driver,"VerifyTotalUsersOnDashboardAndTotalListeadUsersOnUsersPage");
+			Assert.assertTrue(false);
+		}
+	}
+	
+	
+	@Test(priority = 9)
+	//TC: Total Active Users Count shown on dashboard is match with the total listed Active users on the users page
+	public void VerifyActiveUsersCountOnDashboardAndTotalListeadActiveUsersOnUsersPage() throws InterruptedException, IOException
+	{		
+		DashboardPage Dpage = new DashboardPage(driver);
+		Dpage.DashboardTabClicked();
+		Thread.sleep(2000);
+		Dpage.VerifyActiveUsersLabel();
+		logger.info("'Active Users' count is exist/displayed on Dashboard Page");
+		
+		int TotalActiveUserOnDashboardPage = Dpage.GetTotalActiveUserCount();
+		
+		
+		Dpage.ActiveUsersClick();
+		logger.info("Clicked on 'Active Users'");
+		Thread.sleep(2000);
+
+		
+		UsersPage UPage = new UsersPage(driver);
+		int TotalUsers = UPage.GetTotalUsersFromTheUsersList();
+		System.out.println("Total Active Users: " + TotalUsers);
+		logger.info("Total Active Users : ", + TotalUsers);
+		
+		if(TotalActiveUserOnDashboardPage == TotalUsers)
+		{
+			logger.info("Total Active Users count shown on Dashboard is matched with total Active users listead on Users list page");
+			Assert.assertTrue(true);
+		}
+		else
+		{
+			logger.info("Total Active Users shown on Dashboard is not matched with total Active users listead on Users list page");
+//			Dpage.DashboardTabClicked();
+			captureScreenShot(driver,"VerifyActiveUsersCountOnDashboardAndTotalListeadActiveUsersOnUsersPage");
+			Assert.assertTrue(false);
+		}
+	}
+	
+	
+	@Test(priority = 10)
+	//TC: Total In-Active Users Count shown on dashboard is match with the total listed In-Active users on the users page
+	public void VerifyInActiveUsersCountOnDashboardAndTotalListeadInActiveUsersOnUsersPage() throws InterruptedException, IOException
+	{		
+		DashboardPage Dpage = new DashboardPage(driver);
+		Dpage.DashboardTabClicked();
+		Thread.sleep(2000);
+		Dpage.VerifyInactiveUsersLabel();
+		logger.info("In-Active Users' count is exist/displayed on Dashboard Page");
+		
+		int TotalInactiveUserOnDashboardPage = Dpage.GetTotalInActiveUserCount();
+		
+		
+		Dpage.InactiveUsersClick();
+		logger.info("Clicked on 'Inactive Users'");
+		Thread.sleep(2000);
+
+		
+		UsersPage UPage = new UsersPage(driver);
+		int TotalUsers = UPage.GetTotalUsersFromTheUsersList();
+		System.out.println("Total Inactive Users: " + TotalUsers);
+		logger.info("Total Inactive Users : ", + TotalUsers);
+		
+		if(TotalInactiveUserOnDashboardPage == TotalUsers)
+		{
+			logger.info("Total Inactive Users count shown on Dashboard is matched with total Inactive users listead on Users list page");
+			Assert.assertTrue(true);
+		}
+		else
+		{
+			logger.info("Total Inactive Users shown on Dashboard is not matched with total Inactive users listead on Users list page");
+//			Dpage.DashboardTabClicked();
+			captureScreenShot(driver,"VerifyInActiveUsersCountOnDashboardAndTotalListeadInActiveUsersOnUsersPage");
+			Assert.assertTrue(false);
+		}
+	}
+	
+	
+	@Test(priority = 11)
+	//TC: Total Audio Influencers Count shown on dashboard is match with the total listed Audio Influencers on the users page
+	public void VerifyAudioInfluencersCountOnDashboardAndTotalListeadAudioInfluencersOnUsersPage() throws InterruptedException, IOException
+	{		
+		DashboardPage Dpage = new DashboardPage(driver);
+		Dpage.DashboardTabClicked();
+		Thread.sleep(2000);
+		Dpage.VerifyInfluencerUsersLabel();
+		logger.info("'Audio Influencers' count is exist/displayed on Dashboard Page");
+		
+		int TotalAudioInfluencersOnDashboardPage = Dpage.GetTotalAudioInfluencersCount();
+		
+		
+		Dpage.InfluencerUsersClick();
+		logger.info("Clicked on 'Inactive Users'");
+		Thread.sleep(2000);
+
+		
+		UsersPage UPage = new UsersPage(driver);
+		int TotalUsers = UPage.GetTotalUsersFromTheUsersList();
+		System.out.println("Total Audio Influencers: " + TotalUsers);
+		logger.info("Total Audio Influencers : ", + TotalUsers);
+		
+		if(TotalAudioInfluencersOnDashboardPage == TotalUsers)
+		{
+			logger.info("Total Audio Influencers count shown on Dashboard is matched with total Audio Influencers listead on Users list page");
+			Assert.assertTrue(true);
+		}
+		else
+		{
+			logger.info("Total Audio Influencers count shown on Dashboard is not matched with total Audio Influencers listead on Users list page");
+//			Dpage.DashboardTabClicked();
+			captureScreenShot(driver,"VerifyAudioInfluencersCountOnDashboardAndTotalListeadAudioInfluencersOnUsersPage");
+			Assert.assertTrue(false);
+		}
+	}
+
+	@Test(priority = 12)
+	//TC: Total Brand Users Count shown on dashboard is match with the total listed Brand users on the users page
+	public void VerifyBrandUsersCountOnDashboardAndTotalListeadBrandUsersOnUsersPage() throws InterruptedException, IOException
+	{		
+		DashboardPage Dpage = new DashboardPage(driver);
+		Dpage.DashboardTabClicked();
+		Thread.sleep(2000);
+		Dpage.VerifyBrandUsersLabel();
+		logger.info("'Brand Users' count is exist/displayed on Dashboard Page");
+		
+		int TotalBrandUsersOnDashboardPage = Dpage.GetTotalBrandUsersCount();
+		
+		
+		Dpage.BrandUsersClick();
+		logger.info("Clicked on 'Brand Users'");
+		Thread.sleep(2000);
+
+		
+		UsersPage UPage = new UsersPage(driver);
+		int TotalUsers = UPage.GetTotalUsersFromTheUsersList();
+		System.out.println("Total Brand Users: " + TotalUsers);
+		logger.info("Total Brand Users : ", + TotalUsers);
+		
+		if(TotalBrandUsersOnDashboardPage == TotalUsers)
+		{
+			logger.info("Total Brand Users count shown on Dashboard is matched with total Brand Users listead on Users list page");
+			Assert.assertTrue(true);
+		}
+		else
+		{
+			logger.info("Total Brand Users count shown on Dashboard is not matched with total Brand Users listead on Users list page");
+//			Dpage.DashboardTabClicked();
+			captureScreenShot(driver,"VerifyBrandUsersCountOnDashboardAndTotalListeadBrandUsersOnUsersPage");
+			Assert.assertTrue(false);
+		}
+	}
+	
+
+	@Test(priority = 13)
+	//TC: Total Agencies Users Count shown on dashboard is match with the total listed Agencies users on the users page
+	public void VerifyAgenciesUsersCountOnDashboardAndTotalListeadAgenciesUsersOnUsersPage() throws InterruptedException, IOException
+	{		
+		DashboardPage Dpage = new DashboardPage(driver);
+		Dpage.DashboardTabClicked();
+		Thread.sleep(2000);
+		Dpage.VerifyAgenciesUsersLabel();
+		logger.info("'Agencies Users' count is exist/displayed on Dashboard Page");
+		
+		int TotalAgenciesUsersOnDashboardPage = Dpage.GetTotalAgenciesUsersCount();
+		
+		
+		Dpage.AgencyUsersClick();
+		logger.info("Clicked on 'Agencies Users'");
+		Thread.sleep(2000);
+
+		
+		UsersPage UPage = new UsersPage(driver);
+		int TotalUsers = UPage.GetTotalUsersFromTheUsersList();
+		System.out.println("Total Agencie Users : " + TotalUsers);
+		logger.info("Total Agencie Users : ", + TotalUsers);
+		
+		if(TotalAgenciesUsersOnDashboardPage == TotalUsers)
+		{
+			logger.info("Total Agencies Users count shown on Dashboard is matched with total Agencies Users listead on Users list page");
+			Assert.assertTrue(true);
+		}
+		else
+		{
+			logger.info("Total Agencies Users count shown on Dashboard is not matched with total Agencies Users listead on Users list page");
+//			Dpage.DashboardTabClicked();
+			captureScreenShot(driver,"VerifyAgenciesUsersCountOnDashboardAndTotalListeadAgenciesUsersOnUsersPage");
+			Assert.assertTrue(false);
+		}
 	}
 
 }

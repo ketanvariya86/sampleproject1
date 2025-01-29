@@ -25,7 +25,8 @@ public class DashboardPage {
 		@FindBy(xpath = "//h6[text()='Active Users']") public WebElement ActiveUsers;
 		@FindBy(xpath = "//h6[text()='Inactive Users']") public WebElement InactiveUsers;
 	//	@FindBy(xpath = "//h6[text()=\'Influencer User's\']") public WebElement InfluencerUsers;
-		@FindBy(xpath = "//div[@class='MuiBox-root css-3xl87r']") public WebElement InfluencerUsers;
+	//	@FindBy(xpath = "//div[@class='MuiBox-root css-3xl87r']") public WebElement InfluencerUsers;
+		@FindBy(xpath = "//div[@class='MuiBox-root css-rvethp']")  public WebElement InfluencerUsers;
 		@FindBy(xpath = "//h6[text()='Brand Users']") public WebElement BrandUsers;
 		@FindBy(xpath = "//h6[text()='Agencies Users']") public WebElement AgenciesUsers;
 		@FindBy(xpath = "//h5[text()='Audio Influencer Campaign']") public WebElement InfluencerCampaign;
@@ -50,6 +51,12 @@ public class DashboardPage {
 		@FindBy(xpath = "//li[text()='Logout']") public WebElement Logout;
 		@FindBy(xpath = "//span[text()='Dashboard']") public WebElement DashboardTab;
 		@FindBy(xpath = "//div[text()='Logged in successfully']") public WebElement LoggedInSuccessfullyMsg;
+		@FindBy(xpath = "//h6[text()='Total Users']/following-sibling::*[@class='MuiTypography-root MuiTypography-h4 css-4d1v28']") public WebElement TotalUserCount;
+		@FindBy(xpath = "//h6[text()='Active Users']/following-sibling::*[@class='MuiTypography-root MuiTypography-h4 css-4d1v28']") public WebElement TotalActiveUserCount;
+		@FindBy(xpath = "//h6[text()='Inactive Users']/following-sibling::*[@class='MuiTypography-root MuiTypography-h4 css-4d1v28']") public WebElement TotalInActiveUserCount;		
+		@FindBy(xpath = "//h6[contains(text(),'Audio Influencer')]/following-sibling::*[@class='MuiTypography-root MuiTypography-h4 css-4d1v28']") public WebElement TotalAudioInfluencersCount;
+		@FindBy(xpath = "//h6[text()='Brand Users']/following-sibling::*[@class='MuiTypography-root MuiTypography-h4 css-4d1v28']") public WebElement TotalBrandUsersCount;
+		@FindBy(xpath = "//h6[text()='Agencies Users']/following-sibling::*[@class='MuiTypography-root MuiTypography-h4 css-4d1v28']") public WebElement TotalAgenciesUsersCount;
 		
 		public void VerifyDashboardPageURL()
 		{
@@ -237,5 +244,44 @@ public class DashboardPage {
 		public void AgencyUsersClick()
 		{
 			AgenciesUsers.click();
+		}
+		
+		public int GetTotalUserCount()
+		{
+			System.out.println(Integer.parseInt(TotalUserCount.getText()));
+			return Integer.parseInt(TotalUserCount.getText());
+			
+		}
+		
+		public int GetTotalActiveUserCount()
+		{
+			System.out.println(Integer.parseInt(TotalActiveUserCount.getText()));
+			return Integer.parseInt(TotalActiveUserCount.getText());
+			
+		}
+		
+		public int GetTotalInActiveUserCount()
+		{
+			System.out.println(Integer.parseInt(TotalInActiveUserCount.getText()));
+			return Integer.parseInt(TotalInActiveUserCount.getText());
+			
+		}
+		
+		public int GetTotalAudioInfluencersCount()
+		{
+			System.out.println(Integer.parseInt(TotalAudioInfluencersCount.getText()));
+			return Integer.parseInt(TotalAudioInfluencersCount.getText());			
+		}
+		
+		public int GetTotalBrandUsersCount()
+		{
+			System.out.println(Integer.parseInt(TotalBrandUsersCount.getText()));
+			return Integer.parseInt(TotalBrandUsersCount.getText());			
+		}
+		
+		public int GetTotalAgenciesUsersCount()
+		{
+			System.out.println(Integer.parseInt(TotalAgenciesUsersCount.getText()));
+			return Integer.parseInt(TotalAgenciesUsersCount.getText());			
 		}
 }

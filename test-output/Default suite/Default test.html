@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>6/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>10/3/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Jan 07 13:22:14 IST 2025</td>
+<td>Started on:</td><td>Wed Jan 22 18:13:35 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>106 seconds (106196 ms)</td>
+<tr><td>Total time:</td><td>81 seconds (81766 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,13 +76,35 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.ikkon.Test_cases.TC_CampaignPgeTest.VerifyFilterByInActive()'><b>VerifyFilterByInActive</b><br>Test class: com.ikkon.Test_cases.TC_CampaignPgeTest</td>
-<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertTrue(Assert.java:56)
-	at org.testng.Assert.assertTrue(Assert.java:66)
-	at com.ikkon.Test_cases.TC_CampaignPgeTest.VerifyFilterByInActive(TC_CampaignPgeTest.java:225)
+<td title='com.ikkon.Test_cases.TC_DashboardPageTest.VerifyAgenciesUsersCountOnDashboardAndTotalListeadAgenciesUsersOnUsersPage()'><b>VerifyAgenciesUsersCountOnDashboardAndTotalListeadAgenciesUsersOnUsersPage</b><br>Test class: com.ikkon.Test_cases.TC_DashboardPageTest</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=131.0.6778.265)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.26.0&apos;, revision: &apos;8ccf0219d7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [de14af0877caee26cd4f19f638d887fe, clickElement {id=f.1CBB178E51F3AB59324022FAB75319A5.d.E71F2E77F2EA0C39B602D88B91EB6596.e.953}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.265, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\KANHAS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62111}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62111/devtoo..., se:cdpVersion: 131.0.6778.265, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (de14af0877caee26cd4f19f638d887fe)] -&gt; xpath: //h6[text()=&apos;Agencies Users&apos;]]
+Session ID: de14af0877caee26cd4f19f638d887fe
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy28.click(Unknown Source)
+	at com.ikkon.pageObjects.DashboardPage.AgencyUsersClick(DashboardPage.java:246)
+	at com.ikkon.Test_cases.TC_DashboardPageTest.VerifyAgenciesUsersCountOnDashboardAndTotalListeadAgenciesUsersOnUsersPage(TC_DashboardPageTest.java:472)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -109,13 +131,35 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1510129635", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1510129635'><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertTrue(Assert.java:56)
-	at org.testng.Assert.assertTrue(Assert.java:66)
-	at com.ikkon.Test_cases.TC_CampaignPgeTest.VerifyFilterByInActive(TC_CampaignPgeTest.java:225)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1682973478", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1682973478'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=131.0.6778.265)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.26.0&apos;, revision: &apos;8ccf0219d7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [de14af0877caee26cd4f19f638d887fe, clickElement {id=f.1CBB178E51F3AB59324022FAB75319A5.d.E71F2E77F2EA0C39B602D88B91EB6596.e.953}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.265, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\KANHAS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62111}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62111/devtoo..., se:cdpVersion: 131.0.6778.265, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (de14af0877caee26cd4f19f638d887fe)] -&gt; xpath: //h6[text()=&apos;Agencies Users&apos;]]
+Session ID: de14af0877caee26cd4f19f638d887fe
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy28.click(Unknown Source)
+	at com.ikkon.pageObjects.DashboardPage.AgencyUsersClick(DashboardPage.java:246)
+	at com.ikkon.Test_cases.TC_DashboardPageTest.VerifyAgenciesUsersCountOnDashboardAndTotalListeadAgenciesUsersOnUsersPage(TC_DashboardPageTest.java:472)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -143,16 +187,16 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>26</td>
-<td>com.ikkon.Test_cases.TC_CampaignPgeTest@5e2c3d18</td></tr>
+<td>0</td>
+<td>com.ikkon.Test_cases.TC_DashboardPageTest@6e2829c7</td></tr>
 <tr>
-<td title='com.ikkon.Test_cases.TC_CampaignPgeTest.VerifyFilterByInfluencerConfirmed()'><b>VerifyFilterByInfluencerConfirmed</b><br>Test class: com.ikkon.Test_cases.TC_CampaignPgeTest</td>
+<td title='com.ikkon.Test_cases.TC_DashboardPageTest.VerifyTotalUsersOnDashboardAndTotalListeadUsersOnUsersPage()'><b>VerifyTotalUsersOnDashboardAndTotalListeadUsersOnUsersPage</b><br>Test class: com.ikkon.Test_cases.TC_DashboardPageTest</td>
 <td><div><pre>java.lang.AssertionError: expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:110)
 	at org.testng.Assert.failNotEquals(Assert.java:1413)
 	at org.testng.Assert.assertTrue(Assert.java:56)
 	at org.testng.Assert.assertTrue(Assert.java:66)
-	at com.ikkon.Test_cases.TC_CampaignPgeTest.VerifyFilterByInfluencerConfirmed(TC_CampaignPgeTest.java:294)
+	at com.ikkon.Test_cases.TC_DashboardPageTest.VerifyTotalUsersOnDashboardAndTotalListeadUsersOnUsersPage(TC_DashboardPageTest.java:308)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -179,13 +223,13 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace277149580", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace277149580'><pre>java.lang.AssertionError: expected [true] but found [false]
+</pre></div><a href='#' onClick='toggleBox("stack-trace1217347025", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1217347025'><pre>java.lang.AssertionError: expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:110)
 	at org.testng.Assert.failNotEquals(Assert.java:1413)
 	at org.testng.Assert.assertTrue(Assert.java:56)
 	at org.testng.Assert.assertTrue(Assert.java:66)
-	at com.ikkon.Test_cases.TC_CampaignPgeTest.VerifyFilterByInfluencerConfirmed(TC_CampaignPgeTest.java:294)
+	at com.ikkon.Test_cases.TC_DashboardPageTest.VerifyTotalUsersOnDashboardAndTotalListeadUsersOnUsersPage(TC_DashboardPageTest.java:308)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -213,8 +257,78 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>26</td>
-<td>com.ikkon.Test_cases.TC_CampaignPgeTest@5e2c3d18</td></tr>
+<td>4</td>
+<td>com.ikkon.Test_cases.TC_DashboardPageTest@6e2829c7</td></tr>
+<tr>
+<td title='com.ikkon.Test_cases.TC_DashboardPageTest.VerifyAudioInfluencersCountOnDashboardAndTotalListeadAudioInfluencersOnUsersPage()'><b>VerifyAudioInfluencersCountOnDashboardAndTotalListeadAudioInfluencersOnUsersPage</b><br>Test class: com.ikkon.Test_cases.TC_DashboardPageTest</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at org.testng.Assert.assertTrue(Assert.java:66)
+	at com.ikkon.Test_cases.TC_DashboardPageTest.VerifyAudioInfluencersCountOnDashboardAndTotalListeadAudioInfluencersOnUsersPage(TC_DashboardPageTest.java:419)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1686921139", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1686921139'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at org.testng.Assert.assertTrue(Assert.java:66)
+	at com.ikkon.Test_cases.TC_DashboardPageTest.VerifyAudioInfluencersCountOnDashboardAndTotalListeadAudioInfluencersOnUsersPage(TC_DashboardPageTest.java:419)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>4</td>
+<td>com.ikkon.Test_cases.TC_DashboardPageTest@6e2829c7</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -225,35 +339,55 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.ikkon.Test_cases.TC_CampaignPgeTest.VerifyFilterByReviewInfluencer()'><b>VerifyFilterByReviewInfluencer</b><br>Test class: com.ikkon.Test_cases.TC_CampaignPgeTest</td>
+<td title='com.ikkon.Test_cases.TC_DashboardPageTest.VerifyInactiveUsersListByClickingOnInactiveUsers()'><b>VerifyInactiveUsersListByClickingOnInactiveUsers</b><br>Test class: com.ikkon.Test_cases.TC_DashboardPageTest</td>
 <td></td>
-<td>6</td>
-<td>com.ikkon.Test_cases.TC_CampaignPgeTest@5e2c3d18</td></tr>
+<td>8</td>
+<td>com.ikkon.Test_cases.TC_DashboardPageTest@6e2829c7</td></tr>
 <tr>
-<td title='com.ikkon.Test_cases.TC_CampaignPgeTest.VerifyFilterByCompleted()'><b>VerifyFilterByCompleted</b><br>Test class: com.ikkon.Test_cases.TC_CampaignPgeTest</td>
+<td title='com.ikkon.Test_cases.TC_DashboardPageTest.VerifyInActiveUsersCountOnDashboardAndTotalListeadInActiveUsersOnUsersPage()'><b>VerifyInActiveUsersCountOnDashboardAndTotalListeadInActiveUsersOnUsersPage</b><br>Test class: com.ikkon.Test_cases.TC_DashboardPageTest</td>
 <td></td>
-<td>6</td>
-<td>com.ikkon.Test_cases.TC_CampaignPgeTest@5e2c3d18</td></tr>
+<td>2</td>
+<td>com.ikkon.Test_cases.TC_DashboardPageTest@6e2829c7</td></tr>
 <tr>
-<td title='com.ikkon.Test_cases.TC_CampaignPgeTest.VerifyFilterByRequestForInfluencer()'><b>VerifyFilterByRequestForInfluencer</b><br>Test class: com.ikkon.Test_cases.TC_CampaignPgeTest</td>
+<td title='com.ikkon.Test_cases.TC_DashboardPageTest.VerifyInfluencerUsersListByClickingOnInfluencerUsers()'><b>VerifyInfluencerUsersListByClickingOnInfluencerUsers</b><br>Test class: com.ikkon.Test_cases.TC_DashboardPageTest</td>
 <td></td>
-<td>6</td>
-<td>com.ikkon.Test_cases.TC_CampaignPgeTest@5e2c3d18</td></tr>
+<td>8</td>
+<td>com.ikkon.Test_cases.TC_DashboardPageTest@6e2829c7</td></tr>
 <tr>
-<td title='com.ikkon.Test_cases.TC_CampaignPgeTest.VerifyFilterByDraft()'><b>VerifyFilterByDraft</b><br>Test class: com.ikkon.Test_cases.TC_CampaignPgeTest</td>
+<td title='com.ikkon.Test_cases.TC_DashboardPageTest.VerifyAgencyUsersListByClickingOnBrandUsers()'><b>VerifyAgencyUsersListByClickingOnBrandUsers</b><br>Test class: com.ikkon.Test_cases.TC_DashboardPageTest</td>
 <td></td>
-<td>6</td>
-<td>com.ikkon.Test_cases.TC_CampaignPgeTest@5e2c3d18</td></tr>
+<td>8</td>
+<td>com.ikkon.Test_cases.TC_DashboardPageTest@6e2829c7</td></tr>
 <tr>
-<td title='com.ikkon.Test_cases.TC_CampaignPgeTest.VerifyCampaignListOnFirstPage()'><b>VerifyCampaignListOnFirstPage</b><br>Test class: com.ikkon.Test_cases.TC_CampaignPgeTest</td>
+<td title='com.ikkon.Test_cases.TC_DashboardPageTest.VerifyDashboardPageLabelsAfterAdminUserLogin()'><b>VerifyDashboardPageLabelsAfterAdminUserLogin</b><br>Test class: com.ikkon.Test_cases.TC_DashboardPageTest</td>
 <td></td>
-<td>14</td>
-<td>com.ikkon.Test_cases.TC_CampaignPgeTest@5e2c3d18</td></tr>
+<td>8</td>
+<td>com.ikkon.Test_cases.TC_DashboardPageTest@6e2829c7</td></tr>
 <tr>
-<td title='com.ikkon.Test_cases.TC_CampaignPgeTest.VerifyFilterByActive()'><b>VerifyFilterByActive</b><br>Test class: com.ikkon.Test_cases.TC_CampaignPgeTest</td>
+<td title='com.ikkon.Test_cases.TC_DashboardPageTest.VerifyActiveUsersCountOnDashboardAndTotalListeadActiveUsersOnUsersPage()'><b>VerifyActiveUsersCountOnDashboardAndTotalListeadActiveUsersOnUsersPage</b><br>Test class: com.ikkon.Test_cases.TC_DashboardPageTest</td>
 <td></td>
-<td>6</td>
-<td>com.ikkon.Test_cases.TC_CampaignPgeTest@5e2c3d18</td></tr>
+<td>4</td>
+<td>com.ikkon.Test_cases.TC_DashboardPageTest@6e2829c7</td></tr>
+<tr>
+<td title='com.ikkon.Test_cases.TC_DashboardPageTest.VerifyBrandUsersCountOnDashboardAndTotalListeadBrandUsersOnUsersPage()'><b>VerifyBrandUsersCountOnDashboardAndTotalListeadBrandUsersOnUsersPage</b><br>Test class: com.ikkon.Test_cases.TC_DashboardPageTest</td>
+<td></td>
+<td>2</td>
+<td>com.ikkon.Test_cases.TC_DashboardPageTest@6e2829c7</td></tr>
+<tr>
+<td title='com.ikkon.Test_cases.TC_DashboardPageTest.VerifyAllUsersListByClickingOnTotalUsers()'><b>VerifyAllUsersListByClickingOnTotalUsers</b><br>Test class: com.ikkon.Test_cases.TC_DashboardPageTest</td>
+<td></td>
+<td>3</td>
+<td>com.ikkon.Test_cases.TC_DashboardPageTest@6e2829c7</td></tr>
+<tr>
+<td title='com.ikkon.Test_cases.TC_DashboardPageTest.VerifyActiveUsersListByClickingOnActiveUsers()'><b>VerifyActiveUsersListByClickingOnActiveUsers</b><br>Test class: com.ikkon.Test_cases.TC_DashboardPageTest</td>
+<td></td>
+<td>8</td>
+<td>com.ikkon.Test_cases.TC_DashboardPageTest@6e2829c7</td></tr>
+<tr>
+<td title='com.ikkon.Test_cases.TC_DashboardPageTest.VerifyBrandUsersListByClickingOnBrandUsers()'><b>VerifyBrandUsersListByClickingOnBrandUsers</b><br>Test class: com.ikkon.Test_cases.TC_DashboardPageTest</td>
+<td></td>
+<td>8</td>
+<td>com.ikkon.Test_cases.TC_DashboardPageTest@6e2829c7</td></tr>
 </table><p>
 </body>
 </html>
