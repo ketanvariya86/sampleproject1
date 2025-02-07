@@ -5,11 +5,9 @@
     <classes>
       <class name="com.ikkon.Test_cases.TC_DashboardPageTest">
         <methods>
-          <include name="VerifyAgenciesUsersCountOnDashboardAndTotalListeadAgenciesUsersOnUsersPage"/>
-          <include name="VerifyAudioInfluencersCountOnDashboardAndTotalListeadAudioInfluencersOnUsersPage"/>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="VerifyTotalUsersOnDashboardAndTotalListeadUsersOnUsersPage"/>
+          <include name="VerifyToolTipByHoveringMouseOnUpcomingInfluencerCampaignsBar"/>
         </methods>
       </class> <!-- com.ikkon.Test_cases.TC_DashboardPageTest -->
     </classes>

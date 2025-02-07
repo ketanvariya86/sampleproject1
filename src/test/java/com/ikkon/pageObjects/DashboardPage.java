@@ -6,6 +6,7 @@ import static org.testng.Assert.assertEquals;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
@@ -57,7 +58,19 @@ public class DashboardPage {
 		@FindBy(xpath = "//h6[contains(text(),'Audio Influencer')]/following-sibling::*[@class='MuiTypography-root MuiTypography-h4 css-4d1v28']") public WebElement TotalAudioInfluencersCount;
 		@FindBy(xpath = "//h6[text()='Brand Users']/following-sibling::*[@class='MuiTypography-root MuiTypography-h4 css-4d1v28']") public WebElement TotalBrandUsersCount;
 		@FindBy(xpath = "//h6[text()='Agencies Users']/following-sibling::*[@class='MuiTypography-root MuiTypography-h4 css-4d1v28']") public WebElement TotalAgenciesUsersCount;
-		
+		@FindBy(xpath = "//*[contains(@class,'MuiBarElement-root MuiBarElement-series-auto-generated-id-0 css-1ojbopk')][1]") public WebElement Bar1;
+		@FindBy(xpath = "//div[@role='tooltip']//p[@class='MuiTypography-root MuiTypography-body1 css-1op1nui' and text()='Pending Influencer Invitations']") public WebElement TooltIp_PendingInfluencerInvitations;
+//		@FindBy(xpath = "//div[@role='tooltip']//p[@class='MuiTypography-root MuiTypography-body1 css-1op1nui' and text()='2']") public WebElement ToolTip_PendingInfluencerInvitationsValue;
+		@FindBy(xpath = "//*[contains(@class,'MuiBarElement-root MuiBarElement-series-auto-generated-id-0 css-1ojbopk')][2]") public WebElement Bar2;
+		@FindBy(xpath = "//div[@role='tooltip']//p[@class='MuiTypography-root MuiTypography-body1 css-1op1nui' and text()='Rejected Influencer Invitations']") public WebElement ToolTip_RejectedInfluencerInvitations;
+//		@FindBy(xpath = "//div[@role='tooltip']//p[@class='MuiTypography-root MuiTypography-body1 css-1op1nui' and text()='2']") public WebElement ToolTip_RejectedInfluencerInvitationsValue;		
+		@FindBy(xpath = "//*[contains(@class,'MuiBarElement-root MuiBarElement-series-auto-generated-id-0 css-1ojbopk')][3]") public WebElement Bar3;
+		@FindBy(xpath = "//div[@role='tooltip']//p[@class='MuiTypography-root MuiTypography-body1 css-1op1nui' and text()='Active Influencer Campaigns']") public WebElement ToolTip_ActiveInfluencerCampaigns;
+		@FindBy(xpath = "//*[contains(@class,'MuiBarElement-root MuiBarElement-series-auto-generated-id-0 css-1ojbopk')][4]") public WebElement Bar4;
+		@FindBy(xpath = "//div[@role='tooltip']//p[@class='MuiTypography-root MuiTypography-body1 css-1op1nui' and text()='Completed Influencer Campaigns']") public WebElement ToolTip_CompletedInfluencerCampaigns;
+		@FindBy(xpath = "//*[contains(@class,'MuiBarElement-root MuiBarElement-series-auto-generated-id-0 css-1ojbopk')][5]") public WebElement Bar5;
+		@FindBy(xpath = "//div[@role='tooltip']//p[@class='MuiTypography-root MuiTypography-body1 css-1op1nui' and text()='Upcoming Influencer Campaigns']") public WebElement ToolTip_UpcomingInfluencerCampaigns;
+	
 		public void VerifyDashboardPageURL()
 		{
 			String actualUrl = ldriver.getCurrentUrl();
@@ -283,5 +296,46 @@ public class DashboardPage {
 		{
 			System.out.println(Integer.parseInt(TotalAgenciesUsersCount.getText()));
 			return Integer.parseInt(TotalAgenciesUsersCount.getText());			
+		}
+		
+		public String GetToolTipForBar1()
+		{
+			Actions action = new Actions(ldriver);
+//			action.moveByOffset(465,465);
+			action.moveToElement(Bar1).perform();
+//			System.out.println("CursorMoved to Bar1");
+//			action.moveToLocation(465,465).perform();
+			String ToolTipName = TooltIp_PendingInfluencerInvitations.getText();
+//			System.out.println(TooltIp_PendingInfluencerInvitationsValue.getText());
+			return ToolTipName;
+		}
+		public String GetToolTipForBar2()
+		{
+			Actions action = new Actions(ldriver);
+			action.moveToElement(Bar2).perform();
+			String ToolTipName = ToolTip_RejectedInfluencerInvitations.getText();
+			return ToolTipName;
+		}
+		
+		public String GetToolTipForBar3()
+		{
+			Actions action = new Actions(ldriver);
+			action.moveToElement(Bar3).perform();
+			String ToolTipName = ToolTip_ActiveInfluencerCampaigns.getText();
+			return ToolTipName;
+		}
+		public String GetToolTipForBar4()
+		{
+			Actions action = new Actions(ldriver);
+			action.moveToElement(Bar4).perform();
+			String ToolTipName = ToolTip_CompletedInfluencerCampaigns.getText();
+			return ToolTipName;
+		}
+		public String GetToolTipForBar5()
+		{
+			Actions action = new Actions(ldriver);
+			action.moveToElement(Bar5).perform();
+			String ToolTipName = ToolTip_UpcomingInfluencerCampaigns.getText();
+			return ToolTipName;
 		}
 }

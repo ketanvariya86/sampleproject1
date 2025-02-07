@@ -6,30 +6,20 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.ikkon.Test_cases.TC_SignInPageTest">
-        <methods>
-          <include name="Logout"/>
-          <include name="setup"/>
-          <include name="SignInWithAdmin"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.ikkon.Test_cases.TC_SignInPageTest -->
       <class name="com.ikkon.Test_cases.TC_DashboardPageTest">
         <methods>
-          <include name="VerifyAgenciesUsersCountOnDashboardAndTotalListeadAgenciesUsersOnUsersPage"/>
           <include name="VerifyAudioInfluencersCountOnDashboardAndTotalListeadAudioInfluencersOnUsersPage"/>
-          <include name="VerifyBrandUsersCountOnDashboardAndTotalListeadBrandUsersOnUsersPage"/>
           <include name="setup"/>
           <include name="tearDown"/>
+          <include name="VerifyDashboardPageLabelsAfterAdminUserLogin"/>
+          <include name="VerifyToolTipByHoveringMouseOnUpcomingInfluencerCampaignsBar"/>
           <include name="VerifyTotalUsersOnDashboardAndTotalListeadUsersOnUsersPage"/>
         </methods>
       </class> <!-- com.ikkon.Test_cases.TC_DashboardPageTest -->
       <class name="com.ikkon.Test_cases.TC_CampaignPageTest">
         <methods>
           <include name="VerifyFilterByInfluencerConfirmed"/>
-          <include name="VerifyFilterByRequestForInfluencer"/>
           <include name="setup"/>
-          <include name="VerifyFilterByCompleted"/>
           <include name="VerifyPreviousAndNextButtonStatusWhenOnlySinglePageAvailable"/>
           <include name="tearDown"/>
           <include name="VerifyFilterByInActive"/>

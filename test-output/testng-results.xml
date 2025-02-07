@@ -1,45 +1,115 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="41" passed="30" failed="8" skipped="3">
+<testng-results ignored="0" total="46" passed="39" failed="4" skipped="3">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-25T14:27:53 IST" name="Suite" finished-at="2025-01-25T14:37:20 IST" duration-ms="567514">
+  <suite started-at="2025-02-07T19:14:47 IST" name="Suite" finished-at="2025-02-07T19:20:06 IST" duration-ms="318753">
     <groups>
     </groups>
-    <test started-at="2025-01-25T14:27:53 IST" name="Test" finished-at="2025-01-25T14:37:20 IST" duration-ms="567514">
+    <test started-at="2025-02-07T19:14:47 IST" name="Test" finished-at="2025-02-07T19:20:06 IST" duration-ms="318753">
       <class name="com.ikkon.Test_cases.TC_DashboardPageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.ikkon.Test_cases.TC_DashboardPageTest@60f00693]" started-at="2025-01-25T14:31:13 IST" name="setup" finished-at="2025-01-25T14:32:06 IST" duration-ms="52522" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ikkon.Test_cases.TC_DashboardPageTest@aba625]" started-at="2025-02-07T19:15:28 IST" name="setup" finished-at="2025-02-07T19:15:31 IST" duration-ms="3882" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="VerifyDashboardPageLabelsAfterAdminUserLogin()[pri:1, instance:com.ikkon.Test_cases.TC_DashboardPageTest@60f00693]" started-at="2025-01-25T14:32:06 IST" name="VerifyDashboardPageLabelsAfterAdminUserLogin" finished-at="2025-01-25T14:32:16 IST" duration-ms="9657" status="PASS">
+        <test-method signature="VerifyDashboardPageLabelsAfterAdminUserLogin()[pri:1, instance:com.ikkon.Test_cases.TC_DashboardPageTest@aba625]" started-at="2025-02-07T19:15:31 IST" name="VerifyDashboardPageLabelsAfterAdminUserLogin" finished-at="2025-02-07T19:15:49 IST" duration-ms="17535" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//p[text()='Pending']"}
+  (Session info: chrome=133.0.6943.59)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d1caa0541cf6cf127c214b33a5bf04ad, findElement {using=xpath, value=//p[text()='Pending']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.59, chrome: {chromedriverVersion: 133.0.6943.53 (9a80935019b0..., userDataDir: C:\Users\KANHAS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57293}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57293/devtoo..., se:cdpVersion: 133.0.6943.59, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d1caa0541cf6cf127c214b33a5bf04ad]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[text()='Pending']"}
+  (Session info: chrome=133.0.6943.59)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d1caa0541cf6cf127c214b33a5bf04ad, findElement {using=xpath, value=//p[text()='Pending']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.59, chrome: {chromedriverVersion: 133.0.6943.53 (9a80935019b0..., userDataDir: C:\Users\KANHAS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57293}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57293/devtoo..., se:cdpVersion: 133.0.6943.59, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d1caa0541cf6cf127c214b33a5bf04ad
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy29.isDisplayed(Unknown Source)
+at com.ikkon.pageObjects.DashboardPage.VerifyPendingLabel(DashboardPage.java:134)
+at com.ikkon.Test_cases.TC_DashboardPageTest.VerifyDashboardPageLabelsAfterAdminUserLogin(TC_DashboardPageTest.java:64)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyDashboardPageLabelsAfterAdminUserLogin -->
-        <test-method signature="VerifyAllUsersListByClickingOnTotalUsers()[pri:2, instance:com.ikkon.Test_cases.TC_DashboardPageTest@60f00693]" started-at="2025-01-25T14:32:16 IST" name="VerifyAllUsersListByClickingOnTotalUsers" finished-at="2025-01-25T14:32:22 IST" duration-ms="6466" status="PASS">
+        <test-method signature="VerifyAllUsersListByClickingOnTotalUsers()[pri:2, instance:com.ikkon.Test_cases.TC_DashboardPageTest@aba625]" started-at="2025-02-07T19:15:49 IST" name="VerifyAllUsersListByClickingOnTotalUsers" finished-at="2025-02-07T19:15:55 IST" duration-ms="6335" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyAllUsersListByClickingOnTotalUsers -->
-        <test-method signature="VerifyActiveUsersListByClickingOnActiveUsers()[pri:3, instance:com.ikkon.Test_cases.TC_DashboardPageTest@60f00693]" started-at="2025-01-25T14:32:22 IST" name="VerifyActiveUsersListByClickingOnActiveUsers" finished-at="2025-01-25T14:32:31 IST" duration-ms="8469" status="PASS">
+        <test-method signature="VerifyActiveUsersListByClickingOnActiveUsers()[pri:3, instance:com.ikkon.Test_cases.TC_DashboardPageTest@aba625]" started-at="2025-02-07T19:15:55 IST" name="VerifyActiveUsersListByClickingOnActiveUsers" finished-at="2025-02-07T19:16:04 IST" duration-ms="8273" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyActiveUsersListByClickingOnActiveUsers -->
-        <test-method signature="VerifyInactiveUsersListByClickingOnInactiveUsers()[pri:4, instance:com.ikkon.Test_cases.TC_DashboardPageTest@60f00693]" started-at="2025-01-25T14:32:31 IST" name="VerifyInactiveUsersListByClickingOnInactiveUsers" finished-at="2025-01-25T14:32:39 IST" duration-ms="8369" status="PASS">
+        <test-method signature="VerifyInactiveUsersListByClickingOnInactiveUsers()[pri:4, instance:com.ikkon.Test_cases.TC_DashboardPageTest@aba625]" started-at="2025-02-07T19:16:04 IST" name="VerifyInactiveUsersListByClickingOnInactiveUsers" finished-at="2025-02-07T19:16:12 IST" duration-ms="8327" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyInactiveUsersListByClickingOnInactiveUsers -->
-        <test-method signature="VerifyInfluencerUsersListByClickingOnInfluencerUsers()[pri:5, instance:com.ikkon.Test_cases.TC_DashboardPageTest@60f00693]" started-at="2025-01-25T14:32:39 IST" name="VerifyInfluencerUsersListByClickingOnInfluencerUsers" finished-at="2025-01-25T14:32:47 IST" duration-ms="8423" status="PASS">
+        <test-method signature="VerifyInfluencerUsersListByClickingOnInfluencerUsers()[pri:5, instance:com.ikkon.Test_cases.TC_DashboardPageTest@aba625]" started-at="2025-02-07T19:16:12 IST" name="VerifyInfluencerUsersListByClickingOnInfluencerUsers" finished-at="2025-02-07T19:16:20 IST" duration-ms="8278" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyInfluencerUsersListByClickingOnInfluencerUsers -->
-        <test-method signature="VerifyBrandUsersListByClickingOnBrandUsers()[pri:6, instance:com.ikkon.Test_cases.TC_DashboardPageTest@60f00693]" started-at="2025-01-25T14:32:47 IST" name="VerifyBrandUsersListByClickingOnBrandUsers" finished-at="2025-01-25T14:32:56 IST" duration-ms="8475" status="PASS">
+        <test-method signature="VerifyBrandUsersListByClickingOnBrandUsers()[pri:6, instance:com.ikkon.Test_cases.TC_DashboardPageTest@aba625]" started-at="2025-02-07T19:16:20 IST" name="VerifyBrandUsersListByClickingOnBrandUsers" finished-at="2025-02-07T19:16:28 IST" duration-ms="8225" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyBrandUsersListByClickingOnBrandUsers -->
-        <test-method signature="VerifyAgencyUsersListByClickingOnAgencyUsers()[pri:7, instance:com.ikkon.Test_cases.TC_DashboardPageTest@60f00693]" started-at="2025-01-25T14:32:56 IST" name="VerifyAgencyUsersListByClickingOnAgencyUsers" finished-at="2025-01-25T14:33:04 IST" duration-ms="8430" status="PASS">
+        <test-method signature="VerifyAgencyUsersListByClickingOnAgencyUsers()[pri:7, instance:com.ikkon.Test_cases.TC_DashboardPageTest@aba625]" started-at="2025-02-07T19:16:28 IST" name="VerifyAgencyUsersListByClickingOnAgencyUsers" finished-at="2025-02-07T19:16:37 IST" duration-ms="8254" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyAgencyUsersListByClickingOnAgencyUsers -->
-        <test-method signature="VerifyTotalUsersOnDashboardAndTotalListeadUsersOnUsersPage()[pri:8, instance:com.ikkon.Test_cases.TC_DashboardPageTest@60f00693]" started-at="2025-01-25T14:33:04 IST" name="VerifyTotalUsersOnDashboardAndTotalListeadUsersOnUsersPage" finished-at="2025-01-25T14:33:12 IST" duration-ms="7661" status="FAIL">
+        <test-method signature="VerifyTotalUsersOnDashboardAndTotalListeadUsersOnUsersPage()[pri:8, instance:com.ikkon.Test_cases.TC_DashboardPageTest@aba625]" started-at="2025-02-07T19:16:37 IST" name="VerifyTotalUsersOnDashboardAndTotalListeadUsersOnUsersPage" finished-at="2025-02-07T19:16:43 IST" duration-ms="6715" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -83,15 +153,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyTotalUsersOnDashboardAndTotalListeadUsersOnUsersPage -->
-        <test-method signature="VerifyActiveUsersCountOnDashboardAndTotalListeadActiveUsersOnUsersPage()[pri:9, instance:com.ikkon.Test_cases.TC_DashboardPageTest@60f00693]" started-at="2025-01-25T14:33:12 IST" name="VerifyActiveUsersCountOnDashboardAndTotalListeadActiveUsersOnUsersPage" finished-at="2025-01-25T14:33:19 IST" duration-ms="6949" status="PASS">
+        <test-method signature="VerifyActiveUsersCountOnDashboardAndTotalListeadActiveUsersOnUsersPage()[pri:9, instance:com.ikkon.Test_cases.TC_DashboardPageTest@aba625]" started-at="2025-02-07T19:16:43 IST" name="VerifyActiveUsersCountOnDashboardAndTotalListeadActiveUsersOnUsersPage" finished-at="2025-02-07T19:16:50 IST" duration-ms="6495" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyActiveUsersCountOnDashboardAndTotalListeadActiveUsersOnUsersPage -->
-        <test-method signature="VerifyInActiveUsersCountOnDashboardAndTotalListeadInActiveUsersOnUsersPage()[pri:10, instance:com.ikkon.Test_cases.TC_DashboardPageTest@60f00693]" started-at="2025-01-25T14:33:19 IST" name="VerifyInActiveUsersCountOnDashboardAndTotalListeadInActiveUsersOnUsersPage" finished-at="2025-01-25T14:33:24 IST" duration-ms="4588" status="PASS">
+        <test-method signature="VerifyInActiveUsersCountOnDashboardAndTotalListeadInActiveUsersOnUsersPage()[pri:10, instance:com.ikkon.Test_cases.TC_DashboardPageTest@aba625]" started-at="2025-02-07T19:16:50 IST" name="VerifyInActiveUsersCountOnDashboardAndTotalListeadInActiveUsersOnUsersPage" finished-at="2025-02-07T19:16:54 IST" duration-ms="4360" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyInActiveUsersCountOnDashboardAndTotalListeadInActiveUsersOnUsersPage -->
-        <test-method signature="VerifyAudioInfluencersCountOnDashboardAndTotalListeadAudioInfluencersOnUsersPage()[pri:11, instance:com.ikkon.Test_cases.TC_DashboardPageTest@60f00693]" started-at="2025-01-25T14:33:24 IST" name="VerifyAudioInfluencersCountOnDashboardAndTotalListeadAudioInfluencersOnUsersPage" finished-at="2025-01-25T14:33:30 IST" duration-ms="6862" status="FAIL">
+        <test-method signature="VerifyAudioInfluencersCountOnDashboardAndTotalListeadAudioInfluencersOnUsersPage()[pri:11, instance:com.ikkon.Test_cases.TC_DashboardPageTest@aba625]" started-at="2025-02-07T19:16:54 IST" name="VerifyAudioInfluencersCountOnDashboardAndTotalListeadAudioInfluencersOnUsersPage" finished-at="2025-02-07T19:17:02 IST" duration-ms="8168" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -135,184 +205,53 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyAudioInfluencersCountOnDashboardAndTotalListeadAudioInfluencersOnUsersPage -->
-        <test-method signature="VerifyBrandUsersCountOnDashboardAndTotalListeadBrandUsersOnUsersPage()[pri:12, instance:com.ikkon.Test_cases.TC_DashboardPageTest@60f00693]" started-at="2025-01-25T14:33:30 IST" name="VerifyBrandUsersCountOnDashboardAndTotalListeadBrandUsersOnUsersPage" finished-at="2025-01-25T14:33:55 IST" duration-ms="24472" status="FAIL">
-          <exception class="java.lang.IndexOutOfBoundsException">
-            <message>
-              <![CDATA[Index -2 out of bounds for length 0]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IndexOutOfBoundsException: Index -2 out of bounds for length 0
-at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:100)
-at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:106)
-at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:302)
-at java.base/java.util.Objects.checkIndex(Objects.java:385)
-at java.base/java.util.ArrayList.get(ArrayList.java:427)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:39)
-at jdk.proxy2/jdk.proxy2.$Proxy30.get(Unknown Source)
-at com.ikkon.pageObjects.UsersPage.GetTotalUsersFromTheUsersList(UsersPage.java:123)
-at com.ikkon.Test_cases.TC_DashboardPageTest.VerifyBrandUsersCountOnDashboardAndTotalListeadBrandUsersOnUsersPage(TC_DashboardPageTest.java:447)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IndexOutOfBoundsException -->
+        <test-method signature="VerifyBrandUsersCountOnDashboardAndTotalListeadBrandUsersOnUsersPage()[pri:12, instance:com.ikkon.Test_cases.TC_DashboardPageTest@aba625]" started-at="2025-02-07T19:17:03 IST" name="VerifyBrandUsersCountOnDashboardAndTotalListeadBrandUsersOnUsersPage" finished-at="2025-02-07T19:17:07 IST" duration-ms="4652" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyBrandUsersCountOnDashboardAndTotalListeadBrandUsersOnUsersPage -->
-        <test-method signature="VerifyAgenciesUsersCountOnDashboardAndTotalListeadAgenciesUsersOnUsersPage()[pri:13, instance:com.ikkon.Test_cases.TC_DashboardPageTest@60f00693]" started-at="2025-01-25T14:33:55 IST" name="VerifyAgenciesUsersCountOnDashboardAndTotalListeadAgenciesUsersOnUsersPage" finished-at="2025-01-25T14:34:10 IST" duration-ms="14698" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//button[@aria-label='Go to page 6']"}
-  (Session info: chrome=131.0.6778.265)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.26.0', revision: '8ccf0219d7'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9db776814848afb4e250ce7b1e03ce7f, findElement {using=xpath, value=//button[@aria-label='Go to page 6']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.265, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\KANHAS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59446}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59446/devtoo..., se:cdpVersion: 131.0.6778.265, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9db776814848afb4e250ce7b1e03ce7f]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@aria-label='Go to page 6']"}
-  (Session info: chrome=131.0.6778.265)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.26.0', revision: '8ccf0219d7'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9db776814848afb4e250ce7b1e03ce7f, findElement {using=xpath, value=//button[@aria-label='Go to page 6']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.265, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\KANHAS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59446}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59446/devtoo..., se:cdpVersion: 131.0.6778.265, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9db776814848afb4e250ce7b1e03ce7f
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-at com.ikkon.pageObjects.UsersPage.GetTotalUsersFromTheUsersList(UsersPage.java:131)
-at com.ikkon.Test_cases.TC_DashboardPageTest.VerifyAgenciesUsersCountOnDashboardAndTotalListeadAgenciesUsersOnUsersPage(TC_DashboardPageTest.java:485)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method signature="VerifyAgenciesUsersCountOnDashboardAndTotalListeadAgenciesUsersOnUsersPage()[pri:13, instance:com.ikkon.Test_cases.TC_DashboardPageTest@aba625]" started-at="2025-02-07T19:17:07 IST" name="VerifyAgenciesUsersCountOnDashboardAndTotalListeadAgenciesUsersOnUsersPage" finished-at="2025-02-07T19:17:12 IST" duration-ms="4369" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyAgenciesUsersCountOnDashboardAndTotalListeadAgenciesUsersOnUsersPage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ikkon.Test_cases.TC_DashboardPageTest@60f00693]" started-at="2025-01-25T14:34:10 IST" name="tearDown" finished-at="2025-01-25T14:34:10 IST" duration-ms="445" status="PASS">
+        <test-method signature="VerifyToolTipByHoveringMouseOnPendingInfluencerInvitationBar()[pri:14, instance:com.ikkon.Test_cases.TC_DashboardPageTest@aba625]" started-at="2025-02-07T19:17:12 IST" name="VerifyToolTipByHoveringMouseOnPendingInfluencerInvitationBar" finished-at="2025-02-07T19:17:12 IST" duration-ms="362" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.ikkon.Test_cases.TC_DashboardPageTest -->
-      <class name="com.ikkon.Test_cases.TC_SignInPageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.ikkon.Test_cases.TC_SignInPageTest@69c81773]" started-at="2025-01-25T14:27:53 IST" name="setup" finished-at="2025-01-25T14:30:29 IST" duration-ms="156114" status="PASS">
+        </test-method> <!-- VerifyToolTipByHoveringMouseOnPendingInfluencerInvitationBar -->
+        <test-method signature="VerifyToolTipByHoveringMouseOnRejectedInfluencerInvitationsBar()[pri:15, instance:com.ikkon.Test_cases.TC_DashboardPageTest@aba625]" started-at="2025-02-07T19:17:12 IST" name="VerifyToolTipByHoveringMouseOnRejectedInfluencerInvitationsBar" finished-at="2025-02-07T19:17:12 IST" duration-ms="262" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="OpenSignInPage()[pri:1, instance:com.ikkon.Test_cases.TC_SignInPageTest@69c81773]" started-at="2025-01-25T14:30:29 IST" name="OpenSignInPage" finished-at="2025-01-25T14:30:40 IST" duration-ms="10539" status="PASS">
+        </test-method> <!-- VerifyToolTipByHoveringMouseOnRejectedInfluencerInvitationsBar -->
+        <test-method signature="VerifyToolTipByHoveringMouseOnActiveInfluencerCampaignsBar()[pri:16, instance:com.ikkon.Test_cases.TC_DashboardPageTest@aba625]" started-at="2025-02-07T19:17:12 IST" name="VerifyToolTipByHoveringMouseOnActiveInfluencerCampaignsBar" finished-at="2025-02-07T19:17:12 IST" duration-ms="200" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- OpenSignInPage -->
-        <test-method signature="LoginWithoutEnteringCredentials()[pri:2, instance:com.ikkon.Test_cases.TC_SignInPageTest@69c81773]" started-at="2025-01-25T14:30:40 IST" name="LoginWithoutEnteringCredentials" finished-at="2025-01-25T14:30:41 IST" duration-ms="797" status="PASS">
+        </test-method> <!-- VerifyToolTipByHoveringMouseOnActiveInfluencerCampaignsBar -->
+        <test-method signature="VerifyToolTipByHoveringMouseOnCompletedInfluencerCampaignsBar()[pri:17, instance:com.ikkon.Test_cases.TC_DashboardPageTest@aba625]" started-at="2025-02-07T19:17:12 IST" name="VerifyToolTipByHoveringMouseOnCompletedInfluencerCampaignsBar" finished-at="2025-02-07T19:17:13 IST" duration-ms="186" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LoginWithoutEnteringCredentials -->
-        <test-method signature="LoginWithoutEnteringPassword()[pri:3, instance:com.ikkon.Test_cases.TC_SignInPageTest@69c81773]" started-at="2025-01-25T14:30:41 IST" name="LoginWithoutEnteringPassword" finished-at="2025-01-25T14:30:42 IST" duration-ms="1221" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginWithoutEnteringPassword -->
-        <test-method signature="LoginWithoutEnteringEmail()[pri:4, instance:com.ikkon.Test_cases.TC_SignInPageTest@69c81773]" started-at="2025-01-25T14:30:42 IST" name="LoginWithoutEnteringEmail" finished-at="2025-01-25T14:30:43 IST" duration-ms="653" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginWithoutEnteringEmail -->
-        <test-method signature="LoginWithInvalidEmailAndCorrectPassword()[pri:5, instance:com.ikkon.Test_cases.TC_SignInPageTest@69c81773]" started-at="2025-01-25T14:30:43 IST" name="LoginWithInvalidEmailAndCorrectPassword" finished-at="2025-01-25T14:30:43 IST" duration-ms="786" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginWithInvalidEmailAndCorrectPassword -->
-        <test-method signature="LoginEmailAndInvalidPassword()[pri:6, instance:com.ikkon.Test_cases.TC_SignInPageTest@69c81773]" started-at="2025-01-25T14:30:43 IST" name="LoginEmailAndInvalidPassword" finished-at="2025-01-25T14:30:44 IST" duration-ms="973" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginEmailAndInvalidPassword -->
-        <test-method signature="SignInWithAdmin()[pri:7, instance:com.ikkon.Test_cases.TC_SignInPageTest@69c81773]" started-at="2025-01-25T14:30:44 IST" name="SignInWithAdmin" finished-at="2025-01-25T14:31:03 IST" duration-ms="18414" status="FAIL">
+        </test-method> <!-- VerifyToolTipByHoveringMouseOnCompletedInfluencerCampaignsBar -->
+        <test-method signature="VerifyToolTipByHoveringMouseOnUpcomingInfluencerCampaignsBar()[pri:18, instance:com.ikkon.Test_cases.TC_DashboardPageTest@aba625]" started-at="2025-02-07T19:17:13 IST" name="VerifyToolTipByHoveringMouseOnUpcomingInfluencerCampaignsBar" finished-at="2025-02-07T19:17:25 IST" duration-ms="12207" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[text()='Logged in successfully']"}
-  (Session info: chrome=131.0.6778.265)
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@role='tooltip']//p[@class='MuiTypography-root MuiTypography-body1 css-1op1nui' and text()='Upcoming Influencer Campaigns']"}
+  (Session info: chrome=133.0.6943.59)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.26.0', revision: '8ccf0219d7'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [668762336cedfdc838b91edc83453a34, findElement {using=xpath, value=//div[text()='Logged in successfully']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.265, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\KANHAS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59276}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59276/devtoo..., se:cdpVersion: 131.0.6778.265, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 668762336cedfdc838b91edc83453a34]]>
+Command: [d1caa0541cf6cf127c214b33a5bf04ad, findElement {using=xpath, value=//div[@role='tooltip']//p[@class='MuiTypography-root MuiTypography-body1 css-1op1nui' and text()='Upcoming Influencer Campaigns']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.59, chrome: {chromedriverVersion: 133.0.6943.53 (9a80935019b0..., userDataDir: C:\Users\KANHAS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57293}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57293/devtoo..., se:cdpVersion: 133.0.6943.59, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d1caa0541cf6cf127c214b33a5bf04ad]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[text()='Logged in successfully']"}
-  (Session info: chrome=131.0.6778.265)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@role='tooltip']//p[@class='MuiTypography-root MuiTypography-body1 css-1op1nui' and text()='Upcoming Influencer Campaigns']"}
+  (Session info: chrome=133.0.6943.59)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.26.0', revision: '8ccf0219d7'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [668762336cedfdc838b91edc83453a34, findElement {using=xpath, value=//div[text()='Logged in successfully']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.265, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\KANHAS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59276}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59276/devtoo..., se:cdpVersion: 131.0.6778.265, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 668762336cedfdc838b91edc83453a34
+Command: [d1caa0541cf6cf127c214b33a5bf04ad, findElement {using=xpath, value=//div[@role='tooltip']//p[@class='MuiTypography-root MuiTypography-body1 css-1op1nui' and text()='Upcoming Influencer Campaigns']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.59, chrome: {chromedriverVersion: 133.0.6943.53 (9a80935019b0..., userDataDir: C:\Users\KANHAS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57293}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57293/devtoo..., se:cdpVersion: 133.0.6943.59, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d1caa0541cf6cf127c214b33a5bf04ad
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -330,8 +269,8 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 at jdk.proxy2/jdk.proxy2.$Proxy29.getText(Unknown Source)
-at com.ikkon.pageObjects.DashboardPage.VerifyLoggedInSuccessfullyMsg(DashboardPage.java:70)
-at com.ikkon.Test_cases.TC_SignInPageTest.SignInWithAdmin(TC_SignInPageTest.java:197)
+at com.ikkon.pageObjects.DashboardPage.GetToolTipForBar5(DashboardPage.java:338)
+at com.ikkon.Test_cases.TC_DashboardPageTest.VerifyToolTipByHoveringMouseOnUpcomingInfluencerCampaignsBar(TC_DashboardPageTest.java:586)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -361,152 +300,120 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyToolTipByHoveringMouseOnUpcomingInfluencerCampaignsBar -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ikkon.Test_cases.TC_DashboardPageTest@aba625]" started-at="2025-02-07T19:17:25 IST" name="tearDown" finished-at="2025-02-07T19:17:25 IST" duration-ms="441" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.ikkon.Test_cases.TC_DashboardPageTest -->
+      <class name="com.ikkon.Test_cases.TC_SignInPageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ikkon.Test_cases.TC_SignInPageTest@4d15107f]" started-at="2025-02-07T19:14:48 IST" name="setup" finished-at="2025-02-07T19:15:08 IST" duration-ms="20310" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="OpenSignInPage()[pri:1, instance:com.ikkon.Test_cases.TC_SignInPageTest@4d15107f]" started-at="2025-02-07T19:15:08 IST" name="OpenSignInPage" finished-at="2025-02-07T19:15:10 IST" duration-ms="1252" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenSignInPage -->
+        <test-method signature="LoginWithoutEnteringCredentials()[pri:2, instance:com.ikkon.Test_cases.TC_SignInPageTest@4d15107f]" started-at="2025-02-07T19:15:10 IST" name="LoginWithoutEnteringCredentials" finished-at="2025-02-07T19:15:10 IST" duration-ms="810" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginWithoutEnteringCredentials -->
+        <test-method signature="LoginWithoutEnteringPassword()[pri:3, instance:com.ikkon.Test_cases.TC_SignInPageTest@4d15107f]" started-at="2025-02-07T19:15:10 IST" name="LoginWithoutEnteringPassword" finished-at="2025-02-07T19:15:11 IST" duration-ms="870" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginWithoutEnteringPassword -->
+        <test-method signature="LoginWithoutEnteringEmail()[pri:4, instance:com.ikkon.Test_cases.TC_SignInPageTest@4d15107f]" started-at="2025-02-07T19:15:11 IST" name="LoginWithoutEnteringEmail" finished-at="2025-02-07T19:15:12 IST" duration-ms="538" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginWithoutEnteringEmail -->
+        <test-method signature="LoginWithInvalidEmailAndCorrectPassword()[pri:5, instance:com.ikkon.Test_cases.TC_SignInPageTest@4d15107f]" started-at="2025-02-07T19:15:12 IST" name="LoginWithInvalidEmailAndCorrectPassword" finished-at="2025-02-07T19:15:12 IST" duration-ms="673" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginWithInvalidEmailAndCorrectPassword -->
+        <test-method signature="LoginEmailAndInvalidPassword()[pri:6, instance:com.ikkon.Test_cases.TC_SignInPageTest@4d15107f]" started-at="2025-02-07T19:15:12 IST" name="LoginEmailAndInvalidPassword" finished-at="2025-02-07T19:15:13 IST" duration-ms="920" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginEmailAndInvalidPassword -->
+        <test-method signature="SignInWithAdmin()[pri:7, instance:com.ikkon.Test_cases.TC_SignInPageTest@4d15107f]" started-at="2025-02-07T19:15:13 IST" name="SignInWithAdmin" finished-at="2025-02-07T19:15:25 IST" duration-ms="11488" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SignInWithAdmin -->
-        <test-method signature="Logout()[pri:8, instance:com.ikkon.Test_cases.TC_SignInPageTest@69c81773]" started-at="2025-01-25T14:31:03 IST" name="Logout" finished-at="2025-01-25T14:31:13 IST" duration-ms="10057" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='MuiBox-root css-759u60']"}
-  (Session info: chrome=131.0.6778.265)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.26.0', revision: '8ccf0219d7'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [668762336cedfdc838b91edc83453a34, findElement {using=xpath, value=//div[@class='MuiBox-root css-759u60']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.265, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\KANHAS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59276}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59276/devtoo..., se:cdpVersion: 131.0.6778.265, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 668762336cedfdc838b91edc83453a34]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='MuiBox-root css-759u60']"}
-  (Session info: chrome=131.0.6778.265)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.26.0', revision: '8ccf0219d7'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [668762336cedfdc838b91edc83453a34, findElement {using=xpath, value=//div[@class='MuiBox-root css-759u60']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.265, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\KANHAS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59276}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59276/devtoo..., se:cdpVersion: 131.0.6778.265, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 668762336cedfdc838b91edc83453a34
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy29.click(Unknown Source)
-at com.ikkon.pageObjects.DashboardPage.ProfileNameClick(DashboardPage.java:206)
-at com.ikkon.Test_cases.TC_SignInPageTest.Logout(TC_SignInPageTest.java:211)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method signature="Logout()[pri:8, instance:com.ikkon.Test_cases.TC_SignInPageTest@4d15107f]" started-at="2025-02-07T19:15:25 IST" name="Logout" finished-at="2025-02-07T19:15:27 IST" duration-ms="2350" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Logout -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ikkon.Test_cases.TC_SignInPageTest@69c81773]" started-at="2025-01-25T14:31:13 IST" name="tearDown" finished-at="2025-01-25T14:31:13 IST" duration-ms="559" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ikkon.Test_cases.TC_SignInPageTest@4d15107f]" started-at="2025-02-07T19:15:27 IST" name="tearDown" finished-at="2025-02-07T19:15:28 IST" duration-ms="330" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.ikkon.Test_cases.TC_SignInPageTest -->
       <class name="com.ikkon.Test_cases.TC_MenuPageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.ikkon.Test_cases.TC_MenuPageTest@79207381]" started-at="2025-01-25T14:34:10 IST" name="setup" finished-at="2025-01-25T14:34:41 IST" duration-ms="30548" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ikkon.Test_cases.TC_MenuPageTest@97e93f1]" started-at="2025-02-07T19:17:25 IST" name="setup" finished-at="2025-02-07T19:17:30 IST" duration-ms="4287" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="AgencyPageOpened()[pri:1, instance:com.ikkon.Test_cases.TC_MenuPageTest@79207381]" started-at="2025-01-25T14:34:41 IST" name="AgencyPageOpened" finished-at="2025-01-25T14:34:54 IST" duration-ms="13849" status="PASS">
+        <test-method signature="AgencyPageOpened()[pri:1, instance:com.ikkon.Test_cases.TC_MenuPageTest@97e93f1]" started-at="2025-02-07T19:17:30 IST" name="AgencyPageOpened" finished-at="2025-02-07T19:17:43 IST" duration-ms="13761" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AgencyPageOpened -->
-        <test-method signature="BrandPageOpened()[pri:2, instance:com.ikkon.Test_cases.TC_MenuPageTest@79207381]" started-at="2025-01-25T14:34:54 IST" name="BrandPageOpened" finished-at="2025-01-25T14:34:55 IST" duration-ms="646" status="PASS">
+        <test-method signature="BrandPageOpened()[pri:2, instance:com.ikkon.Test_cases.TC_MenuPageTest@97e93f1]" started-at="2025-02-07T19:17:43 IST" name="BrandPageOpened" finished-at="2025-02-07T19:17:44 IST" duration-ms="484" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BrandPageOpened -->
-        <test-method signature="CampaignPageOpened()[pri:3, instance:com.ikkon.Test_cases.TC_MenuPageTest@79207381]" started-at="2025-01-25T14:34:55 IST" name="CampaignPageOpened" finished-at="2025-01-25T14:34:56 IST" duration-ms="591" status="PASS">
+        <test-method signature="CampaignPageOpened()[pri:3, instance:com.ikkon.Test_cases.TC_MenuPageTest@97e93f1]" started-at="2025-02-07T19:17:44 IST" name="CampaignPageOpened" finished-at="2025-02-07T19:17:44 IST" duration-ms="500" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CampaignPageOpened -->
-        <test-method signature="MatchmakingPageOpened()[pri:4, instance:com.ikkon.Test_cases.TC_MenuPageTest@79207381]" started-at="2025-01-25T14:34:56 IST" name="MatchmakingPageOpened" finished-at="2025-01-25T14:34:56 IST" duration-ms="659" status="PASS">
+        <test-method signature="MatchmakingPageOpened()[pri:4, instance:com.ikkon.Test_cases.TC_MenuPageTest@97e93f1]" started-at="2025-02-07T19:17:44 IST" name="MatchmakingPageOpened" finished-at="2025-02-07T19:17:45 IST" duration-ms="550" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MatchmakingPageOpened -->
-        <test-method signature="UsersPageIsOpened()[pri:5, instance:com.ikkon.Test_cases.TC_MenuPageTest@79207381]" started-at="2025-01-25T14:34:56 IST" name="UsersPageIsOpened" finished-at="2025-01-25T14:34:58 IST" duration-ms="1469" status="PASS">
+        <test-method signature="UsersPageIsOpened()[pri:5, instance:com.ikkon.Test_cases.TC_MenuPageTest@97e93f1]" started-at="2025-02-07T19:17:45 IST" name="UsersPageIsOpened" finished-at="2025-02-07T19:17:46 IST" duration-ms="1180" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UsersPageIsOpened -->
-        <test-method signature="SystemLogsPageIsOpened()[pri:6, instance:com.ikkon.Test_cases.TC_MenuPageTest@79207381]" started-at="2025-01-25T14:34:58 IST" name="SystemLogsPageIsOpened" finished-at="2025-01-25T14:34:58 IST" duration-ms="623" status="PASS">
+        <test-method signature="SystemLogsPageIsOpened()[pri:6, instance:com.ikkon.Test_cases.TC_MenuPageTest@97e93f1]" started-at="2025-02-07T19:17:46 IST" name="SystemLogsPageIsOpened" finished-at="2025-02-07T19:17:46 IST" duration-ms="490" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SystemLogsPageIsOpened -->
-        <test-method signature="DashboardPageOpened()[pri:7, instance:com.ikkon.Test_cases.TC_MenuPageTest@79207381]" started-at="2025-01-25T14:34:58 IST" name="DashboardPageOpened" finished-at="2025-01-25T14:35:04 IST" duration-ms="5153" status="PASS">
+        <test-method signature="DashboardPageOpened()[pri:7, instance:com.ikkon.Test_cases.TC_MenuPageTest@97e93f1]" started-at="2025-02-07T19:17:46 IST" name="DashboardPageOpened" finished-at="2025-02-07T19:17:52 IST" duration-ms="5116" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DashboardPageOpened -->
-        <test-method signature="NotificationPageIsOpened()[pri:8, instance:com.ikkon.Test_cases.TC_MenuPageTest@79207381]" started-at="2025-01-25T14:35:04 IST" name="NotificationPageIsOpened" finished-at="2025-01-25T14:35:09 IST" duration-ms="5702" status="PASS">
+        <test-method signature="NotificationPageIsOpened()[pri:8, instance:com.ikkon.Test_cases.TC_MenuPageTest@97e93f1]" started-at="2025-02-07T19:17:52 IST" name="NotificationPageIsOpened" finished-at="2025-02-07T19:17:57 IST" duration-ms="5142" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- NotificationPageIsOpened -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ikkon.Test_cases.TC_MenuPageTest@79207381]" started-at="2025-01-25T14:35:09 IST" name="tearDown" finished-at="2025-01-25T14:35:10 IST" duration-ms="356" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ikkon.Test_cases.TC_MenuPageTest@97e93f1]" started-at="2025-02-07T19:17:57 IST" name="tearDown" finished-at="2025-02-07T19:17:57 IST" duration-ms="351" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.ikkon.Test_cases.TC_MenuPageTest -->
       <class name="com.ikkon.Test_cases.TC_CampaignPageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.ikkon.Test_cases.TC_CampaignPageTest@491b9b8]" started-at="2025-01-25T14:35:10 IST" name="setup" finished-at="2025-01-25T14:35:14 IST" duration-ms="4167" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ikkon.Test_cases.TC_CampaignPageTest@5a5a729f]" started-at="2025-02-07T19:17:57 IST" name="setup" finished-at="2025-02-07T19:18:01 IST" duration-ms="3706" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="VerifyCampaignListOnFirstPage()[pri:1, instance:com.ikkon.Test_cases.TC_CampaignPageTest@491b9b8]" started-at="2025-01-25T14:35:14 IST" name="VerifyCampaignListOnFirstPage" finished-at="2025-01-25T14:35:29 IST" duration-ms="14946" status="PASS">
+        <test-method signature="VerifyCampaignListOnFirstPage()[pri:1, instance:com.ikkon.Test_cases.TC_CampaignPageTest@5a5a729f]" started-at="2025-02-07T19:18:01 IST" name="VerifyCampaignListOnFirstPage" finished-at="2025-02-07T19:18:15 IST" duration-ms="14187" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyCampaignListOnFirstPage -->
-        <test-method signature="VerifyPreviousButtonStatusOnFirstPage()[pri:2, instance:com.ikkon.Test_cases.TC_CampaignPageTest@491b9b8]" started-at="2025-01-25T14:35:29 IST" name="VerifyPreviousButtonStatusOnFirstPage" finished-at="2025-01-25T14:35:29 IST" duration-ms="55" status="PASS">
+        <test-method signature="VerifyPreviousButtonStatusOnFirstPage()[pri:2, instance:com.ikkon.Test_cases.TC_CampaignPageTest@5a5a729f]" started-at="2025-02-07T19:18:15 IST" name="VerifyPreviousButtonStatusOnFirstPage" finished-at="2025-02-07T19:18:15 IST" duration-ms="41" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyPreviousButtonStatusOnFirstPage -->
-        <test-method signature="VerifyPreviousButtonStausWhenSwitchFromFirstPageToAnotherPage()[pri:3, instance:com.ikkon.Test_cases.TC_CampaignPageTest@491b9b8]" started-at="2025-01-25T14:35:29 IST" name="VerifyPreviousButtonStausWhenSwitchFromFirstPageToAnotherPage" finished-at="2025-01-25T14:35:30 IST" duration-ms="1315" status="PASS">
+        <test-method signature="VerifyPreviousButtonStausWhenSwitchFromFirstPageToAnotherPage()[pri:3, instance:com.ikkon.Test_cases.TC_CampaignPageTest@5a5a729f]" started-at="2025-02-07T19:18:15 IST" name="VerifyPreviousButtonStausWhenSwitchFromFirstPageToAnotherPage" finished-at="2025-02-07T19:18:16 IST" duration-ms="1187" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyPreviousButtonStausWhenSwitchFromFirstPageToAnotherPage -->
-        <test-method signature="VerifyNextButtonStatusWhenUserIsOnLastPage()[pri:4, instance:com.ikkon.Test_cases.TC_CampaignPageTest@491b9b8]" started-at="2025-01-25T14:35:30 IST" name="VerifyNextButtonStatusWhenUserIsOnLastPage" finished-at="2025-01-25T14:35:35 IST" duration-ms="5233" status="PASS">
+        <test-method signature="VerifyNextButtonStatusWhenUserIsOnLastPage()[pri:4, instance:com.ikkon.Test_cases.TC_CampaignPageTest@5a5a729f]" started-at="2025-02-07T19:18:16 IST" name="VerifyNextButtonStatusWhenUserIsOnLastPage" finished-at="2025-02-07T19:18:21 IST" duration-ms="4763" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyNextButtonStatusWhenUserIsOnLastPage -->
-        <test-method signature="VerifyPreviousAndNextButtonStatusWhenOnlySinglePageAvailable()[pri:5, instance:com.ikkon.Test_cases.TC_CampaignPageTest@491b9b8]" started-at="2025-01-25T14:35:35 IST" name="VerifyPreviousAndNextButtonStatusWhenOnlySinglePageAvailable" finished-at="2025-01-25T14:35:35 IST" duration-ms="40" status="SKIP">
+        <test-method signature="VerifyPreviousAndNextButtonStatusWhenOnlySinglePageAvailable()[pri:5, instance:com.ikkon.Test_cases.TC_CampaignPageTest@5a5a729f]" started-at="2025-02-07T19:18:21 IST" name="VerifyPreviousAndNextButtonStatusWhenOnlySinglePageAvailable" finished-at="2025-02-07T19:18:21 IST" duration-ms="27" status="SKIP">
           <exception class="org.testng.SkipException">
             <message>
               <![CDATA[Skiping the test case as Total pages are more than 3. Total Pages are : 6]]>
@@ -546,15 +453,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyPreviousAndNextButtonStatusWhenOnlySinglePageAvailable -->
-        <test-method signature="VerifyFilterByDraft()[pri:6, instance:com.ikkon.Test_cases.TC_CampaignPageTest@491b9b8]" started-at="2025-01-25T14:35:35 IST" name="VerifyFilterByDraft" finished-at="2025-01-25T14:35:39 IST" duration-ms="3785" status="PASS">
+        <test-method signature="VerifyFilterByDraft()[pri:6, instance:com.ikkon.Test_cases.TC_CampaignPageTest@5a5a729f]" started-at="2025-02-07T19:18:21 IST" name="VerifyFilterByDraft" finished-at="2025-02-07T19:18:24 IST" duration-ms="3359" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyFilterByDraft -->
-        <test-method signature="VerifyFilterByActive()[pri:7, instance:com.ikkon.Test_cases.TC_CampaignPageTest@491b9b8]" started-at="2025-01-25T14:35:39 IST" name="VerifyFilterByActive" finished-at="2025-01-25T14:35:43 IST" duration-ms="3649" status="PASS">
+        <test-method signature="VerifyFilterByActive()[pri:7, instance:com.ikkon.Test_cases.TC_CampaignPageTest@5a5a729f]" started-at="2025-02-07T19:18:24 IST" name="VerifyFilterByActive" finished-at="2025-02-07T19:18:28 IST" duration-ms="3397" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyFilterByActive -->
-        <test-method signature="VerifyFilterByInActive()[pri:8, instance:com.ikkon.Test_cases.TC_CampaignPageTest@491b9b8]" started-at="2025-01-25T14:35:43 IST" name="VerifyFilterByInActive" finished-at="2025-01-25T14:36:27 IST" duration-ms="43727" status="SKIP">
+        <test-method signature="VerifyFilterByInActive()[pri:8, instance:com.ikkon.Test_cases.TC_CampaignPageTest@5a5a729f]" started-at="2025-02-07T19:18:28 IST" name="VerifyFilterByInActive" finished-at="2025-02-07T19:19:11 IST" duration-ms="43441" status="SKIP">
           <exception class="org.testng.SkipException">
             <message>
               <![CDATA[Skiping the test case as Total filtered campaigns are: 0]]>
@@ -595,15 +502,23 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyFilterByInActive -->
-        <test-method signature="VerifyFilterByRequestForInfluencer()[pri:9, instance:com.ikkon.Test_cases.TC_CampaignPageTest@491b9b8]" started-at="2025-01-25T14:36:27 IST" name="VerifyFilterByRequestForInfluencer" finished-at="2025-01-25T14:37:01 IST" duration-ms="34320" status="SKIP">
+        <test-method signature="VerifyFilterByRequestForInfluencer()[pri:9, instance:com.ikkon.Test_cases.TC_CampaignPageTest@5a5a729f]" started-at="2025-02-07T19:19:11 IST" name="VerifyFilterByRequestForInfluencer" finished-at="2025-02-07T19:19:15 IST" duration-ms="3621" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyFilterByRequestForInfluencer -->
+        <test-method signature="VerifyFilterByReviewInfluencer()[pri:10, instance:com.ikkon.Test_cases.TC_CampaignPageTest@5a5a729f]" started-at="2025-02-07T19:19:15 IST" name="VerifyFilterByReviewInfluencer" finished-at="2025-02-07T19:19:18 IST" duration-ms="3553" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyFilterByReviewInfluencer -->
+        <test-method signature="VerifyFilterByInfluencerConfirmed()[pri:11, instance:com.ikkon.Test_cases.TC_CampaignPageTest@5a5a729f]" started-at="2025-02-07T19:19:18 IST" name="VerifyFilterByInfluencerConfirmed" finished-at="2025-02-07T19:20:02 IST" duration-ms="43456" status="SKIP">
           <exception class="org.testng.SkipException">
             <message>
-              <![CDATA[Skiping the test case as Total filtered campaigns are: 9]]>
+              <![CDATA[Skiping the test case as Total filtered campaigns are: 0]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.testng.SkipException: Skiping the test case as Total filtered campaigns are: 9
+              <![CDATA[org.testng.SkipException: Skiping the test case as Total filtered campaigns are: 0
 at com.ikkon.pageObjects.CampaignPage.VerifyGetFilteredCampaignListStatus(CampaignPage.java:144)
-at com.ikkon.Test_cases.TC_CampaignPageTest.VerifyFilterByRequestForInfluencer(TC_CampaignPageTest.java:236)
+at com.ikkon.Test_cases.TC_CampaignPageTest.VerifyFilterByInfluencerConfirmed(TC_CampaignPageTest.java:284)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -635,223 +550,12 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VerifyFilterByRequestForInfluencer -->
-        <test-method signature="VerifyFilterByReviewInfluencer()[pri:10, instance:com.ikkon.Test_cases.TC_CampaignPageTest@491b9b8]" started-at="2025-01-25T14:37:01 IST" name="VerifyFilterByReviewInfluencer" finished-at="2025-01-25T14:37:05 IST" duration-ms="4086" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyFilterByReviewInfluencer -->
-        <test-method signature="VerifyFilterByInfluencerConfirmed()[pri:11, instance:com.ikkon.Test_cases.TC_CampaignPageTest@491b9b8]" started-at="2025-01-25T14:37:05 IST" name="VerifyFilterByInfluencerConfirmed" finished-at="2025-01-25T14:37:20 IST" duration-ms="15036" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-            <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=131.0.6778.265)
-Build info: version: '4.26.0', revision: '8ccf0219d7'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b196959d3d59a9cd1d50394145145478, findElements {using=xpath, value=//tbody[@class='MuiTableBody-root css-1xnox0e']//tr//td[2]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.265, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\KANHAS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59651}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59651/devtoo..., se:cdpVersion: 131.0.6778.265, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b196959d3d59a9cd1d50394145145478]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=131.0.6778.265)
-Build info: version: '4.26.0', revision: '8ccf0219d7'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b196959d3d59a9cd1d50394145145478, findElements {using=xpath, value=//tbody[@class='MuiTableBody-root css-1xnox0e']//tr//td[2]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.265, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\KANHAS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59651}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59651/devtoo..., se:cdpVersion: 131.0.6778.265, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b196959d3d59a9cd1d50394145145478
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:182)
-at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:103)
-at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:381)
-at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:375)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElements(DefaultElementLocator.java:83)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:36)
-at jdk.proxy2/jdk.proxy2.$Proxy30.size(Unknown Source)
-at com.ikkon.pageObjects.CampaignPage.VerifyGetFilteredCampaignListStatus(CampaignPage.java:143)
-at com.ikkon.Test_cases.TC_CampaignPageTest.VerifyFilterByInfluencerConfirmed(TC_CampaignPageTest.java:284)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
-          <reporter-output>
-          </reporter-output>
         </test-method> <!-- VerifyFilterByInfluencerConfirmed -->
-        <test-method signature="VerifyFilterByCompleted()[pri:12, instance:com.ikkon.Test_cases.TC_CampaignPageTest@491b9b8]" started-at="2025-01-25T14:37:20 IST" name="VerifyFilterByCompleted" finished-at="2025-01-25T14:37:20 IST" duration-ms="45" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-            <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=131.0.6778.265)
-Build info: version: '4.26.0', revision: '8ccf0219d7'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b196959d3d59a9cd1d50394145145478, findElement {using=xpath, value=//div[@id='mui-component-select-status']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.265, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\KANHAS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59651}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59651/devtoo..., se:cdpVersion: 131.0.6778.265, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b196959d3d59a9cd1d50394145145478]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=131.0.6778.265)
-Build info: version: '4.26.0', revision: '8ccf0219d7'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b196959d3d59a9cd1d50394145145478, findElement {using=xpath, value=//div[@id='mui-component-select-status']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.265, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\KANHAS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59651}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59651/devtoo..., se:cdpVersion: 131.0.6778.265, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b196959d3d59a9cd1d50394145145478
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy29.click(Unknown Source)
-at com.ikkon.pageObjects.CampaignPage.ClickOnStatusDropdown(CampaignPage.java:82)
-at com.ikkon.Test_cases.TC_CampaignPageTest.VerifyFilterByCompleted(TC_CampaignPageTest.java:304)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+        <test-method signature="VerifyFilterByCompleted()[pri:12, instance:com.ikkon.Test_cases.TC_CampaignPageTest@5a5a729f]" started-at="2025-02-07T19:20:02 IST" name="VerifyFilterByCompleted" finished-at="2025-02-07T19:20:05 IST" duration-ms="3415" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyFilterByCompleted -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ikkon.Test_cases.TC_CampaignPageTest@491b9b8]" started-at="2025-01-25T14:37:20 IST" name="tearDown" finished-at="2025-01-25T14:37:20 IST" duration-ms="42" status="FAIL">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[disconnected: not connected to DevTools
-  (failed to check if window was closed: disconnected: not connected to DevTools)
-  (Session info: chrome=131.0.6778.265)
-Build info: version: '4.26.0', revision: '8ccf0219d7'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b196959d3d59a9cd1d50394145145478, close {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.265, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\KANHAS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59651}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59651/devtoo..., se:cdpVersion: 131.0.6778.265, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b196959d3d59a9cd1d50394145145478]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: disconnected: not connected to DevTools
-  (failed to check if window was closed: disconnected: not connected to DevTools)
-  (Session info: chrome=131.0.6778.265)
-Build info: version: '4.26.0', revision: '8ccf0219d7'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b196959d3d59a9cd1d50394145145478, close {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.265, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\KANHAS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59651}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59651/devtoo..., se:cdpVersion: 131.0.6778.265, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b196959d3d59a9cd1d50394145145478
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
-at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:418)
-at com.ikkon.Test_cases.BaseClass.tearDown(BaseClass.java:86)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.internal.invokers.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:222)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:131)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ikkon.Test_cases.TC_CampaignPageTest@5a5a729f]" started-at="2025-02-07T19:20:05 IST" name="tearDown" finished-at="2025-02-07T19:20:06 IST" duration-ms="355" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

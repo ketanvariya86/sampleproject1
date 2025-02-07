@@ -18,8 +18,8 @@ public class TC_DashboardPageTest extends BaseClass {
 	
 	
 	
-	// TC-03 : After login with Admin, verify all labels shown on Dashboard 	
 	@Test(priority = 1)
+	// TC-03 : After login with Admin, verify all labels shown on Dashboard 	
 	public void VerifyDashboardPageLabelsAfterAdminUserLogin() throws InterruptedException
 	{
 		logger.info("================== After login with Admin, verify all labels shown on Dashboard execution started ==================");
@@ -499,5 +499,102 @@ public class TC_DashboardPageTest extends BaseClass {
 			Assert.assertTrue(false);
 		}
 	}
+	
+	@Test(priority = 14)	
+	//Verify the tooltip shown by hovering mouse on Pending Influencer Invitations bar chart
+	public void VerifyToolTipByHoveringMouseOnPendingInfluencerInvitationBar() throws InterruptedException, IOException 
+	{
+		DashboardPage DPage = new DashboardPage(driver);
+		DPage.DashboardTabClicked();
+		String ToolTip = DPage.GetToolTipForBar1();
+		if(ToolTip.contentEquals("Pending Influencer Invitations"))
+		{
+			logger.info("'Pending Influencer Invitation' tooltip shown by hovering mouse on Pending Influencer Invitations bar chart");
+			Assert.assertTrue(true);
+		}
+		else
+		{
+			logger.info("'Pending Influencer Invitation' tooltip is not shown by hovering mouse on Pending Influencer Invitations bar chart");
+			captureScreenShot(driver,"VerifyToolTipByHoveringMouseOnPendingInfluencerInvitationBar");
+			Assert.assertTrue(false);
+		}
+	}
+	
+	@Test(priority = 15)	
+	//Verify the tooltip shown by hovering mouse on Rejected Influencer Invitations bar chart
+	public void VerifyToolTipByHoveringMouseOnRejectedInfluencerInvitationsBar() throws InterruptedException, IOException 
+	{
+		DashboardPage DPage = new DashboardPage(driver);
+		String ToolTip = DPage.GetToolTipForBar2();
+		if(ToolTip.contentEquals("Rejected Influencer Invitations"))
+		{
+			logger.info("'Rejected Influencer Invitations' tooltip is shown by hovering mouse on Rejected Influencer Invitations bar chart");
+			Assert.assertTrue(true);
+		}
+		else
+		{
+			logger.info("'Rejected Influencer Invitations' tooltip is not shown by hovering mouse on Rejected Influencer Invitations bar chart");
+			captureScreenShot(driver,"VerifyToolTipByHoveringMouseOnRejectedInfluencerInvitationsBar");
+			Assert.assertTrue(false);
+		}
+	}
+	
+	@Test(priority = 16)	
+	//Verify the tooltip shown by hovering mouse on Active Influencer Campaigns bar chart
 
+	public void VerifyToolTipByHoveringMouseOnActiveInfluencerCampaignsBar() throws InterruptedException, IOException 
+	{
+		DashboardPage DPage = new DashboardPage(driver);
+		String ToolTip = DPage.GetToolTipForBar3();
+		if(ToolTip.contentEquals("Active Influencer Campaigns"))
+		{
+			logger.info("'Active Influencer Campaigns' tooltip shown by hovering mouse on Active Influencer Campaigns bar chart");
+			Assert.assertTrue(true);
+		}
+		else
+		{
+			logger.info("'Active Influencer Campaigns' tooltip is not shown by hovering mouse on Active Influencer Campaigns bar chart");
+			captureScreenShot(driver,"VerifyToolTipByHoveringMouseOnActiveInfluencerCampaignsBar");
+			Assert.assertTrue(false);
+		}
+	}
+	
+	@Test(priority = 17)	
+	//Verify the tooltip shown by hovering mouse on Completed Influencer Campaigns bar chart
+	public void VerifyToolTipByHoveringMouseOnCompletedInfluencerCampaignsBar() throws InterruptedException, IOException 
+	{
+		DashboardPage DPage = new DashboardPage(driver);
+		String ToolTip = DPage.GetToolTipForBar4();
+		if(ToolTip.contentEquals("Completed Influencer Campaigns"))
+		{
+			logger.info("'Completed Influencer Campaignss' tooltip shown by hovering mouse on Completed Influencer Campaigns bar chart");
+			Assert.assertTrue(true);
+		}
+		else
+		{
+			logger.info("'Completed Influencer Campaigns' tooltip is not shown by hovering mouse on Completed Influencer Campaigns bar chart");
+			captureScreenShot(driver,"VerifyToolTipByHoveringMouseOnCompletedInfluencerCampaignsBar");
+			Assert.assertTrue(false);
+		}
+	}
+	@Test(priority = 18)	
+	//Verify the tooltip shown by hovering mouse on Upcoming Influencer Campaigns bar chart
+	public void VerifyToolTipByHoveringMouseOnUpcomingInfluencerCampaignsBar() throws InterruptedException, IOException 
+	{
+		DashboardPage DPage = new DashboardPage(driver);
+		Thread.sleep(2000);
+		String ToolTip = DPage.GetToolTipForBar5();
+		if(ToolTip.contentEquals("Upcoming Influencer Campaigns"))
+		{
+			logger.info("'Upcoming Influencer Campaigns' tooltip shown by hovering mouse on Upcoming Influencer Campaigns bar chart");
+			Assert.assertTrue(true);
+		}
+		else
+		{
+			logger.info("'Upcoming Influencer Campaigns' tooltip is not shown by hovering mouse on Upcoming Influencer Campaigns bar chart");
+			captureScreenShot(driver,"VerifyToolTipByHoveringMouseOnUpcomingInfluencerCampaignsBar");
+			Assert.assertTrue(false);
+		}
+	}
+	
 }
